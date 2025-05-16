@@ -18,6 +18,7 @@
    # Common
 ===============================================*/
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --thm-font: 'Heebo', sans-serif;
     --thm-font-two: 'Roboto', sans-serif;
@@ -103,7 +104,7 @@ ul {
 }
 
 .fixed-bg {
-    background-attachment: fixed!important;
+    background-attachment: fixed !important;
 }
 
 
@@ -119,6 +120,7 @@ ul {
     min-width: 320px;
     overflow: hidden;
 }
+
 
 .container {
     padding-left: 15px;
@@ -574,20 +576,20 @@ ul {
    Scroll To Top
 ===============================================*/
 .scroll-to-top {
-    display: inline-block!important;
-    width: 45px!important;
-    height: 45px!important;
-    background: var(--thm-base)!important;
-    color: #fff!important;
+    display: inline-block !important;
+    width: 45px !important;
+    height: 45px !important;
+    background: var(--thm-base) !important;
+    color: #fff !important;
     position: fixed;
-    bottom: 40px!important;
-    right: 40px!important;
-    z-index: 99!important;
-    text-align: center!important;
+    bottom: 40px !important;
+    right: 40px !important;
+    z-index: 99 !important;
+    text-align: center !important;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     display: none;
-    border-radius: 50%!important;
+    border-radius: 50% !important;
     transition: all 0.4s ease;
 }
 

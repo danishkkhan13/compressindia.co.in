@@ -11,10 +11,10 @@ export default function ServicePageOne() {
 		<>
 			<SEO pageTitle={"Service"} />
 			<HeaderOne />
-			<Breadcrumb 
-                heading="Service Page 1"
-                currentPage="Service" 
-            />
+			<Breadcrumb
+				heading="Service Page 1"
+				currentPage="Service"
+			/>
 			<ServiceOne />
 			<BrandOne />
 			<CtaOne />
