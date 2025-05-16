@@ -1,0 +1,50 @@
+// Faq One
+export const FaqOneData = [
+    {
+        id: 1,
+        image: "/assets/images/resources/faq-v1-img1.jpg",
+        alt: "Faq",
+        heading: "How you will be take a short time?",
+        description: "We denounce with righteous indignation and dislike men demoralized by the charms of pleasure of the moment, they cannot foresee the pain and trouble.",
+        delay: "0ms",
+        duration: "1000ms",
+        open: "active",
+    },
+    {
+        id: 2,
+        image: "/assets/images/resources/faq-v1-img1.jpg",
+        alt: "Faq",
+        heading: "Why are the cleaning rate will be lowest price?",
+        description: "We denounce with righteous indignation and dislike men demoralized by the charms of pleasure of the moment, they cannot foresee the pain and trouble.",
+        delay: "100ms",
+        duration: "1000ms",
+    },
+    {
+        id: 3,
+        image: "/assets/images/resources/faq-v1-img1.jpg",
+        alt: "Faq",
+        heading: "Your pricing table will be possible?",
+        description: "We denounce with righteous indignation and dislike men demoralized by the charms of pleasure of the moment, they cannot foresee the pain and trouble.",
+        delay: "200ms",
+        duration: "1000ms",
+    },
+    {
+        id: 4,
+        image: "/assets/images/resources/faq-v1-img1.jpg",
+        alt: "Faq",
+        heading: "Why do I need to remove toys from the pool?",
+        description: "We denounce with righteous indignation and dislike men demoralized by the charms of pleasure of the moment, they cannot foresee the pain and trouble.",
+        delay: "300ms",
+        duration: "1000ms",
+    },
+    {
+        id: 5,
+        image: "/assets/images/resources/faq-v1-img1.jpg",
+        alt: "Faq",
+        heading: "Do I have to cover my pool when it rains?",
+        description: "We denounce with righteous indignation and dislike men demoralized by the charms of pleasure of the moment, they cannot foresee the pain and trouble.",
+        delay: "400ms",
+        duration: "1000ms",
+    },
+    
+];
