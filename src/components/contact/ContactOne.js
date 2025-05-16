@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import BackgroundOne from '../../../public/assets/images/backgrounds/contact-v1-bg.jpg';
+import BackgroundOne from '../../../public/assets/images/about/contact.jpg';
 
 const ContactOne = () => {
     useEffect(() => {
@@ -13,7 +13,7 @@ const ContactOne = () => {
         <section className="contact-one pd-120-0-120">
             <div className="contact-one__bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%" style={{backgroundImage: `url(${BackgroundOne.src})`}}>
             </div>
-            <div className="contact-one__img wow slideInRight" data-wow-delay="500ms" data-wow-duration="2500ms"><img src="/assets/images/resources/contact-v1-img1.png" alt="" /></div>
+            <div className="contact-one__img wow slideInRight" data-wow-delay="500ms" data-wow-duration="2500ms"><img src="/assets/images/about/contact.jpg" alt="" /></div>
             <div className="container">
                 <div className="row">
                     {/* Start Contact One Form Box */}

@@ -5,7 +5,7 @@ const Breadcrumb = ({heading = "About Us", currentPage = "About"}) => {
     return (
         <>
             <section class="page-header">
-                <div class="page-header__bg" style={{backgroundImage: `url(/assets/images/backgrounds/page-header-img1.jpg)`}}></div>
+                <div class="page-header__bg" style={{backgroundImage: `url(/assets/images/about/about-img.jpg)`}}></div>
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">

@@ -45,7 +45,7 @@ const AboutTwo = () => {
                                 </div>
                                 <div className="about-two__img2 wow zoomIn" data-wow-delay="100ms" data-wow-duration="3500ms">
                                     <div className="about-two__img2-inner">
-                                        <img src="/assets/images/about/about-v2-img2.jpg" alt="" />
+                                        <img src="/assets/images/about/about-img.jpg" alt="" />
                                     </div>
                                 </div>
                             </div>

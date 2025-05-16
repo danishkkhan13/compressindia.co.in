@@ -3,7 +3,7 @@ export const ServiceOneData = [
     {
         id: 1,
         icon: "icon-house",
-        image: "/assets/images/services/services-v1-img1.jpg",
+        image: "/assets/images/services/service1.jpg",
         heading: "Bedroom Cleaning",
         description: "We provide janitorial and this specialized is services.",
         link: "/bedroom-cleaning",
@@ -13,7 +13,7 @@ export const ServiceOneData = [
     {
         id: 2,
         icon: "icon-window-cleaning",
-        image: "/assets/images/services/services-v1-img2.jpg",
+        image: "/assets/images/services/service2.jpg",
         heading: "Window Cleaning",
         description: "We provide janitorial and this specialized is services.",
         link: "/window-cleaning",
@@ -23,7 +23,7 @@ export const ServiceOneData = [
     {
         id: 3,
         icon: "icon-flat",
-        image: "/assets/images/services/services-v1-img3.jpg",
+        image: "/assets/images/services/service3.jpg",
         heading: "Office Cleaning",
         description: "We provide janitorial and this specialized is services.",
         link: "/office-cleaning",
@@ -33,7 +33,7 @@ export const ServiceOneData = [
     {
         id: 4,
         icon: "icon-carpet-cleaner",
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/service4.jpg",
         heading: "Commercial Cleaning",
         description: "We provide janitorial and this specialized is services.",
         link: "/commercial-cleaning",
@@ -43,7 +43,7 @@ export const ServiceOneData = [
     {
         id: 5,
         icon: "icon-house-1",
-        image: "/assets/images/services/services-v1-img5.jpg",
+        image: "/assets/images/services/service5.jpg",
         heading: "House Cleaning",
         description: "We provide janitorial and this specialized is services.",
         link: "/house-cleaning",
@@ -53,7 +53,7 @@ export const ServiceOneData = [
     {
         id: 5,
         icon: "icon-electric-vehicle",
-        image: "/assets/images/services/services-v1-img6.jpg",
+        image: "/assets/images/services/service6.jpg",
         heading: "Car Cleaning",
         description: "We provide janitorial and this specialized is services.",
         link: "/car-cleaning",

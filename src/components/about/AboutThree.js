@@ -11,7 +11,7 @@ const AboutThree = () => {
                             <div class="about-three__img clearfix">
                                 <div class="about-three__img1">
                                     <div class="about-three__img1-inner js-tilt">
-                                        <img src="/assets/images/about/about-v3-img1.jpg" alt="" />
+                                        <img src="/assets/images/about/about-img.jpg" alt="" />
                                     </div>
                                 </div>
                             </div>

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
-import BackgroundOne from '../../../public/assets/images/backgrounds/main-slider-v1-img1.jpg';
-import BackgroundTwo from '../../../public/assets/images/backgrounds/main-slider-v1-img2.jpg';
-import BackgroundThree from '../../../public/assets/images/backgrounds/main-slider-v1-img3.jpg';
+import BackgroundOne from '../../../public/assets/images/backgrounds/slide1.jpg';
+import BackgroundTwo from '../../../public/assets/images/backgrounds/slide2.jpg';
+import BackgroundThree from '../../../public/assets/images/backgrounds/slide3.jpg';
 
 const HeroOne = () => {
 

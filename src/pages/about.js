@@ -21,8 +21,8 @@ export default function AboutPage() {
 			<AboutOne />
 			<ServiceOne />
 			<ContactOne />
-			<TeamOne />
-			<BlogOne />
+			{/* <TeamOne /> */}
+			{/* <BlogOne /> */}
 			<BrandOne />
 			<FooterOne />
 		</>

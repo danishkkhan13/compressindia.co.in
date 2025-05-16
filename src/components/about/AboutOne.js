@@ -6,7 +6,7 @@ const AboutOne = () => {
         <>
             <section className="about-one pd-120-0-120">
                 <div className="about-one__img2 wow slideInRight" data-wow-delay="500ms">
-                    <img className="float-bob-x" src="/assets/images/about/about-v1-img2.png" alt="About" />
+                    <img className="float-bob-x" src="/assets/images/about/about.png" alt="About" />
                 </div>
                 <div className="container">
                     <div className="row">
@@ -14,7 +14,7 @@ const AboutOne = () => {
                         <div className="col-xl-6">
                             <div className="about-one__img clearfix">
                                 <div className="about-one__img-inner">
-                                    <img src="/assets/images/about/about-v1-img1.jpg" alt="About" />
+                                    <img src="/assets/images/about/about.jpg" alt="About" />
                                 </div>
                                 <div className="experince-box">
                                     <h2>25 +Years Experince</h2>
