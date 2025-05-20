@@ -29,35 +29,37 @@ export default function AboutPage() {
 			?
 			<Product />
 			<section className="about-one pd-120-0-120">
-				<div className="container">
-					<div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
-						{/* Text Content */}
-						<div className="md:w-2/3">
-							<h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">OUR VISION</h2>
-							<div className="flex justify-around w-full p-4 bg-gray-100">
-								<p className=" leading-relaxed">
+				<div className="container mx-auto px-4">
+					<div className="row">
+						<div className="flex items-center ourvision">
+
+							{/* Text Section */}
+							<div className="col-xl-8">
+								<h2 className="text-3xl font-bold text-gray-900 mb-4">OUR VISION</h2>
+								<p className="text-gray-700 text-lg leading-relaxed">
 									At Compress India Private Limited, Our vision is clear to redefine the AC service / repair &amp; cooling industry <br />
 									by setting the highest standards in customer satisfaction, technical expertise, and environmental responsibilities. <br />
-									We look forward to not only meeting but exceeding our cooling needs.
+									We look forward to not only meeting but exceeding your cooling needs.
 								</p>
-
-
-								{/* Image */}
-								<div className="md:w-1/3 flex justify-center">
-									<Image
-										src="/images/resources/vision.jpg"
-										alt="Our Vision"
-										width={300}
-										height={200}
-										className="object-contain"
-										priority
-									/>
-								</div>
 							</div>
+
+							{/* Image Section */}
+							<div className="col-xl-4">
+								<img
+									src="/images/resources/vision.jpg"
+									alt="Our Vision"
+									className="w-[350px] h-auto object-contain"
+								/>
+							</div>
+
 						</div>
 					</div>
 				</div>
 			</section>
+
+
+
+
 			{/* <ContactOne />
 			<TeamOne />
 			<BlogOne /> */}

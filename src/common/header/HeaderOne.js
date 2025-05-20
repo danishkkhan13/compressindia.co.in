@@ -3,6 +3,7 @@ import NavMenu from './NavMenu';
 import Sidebar from './sidebar';
 import Link from 'next/link';
 import Modal from 'react-bootstrap/Modal';
+import Image from 'next/image';
 
 const HeaderOne = () => {
     useEffect(() => {
@@ -11,19 +12,19 @@ const HeaderOne = () => {
 
         if ($("#polyglot-language-options").length) {
             $('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
-              effect: 'slide',
-              animSpeed: 500,
-              testMode: true,
-              onChange: function (evt) {
-                alert("The selected language is: " + evt.selectedItem);
-              }
-        
+                effect: 'slide',
+                animSpeed: 500,
+                testMode: true,
+                onChange: function (evt) {
+                    alert("The selected language is: " + evt.selectedItem);
+                }
+
             });
         }
-            
+
     }, []);
     const [isActive, setIsActive] = useState(false);
-    
+
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -99,8 +100,20 @@ const HeaderOne = () => {
                     <div className="container clearfix">
                         <div className="main-menu-wrapper clearfix">
                             <div className="main-menu-wrapper__left">
+
                                 <div className="main-menu-wrapper__logo">
-                                    <Link href="/"><img src="/assets/images/resources/logo-1.png" alt="" /></Link>
+                                    <Link href="/" className="block text-left">
+                                        <div className="flex flex-col items-start">
+                                            <Image
+                                                src="/assets/images/resources/logo-1.png"
+                                                alt="Logo"
+                                                width={235}
+                                                height={44}
+                                                className="h-[44px] w-[235px]"
+                                            />
+                                            {/* <span className="text-sm mt-2">An Air condition company</span> */}
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="main-menu-wrapper__right">

@@ -10,10 +10,10 @@ export default function GalleryOnePage() {
 		<>
 			<SEO pageTitle={"Gallery Page 1"} />
 			<HeaderOne />
-			<Breadcrumb 
-                heading="Gallery Page 1"
-                currentPage="Gallery" 
-            />
+			<Breadcrumb
+				heading="Gallery Page 1"
+				currentPage="Gallery"
+			/>
 			<GalleryOne />
 			<CtaOne />
 			<FooterOne />

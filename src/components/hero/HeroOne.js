@@ -10,31 +10,31 @@ const HeroOne = () => {
 
         if ($('.main-slider-one__carousel').length) {
             $('.main-slider-one__carousel').owlCarousel({
-              animateOut: 'fadeOut',
-              animateIn: 'fadeIn',
-              loop: true,
-              margin: 0,
-              dots: false,
-              nav: true,
-              singleItem: true,
-              smartSpeed: 500,
-              autoplay: true,
-              autoplayTimeout: 9000,
-              navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right right"></span>'],
-              responsive: {
-                0: {
-                  items: 1
-                },
-                600: {
-                  items: 1
-                },
-                1024: {
-                  items: 1
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                loop: true,
+                margin: 0,
+                dots: false,
+                nav: true,
+                singleItem: true,
+                smartSpeed: 500,
+                autoplay: true,
+                autoplayTimeout: 9000,
+                navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right right"></span>'],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1024: {
+                        items: 1
+                    }
                 }
-              }
             });
         }
-            
+
     }, []);
 
     return (
@@ -45,21 +45,21 @@ const HeroOne = () => {
                     <div className="main-slider-one__single">
                         <div className="top-shape"></div>
                         <div className="bottom-shape"></div>
-                        <div className="image-layer" style={{backgroundImage: `url(${BackgroundOne.src})`}}></div>
+                        <div className="image-layer" style={{ backgroundImage: `url(${BackgroundOne.src})` }}></div>
                         <div className="container">
                             <div className="main-slider-one__content">
-                                <div className="tagline">
-                                    <p>Welcome to Washup. </p>
-                                </div>
+                                {/* <div className="tagline">
+                                    <p>PCB Board Repairing</p>
+                                </div> */}
                                 <div className="title">
-                                    <h2>Examples of great cleaning <br /> that get it right.</h2>
+                                    <h2>PCB Board Repairing</h2>
                                 </div>
                                 <div className="text">
-                                    <p>We will help you to feel better and enjoy every single day of <br />may be the fastest growing health.</p>
+                                    <p>Revive, Repair, Reconnect: Precision PCB Board Repairing for <br /> Seamless Performance. Your Electronics Deserve Expert Care, We Deliver Excellence.</p>
                                 </div>
                                 <div className="btn-box">
                                     <Link href="/contact" className="thm-btn">
-                                        <span>Discover Now</span>
+                                        <span>Request Services</span>
                                         <div className="liquid"></div>
                                     </Link>
                                 </div>
@@ -72,22 +72,20 @@ const HeroOne = () => {
                     <div className="main-slider-one__single">
                         <div className="top-shape"></div>
                         <div className="bottom-shape"></div>
-                        <div className="image-layer" style={{backgroundImage: `url(${BackgroundTwo.src})`}}>
+                        <div className="image-layer" style={{ backgroundImage: `url(${BackgroundTwo.src})` }}>
                         </div>
                         <div className="container">
                             <div className="main-slider-one__content">
-                                <div className="tagline">
-                                    <p>Welcome to Washup.</p>
-                                </div>
+
                                 <div className="title">
-                                    <h2>Examples of great cleaning <br /> that get it right.</h2>
+                                    <h2>New AC<br /> Installation & <br />Dismantle </h2>
                                 </div>
                                 <div className="text">
-                                    <p>We will help you to feel better and enjoy every single day of <br />may be the fastest growing health.</p>
+                                    <p>Seamless AC Solutions: Expert Installation & Hassle-Free <br />Dismantle Services. Your Comfort, Our Craftsmanship. </p>
                                 </div>
                                 <div className="btn-box">
                                     <Link href="/contact" className="thm-btn">
-                                        <span>Discover Now</span>
+                                        <span>Request Services</span>
                                         <div className="liquid"></div>
                                     </Link>
                                 </div>
@@ -100,22 +98,22 @@ const HeroOne = () => {
                     <div className="main-slider-one__single">
                         <div className="top-shape"></div>
                         <div className="bottom-shape"></div>
-                        <div className="image-layer" style={{backgroundImage: `url(${BackgroundThree.src})`}}>
+                        <div className="image-layer" style={{ backgroundImage: `url(${BackgroundThree.src})` }}>
                         </div>
                         <div className="container">
                             <div className="main-slider-one__content">
                                 <div className="tagline">
-                                    <p>Welcome to Washup.</p>
+                                    <p>AC Maintenance	</p>
                                 </div>
                                 <div className="title">
                                     <h2>Examples of great cleaning <br /> that get it right.</h2>
                                 </div>
                                 <div className="text">
-                                    <p>We will help you to feel better and enjoy every single day of <br />may be the fastest growing health.</p>
+                                    <p>Preserve Peak Performance: Elevate your AC's lifespan with<br />our meticulous Maintenance Services. Breathe Easy,<br />Stay Cool, and Keep Your Comfort in Check.	</p>
                                 </div>
                                 <div className="btn-box">
                                     <Link href="/contact" className="thm-btn">
-                                        <span>Discover Now</span>
+                                        <span>Select Deal</span>
                                         <div className="liquid"></div>
                                     </Link>
                                 </div>

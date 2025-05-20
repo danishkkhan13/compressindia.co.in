@@ -10,12 +10,11 @@ const PricingOne = () => {
                 <div className="container">
                     <div className="section-title__style2">
                         <div className="section-title">
-                            <span className="section-title__tagline">Pricing Plan</span>
+                            <span className="section-title__tagline">Pricing Plan & Offers</span>
                             <h2 className="section-title__title">Choose Your Pricing Plan</h2>
                         </div>
                         <div className="text-box">
-                            <p>will reenergize your ome and enhance your life. From everyday housekeeping to routine
-                                cleanings, our professional this to members can provide you.</p>
+
                         </div>
                     </div>
                     <div className="row">
@@ -23,7 +22,7 @@ const PricingOne = () => {
                             <div key={i} className="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay={item.delay}>
                                 <div className="pricing-plan-one__single">
                                     <div className="pricing-plan-one__single-inner">
-                                        <div className="layer-outer" style={{backgroundImage: `url(${BackgroundOne.src})`}}></div>
+                                        <div className="layer-outer" style={{ backgroundImage: `url(${BackgroundOne.src})` }}></div>
                                         <div className="table-header text-center">
                                             <div className="category-wrapper">
                                                 <h3>{item.heading}</h3>

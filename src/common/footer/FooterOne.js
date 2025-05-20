@@ -1,12 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const FooterOne = () => {
     return (
         <>
 
             <footer className="footer-one">
-                <div className="footer-one__bg" style={{backgroundImage: `url(/assets/images/backgrounds/footer-v1-bg.jpg)`}}></div>
+                <div className="footer-one__bg" style={{ backgroundImage: `url(/assets/images/backgrounds/footer-v1-bg.jpg)` }}></div>
                 <div className="footer-one__top">
                     <div className="container">
                         <div className="row">
@@ -17,7 +18,15 @@ const FooterOne = () => {
                                         <div className="col-xl-4 col-lg-4 col-md-6 wow animated fadeInUp" data-wow-delay="0.1s">
                                             <div className="footer-widget__column footer-widget__about">
                                                 <div className="footer-widget__about-logo">
-                                                    <Link href="/"><img src="/assets/images/resources/footer-logo1.png" alt="" /></Link>
+                                                    <Link href="/">
+                                                        <Image
+                                                            src="/assets/images/resources/logo-1.png"
+                                                            alt="Logo"
+                                                            width={235}
+                                                            height={44}
+                                                            className="h-[44px] w-[235px]"
+                                                        />
+                                                    </Link>
                                                 </div>
                                                 <p className="footer-widget__about-text">We help businesses maximize their
                                                     online presence with a personalized approach to digital marketing.</p>
@@ -150,7 +159,7 @@ const FooterOne = () => {
                 </div>
                 {/* End Footer One Bottom */}
             </footer>
-            
+
         </>
     )
 }

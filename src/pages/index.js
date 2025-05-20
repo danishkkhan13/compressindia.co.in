@@ -2,6 +2,7 @@ import SEO from "../common/seo/Seo";
 import HeaderOne from "../common/header/HeaderOne";
 import HeroOne from "../components/hero/HeroOne";
 import AboutOne from "../components/about/AboutOne";
+import WhyChooseUs from "@/components/whychoose_us/chooseus";
 import ServiceOne from "../components/service/ServiceOne";
 import ProjectOne from "../components/project/ProjectOne";
 import ContactOne from "../components/contact/ContactOne";
@@ -12,23 +13,29 @@ import CtaOne from "../components/cta/CtaOne";
 import BlogOne from "../components/blog/BlogOne";
 import BrandOne from "../components/brand/BrandTwo";
 import FooterOne from "../common/footer/FooterOne";
+import FaqOne from "../components/faq/FaqOne";
+import PricingOne from "@/components/pricing/PricingOne";
+import ContactBanner from "@/components/contactBanner/contactbanner";
 
 export default function Home() {
 	return (
 		<>
 			<SEO pageTitle={"Home One"} />
 			<HeaderOne />
-      		<HeroOne />
+			<HeroOne />
 			<AboutOne />
-			<ServiceOne />
-			<ProjectOne />
+			<WhyChooseUs />
+			<FaqOne />
 			<ContactOne />
-			<TeamOne />
+			<PricingOne />
+			{/* <ProjectOne /> */}
+
+			{/* <TeamOne />
 			<WhyChooseUsOne />
-			<TestimonialOne />
-			<CtaOne />
-			<BlogOne /> 
-			<BrandOne />
+			<TestimonialOne /> */}
+			{/* <CtaOne />
+			<BlogOne />
+			<BrandOne /> */}
 			<FooterOne />
 		</>
 	);
