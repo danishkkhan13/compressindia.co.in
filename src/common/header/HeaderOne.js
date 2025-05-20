@@ -31,7 +31,7 @@ const HeaderOne = () => {
     return (
         <>
             <header className="main-header clearfix">
-                <div className="main-header__top clearfix">
+                {/* <div className="main-header__top clearfix">
                     <div className="container clearfix">
                         <div className="main-header__top-inner clearfix">
                             <div className="main-header__top-left">
@@ -94,7 +94,7 @@ const HeaderOne = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <nav className="main-menu clearfix">
                     <div className="container clearfix">
