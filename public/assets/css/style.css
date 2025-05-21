@@ -3770,6 +3770,95 @@ div[class^="bubble-"] {
     opacity: 0.7;
 }
 
+hr:not([size]) {
+    height: 2px;
+    color: #000000;
+}
+
+/* Styling for button container */
+
+
+/* Styling for the button */
+.about-one__content-btn button {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px 30px;
+    background-color: rgba(0, 123, 255, 0.7);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.4s ease;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.about-one__content-btn button:hover .text {
+    color: #fff;
+    /* Changes text color on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge text */
+}
+
+.about-one__content-btn button:hover .liquids {
+    width: 100%;
+    /* Expands liquid span to cover button */
+    height: 100%;
+    /* Expands liquid span to cover button */
+    /* background-color: rgba(0, 123, 255, 0.7); */
+    /* Liquid effect color */
+    transition: all 0.4s ease;
+    /* Smooth expansion transition */
+}
+
+/* Styling for the text inside the button */
+.about-one__content-btn .text {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    /* Default text color */
+}
+
+/* Styling for the liquid effect */
+.about-one__content-btn .liquids {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: rgb(101 214 74);
+    /* Liquid color */
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
+    /* Smooth expansion */
+}
+
+.innerpage-whitebox {
+    background: #fff;
+    padding: 2em 2em 2em 2em;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: -60px;
+}
+
+.offers {
+    padding-top: 50px;
+    display: flex;
+}
+
+.list-inside {
+    padding-right: 90px;
+}
+
+.innerpage-box {
+    padding: 1em 0;
+    position: relative;
+    z-index: 999;
+}
+
 .team-one__single {
     position: relative;
     display: block;

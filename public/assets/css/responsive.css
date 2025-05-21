@@ -465,6 +465,11 @@
         padding-right: 0px;
     }
 
+    .offers {
+        display: block;
+        /* Or flex-direction: column; based on your needs */
+    }
+
     .about-one__img .experince-box {
         top: auto;
         left: 0px;
