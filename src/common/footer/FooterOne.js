@@ -15,7 +15,7 @@ const FooterOne = () => {
                                 <div className="footer-one__top-wrapper">
                                     <div className="row">
                                         {/* Start Footer Widget Column */}
-                                        <div className="col-xl-4 col-lg-4 col-md-6 wow animated fadeInUp" data-wow-delay="0.1s">
+                                        <div className="col-xl-4 col-lg-4 col-md-4 wow animated fadeInUp" data-wow-delay="0.1s">
                                             <div className="footer-widget__column footer-widget__about">
                                                 <div className="footer-widget__about-logo">
                                                     <Link href="/">
@@ -44,14 +44,14 @@ const FooterOne = () => {
                                         {/* End Footer Widget Column */}
 
                                         {/* Start Footer Widget Column */}
-                                        <div className="col-xl-2 col-lg-2 col-md-6 wow animated fadeInUp" data-wow-delay="0.3s">
+                                        <div className="col-xl-4 col-lg-4 col-md-4 wow animated fadeInUp" data-wow-delay="0.3s">
                                             <div className="footer-widget__column footer-widget__links mar-l">
                                                 <h2 className="footer-widget__title">Useful Links</h2>
                                                 <ul className="footer-widget__links-list">
                                                     <li className="footer-widget__links-list-item"><Link href="/about">About</Link></li>
                                                     <li className="footer-widget__links-list-item"><Link href="/service-one">Services</Link></li>
-                                                    <li className="footer-widget__links-list-item"><Link href="/testimonial">Testimonials</Link></li>
-                                                    <li className="footer-widget__links-list-item"><Link href="/team">Team</Link></li>
+                                                    <li className="footer-widget__links-list-item"><Link href="/privacy">Privacy Policy</Link></li>
+                                                    <li className="footer-widget__links-list-item"><Link href="/term">Terms and Conditions</Link></li>
                                                     <li className="footer-widget__links-list-item"><Link href="/contact">Contact</Link></li>
                                                 </ul>
                                             </div>
@@ -59,28 +59,28 @@ const FooterOne = () => {
                                         {/* End Footer Widget Column */}
 
                                         {/* Start Footer Widget Column */}
-                                        <div className="col-xl-3 col-lg-3 col-md-6 wow animated fadeInUp" data-wow-delay="0.5s">
+                                        <div className="col-xl-4 col-lg-4 col-md-4 wow animated fadeInUp" data-wow-delay="0.5s">
                                             <div className="footer-widget__column footer-widget__links mrt-60">
                                                 <h2 className="footer-widget__title">Our Service</h2>
                                                 <ul className="footer-widget__links-list">
-                                                    <li className="footer-widget__links-list-item"><Link href="/bedroom-cleaning">Bedroom Cleaning</Link></li>
-                                                    <li className="footer-widget__links-list-item"><Link href="/window-cleaning">Window Cleaning</Link></li>
-                                                    <li className="footer-widget__links-list-item"><Link href="/office-cleaning">Office Cleaning</Link></li>
-                                                    <li className="footer-widget__links-list-item"><Link href="/commercial-cleaning">Commercial Cleaning</Link></li>
-                                                    <li className="footer-widget__links-list-item"><Link href="/house-cleaning">House Cleaning</Link></li>
+                                                    <li className="footer-widget__links-list-item"><Link href="/one-time-services">One Time Service</Link></li>
+                                                    <li className="footer-widget__links-list-item"><Link href="/chemical-jet-services">Chemical Jet Services</Link></li>
+                                                    <li className="footer-widget__links-list-item"><Link href="/ac-dismantle-services-2-2">Dismantle Services</Link></li>
+                                                    <li className="footer-widget__links-list-item"><Link href="/ac-installation-services">AC Installation Services</Link></li>
+                                                    <li className="footer-widget__links-list-item"><Link href="/ac-dismantle-services">AC Dismantle Services</Link></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         {/* End Footer Widget Column */}
 
                                         {/* Start Footer Widget Column */}
-                                        <div className="col-xl-3 col-lg-3 col-md-6 wow animated fadeInUp" data-wow-delay="0.7s">
+                                        {/* <div className="col-xl-3 col-lg-3 col-md-6 wow animated fadeInUp" data-wow-delay="0.7s">
                                             <div className="footer-widget__column footer-widget__gallery mrt-60">
-                                                <h2 className="footer-widget__title">Our Gallery</h2>
+                                                <h2 className="footer-widget__title">Our Offers</h2>
                                                 <ul>
                                                     <li className="footer-widget__gallery-single">
                                                         <div className="img-box">
-                                                            <img src="/assets/images/footer/footer-v1-img1.png" alt="" />
+                                                            <img src="/assets/images/services/incrediable-deal.png" alt="" />
                                                             <div className="overlay-icon">
                                                                 <Link href="/"><span className="icon-link"></span></Link>
                                                             </div>
@@ -105,35 +105,10 @@ const FooterOne = () => {
                                                         </div>
                                                     </li>
 
-                                                    <li className="footer-widget__gallery-single">
-                                                        <div className="img-box">
-                                                            <img src="/assets/images/footer/footer-v1-img4.png" alt="" />
-                                                            <div className="overlay-icon">
-                                                                <Link href="/"><span className="icon-link"></span></Link>
-                                                            </div>
-                                                        </div>
-                                                    </li>
 
-                                                    <li className="footer-widget__gallery-single">
-                                                        <div className="img-box">
-                                                            <img src="/assets/images/footer/footer-v1-img5.png" alt="" />
-                                                            <div className="overlay-icon">
-                                                                <Link href="/"><span className="icon-link"></span></Link>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li className="footer-widget__gallery-single">
-                                                        <div className="img-box">
-                                                            <img src="/assets/images/footer/footer-v1-img6.png" alt="" />
-                                                            <div className="overlay-icon">
-                                                                <Link href="/"><span className="icon-link"></span></Link>
-                                                            </div>
-                                                        </div>
-                                                    </li>
                                                 </ul>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         {/* End Footer Widget Column */}
                                     </div>
                                 </div>

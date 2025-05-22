@@ -135,7 +135,7 @@ export default function customizedservicesPageOne() {
                         backgroundColor: '#32373c',
                         borderRadius: '5px'
                     }}>
-                        Compare with same deal
+                        Our Factory Products
                     </button>
                 </div>
             </section>

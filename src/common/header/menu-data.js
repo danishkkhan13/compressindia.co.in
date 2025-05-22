@@ -32,7 +32,7 @@ const menu_data = [
   {
     id: 4,
     has_dropdown: true,
-    title: "Service+",
+    title: "-Service+",
     link: "#",
     sub_menus: [
       { link: "/one-time-services", title: "One Time Services" },
@@ -56,21 +56,21 @@ const menu_data = [
 
     ],
   },
+  // {
+  //   id: 5,
+  //   has_dropdown: true,
+  //   title: "Blog",
+  //   link: "/#",
+  //   sub_menus: [
+  //     { link: "/blog", title: "Blog" },
+  //     { link: "/blog-grid", title: "Blog Grid" },
+  //     { link: "/blog-list", title: "Blog List" },
+  //     { link: "/blog-standard", title: "Blog Standard" },
+  //     { link: "/blog-details", title: "Blog Details" },
+  //   ],
+  // },
   {
     id: 5,
-    has_dropdown: true,
-    title: "Blog",
-    link: "/#",
-    sub_menus: [
-      { link: "/blog", title: "Blog" },
-      { link: "/blog-grid", title: "Blog Grid" },
-      { link: "/blog-list", title: "Blog List" },
-      { link: "/blog-standard", title: "Blog Standard" },
-      { link: "/blog-details", title: "Blog Details" },
-    ],
-  },
-  {
-    id: 6,
     mega_menu: false,
     has_dropdown: false,
     title: "Contact",

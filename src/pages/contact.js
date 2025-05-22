@@ -11,10 +11,10 @@ export default function ContactPage() {
 		<>
 			<SEO pageTitle={"Contact Page"} />
 			<HeaderOne />
-			<Breadcrumb 
-                heading="Contact Page"
-                currentPage="Contact" 
-            />
+			<Breadcrumb
+				heading="Contact Page"
+				currentPage="Contact"
+			/>
 			<ContactInfo />
 			<ContactThree />
 			<ContactMap />

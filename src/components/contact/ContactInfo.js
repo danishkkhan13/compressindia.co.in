@@ -14,12 +14,14 @@ const ContactInfo = () => {
                                 </div>
                                 <div className="contact-box__single-text">
                                     <h2><a href="#">Our Location</a></h2>
-                                    <p>354 Oakridge, Camden <br />NJ 08102 - USA</p>
+                                    <p>
+                                        Off no.103, 1st floor, Hi Tech Premises Co- <br />Op.Soc.Ltd, Near SCLR Road, Kurla(W), Mumbai, Maharashtra, India
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         {/* End Contact Box Single */}
-                        
+
                         {/* Start Contact Box Single */}
                         <div className="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1500ms">
                             <div className="contact-box__single text-center">
@@ -28,8 +30,8 @@ const ContactInfo = () => {
                                 </div>
                                 <div className="contact-box__single-text">
                                     <h2><a href="#">Email Address</a></h2>
-                                    <p><a href="mailto:exampal@gmail.com">exampal@gmail.com</a></p>
-                                    <p><a href="mailto:exampal@gmail.com">www.unicktheme.com</a></p>
+                                    <p><a href="mailto:sales@compressindia.in">sales@compressindia.in</a><br /><br /><br /></p>
+                                    {/* <p><a href="mailto:exampal@gmail.com">www.unicktheme.com</a></p> */}
                                 </div>
                             </div>
                         </div>
@@ -43,8 +45,8 @@ const ContactInfo = () => {
                                 </div>
                                 <div className="contact-box__single-text">
                                     <h2><a href="#">Phone Number</a></h2>
-                                    <p><a href="tel:123456789">+012 (999) 666 22</a></p>
-                                    <p><a href="tel:123456789">+856352287</a></p>
+                                    <p><a href="tel:+91 8655011465">+91 8655011465
+                                    </a><br /><br /><br /></p>
                                 </div>
                             </div>
                         </div>

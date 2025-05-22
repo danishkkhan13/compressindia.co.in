@@ -3590,7 +3590,7 @@ div[class^="bubble-"] {
     height: 65px;
 }
 
-.contact-one__form-box .input-box .nice-select {
+/* .contact-one__form-box .input-box .nice-select {
     height: 65px;
     line-height: 65px;
     background: transparent;
@@ -3602,7 +3602,8 @@ div[class^="bubble-"] {
     color: #ffffff;
     padding-left: 30px;
     padding-right: 20px;
-}
+    width: 100%;
+} */
 
 .contact-one__form-box .input-box .nice-select:after {
     width: 8px;
@@ -3851,6 +3852,11 @@ hr:not([size]) {
     margin-bottom: 10px;
     margin-top: -180px;
 }
+
+.benefets {
+    width: 90% !important;
+}
+
 
 .servicese {
     display: flex;
@@ -8431,7 +8437,8 @@ hr:not([size]) {
 }
 
 .comment-form__input-box input[type="text"],
-.comment-form__input-box input[type="email"] {
+.comment-form__input-box input[type="email"],
+.comment-form__input-box select {
     position: relative;
     display: block;
     background: transparent;
@@ -8449,6 +8456,7 @@ hr:not([size]) {
     font-family: var(--thm-font-two);
     outline: none;
 }
+
 
 .comment-form__input-box textarea {
     width: 100%;
@@ -8987,8 +8995,9 @@ hr:not([size]) {
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 30px 0px rgb(234, 234, 234, 0.7);
-    padding: 95px 0px 40px;
+
     margin-top: -45px;
+    padding: 75px 18px 50px 18px;
 }
 
 .contact-box__single-text h2 {

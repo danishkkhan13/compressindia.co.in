@@ -10,7 +10,7 @@ export default function Blockbusterdeal() {
           <div className="row">
             <div className="innerpage-whitebox main-timeline">
               <div className="bg-white px-6 py-12 md:px-16 md:py-20">
-                <div className="max-w-7xl mx-auto">
+                <div className="max-w-7xl mx-auto" style={{ paddingBottom: '40px' }}>
                   <div className="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
                     <div className="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
                       <h2 className="wp-block-heading">PRICE : 1,500/-</h2>
