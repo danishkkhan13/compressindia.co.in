@@ -1153,6 +1153,10 @@
         display: none;
     }
 
+    .servicese {
+        display: block;
+    }
+
     .main-slider-one__single .bottom-shape {
         display: none;
     }

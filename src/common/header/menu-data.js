@@ -16,24 +16,9 @@ const menu_data = [
     title: "About",
     link: "/about",
   },
+
   {
     id: 3,
-    has_dropdown: true,
-    title: "Service+",
-    link: "#",
-    sub_menus: [
-      { link: "/service-one", title: "Service 01" },
-      { link: "/service-two", title: "Service 02" },
-      { link: "/bedroom-cleaning", title: "Bedroom Cleaning" },
-      { link: "/window-cleaning", title: "Window Cleaning" },
-      { link: "/office-cleaning", title: "Office Cleaning" },
-      { link: "/commercial-cleaning", title: "Commercial Cleaning" },
-      { link: "/house-cleaning", title: "House Cleaning" },
-      { link: "/car-cleaning", title: "Car Cleaning" },
-    ],
-  },
-  {
-    id: 4,
     mega_menu: false,
     has_dropdown: true,
     title: "-Offers+",
@@ -41,16 +26,34 @@ const menu_data = [
     sub_menus: [
       { link: "/blockbuster-deal", title: "Blockbuster Deal" },
       { link: "/desirable-deal", title: "DESIRABLE DEAL" },
-      { link: "/project", title: "Project" },
-      { link: "/project-details", title: "Project Details" },
-      { link: "/pricing", title: "Pricing" },
-      { link: "/testimonial", title: "Testimonial" },
-      { link: "/gallery-one", title: "Gallery 01" },
-      { link: "/gallery-two", title: "Gallery 02" },
-      { link: "/gallery-details", title: "Gallery Details" },
-      { link: "/client", title: "Client" },
-      { link: "/faq", title: "Faq" },
-      { link: "/error", title: "404 Error" },
+      { link: "/incredible-deal", title: "INCREDIBLE DEAL" },
+    ],
+  },
+  {
+    id: 4,
+    has_dropdown: true,
+    title: "Service+",
+    link: "#",
+    sub_menus: [
+      { link: "/one-time-services", title: "One Time Services" },
+      { link: "/chemical-jet-services", title: "Chemical Jet Services" },
+      { link: "/ac-dismantle-services-2-2", title: "Dismantle Services" },
+      { link: "/ac-installation-services", title: "AC Installation Services" },
+      { link: "/ac-dismantle-services", title: "AC Dismantle Services" },
+      { link: "/ac-pressure-testing-services", title: "AC Pressure Testing Services" },
+      { link: "/gas-charging", title: "GAS Charging" },
+      { link: "/pcb-board-repair", title: "PCB Board Repair" },
+      { link: "/capacitor-electrical-part", title: "Capacitor / Electrical Part" },
+      { link: "/compressor-installation", title: "Compressor Installation" },
+      { link: "/fan-motor-installation", title: "Fan Motor Installation" },
+      { link: "/copper-coil-installation", title: "Copper Coil Installation" },
+      { link: "/customized-services", title: "Customized Services" },
+
+
+
+
+
+
     ],
   },
   {

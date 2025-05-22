@@ -55,7 +55,7 @@ const ServiceOne = () => {
                     ))}
                 </div>
                 {!showAll && (
-                    <div className="text-center mt-5">
+                    <div className="text-center">
                         <div className="about-one__content-btn d-inline-block position-relative">
                             <button onClick={handleShowMore} className="thm-btn position-relative overflow-hidden">
                                 <span className="text position-relative" style={{ zIndex: 2 }}>Show More</span>

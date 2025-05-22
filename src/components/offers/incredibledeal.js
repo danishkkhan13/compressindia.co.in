@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 
 
-export default function Desirabledeal() {
+export default function Incredibledeal() {
     return (
         <section className="about-one">
             <div className="innerpage-box">
