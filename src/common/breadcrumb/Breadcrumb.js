@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Breadcrumb = ({heading = "About Us", currentPage = "About"}) => {
+const Breadcrumb = ({heading = "About Us", currentPage = "About" , backgroundImage = 'url()'}) => {
     return (
         <>
             <section class="page-header">
-                <div class="page-header__bg" style={{backgroundImage: `url(/assets/images/about/about-img.jpg)`}}></div>
+                <div class="page-header__bg" style={{backgroundImage:`url(${backgroundImage})`}}></div>
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-12">

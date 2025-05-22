@@ -12,6 +12,7 @@ export default function fanmotorinstallationPageOne() {
             <Breadcrumb
                 heading="Fan Motor Installation"
                 currentPage="Fan Motor Installation"
+                backgroundImage="/assets/images/backgrounds/fan-motor.jpg"
             />
             <section className="py-16 services-one pd-120-0-90 bg-white">
                 <div className="container">

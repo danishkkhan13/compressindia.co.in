@@ -12,6 +12,7 @@ export default function compressorinstallationPageOne() {
             <Breadcrumb
                 heading="compressor-installation"
                 currentPage="compressor-installation"
+                backgroundImage="/assets/images/backgrounds/compressor.jpg"
             />
             <section className="py-16 services-one pd-120-0-90 bg-white">
                 <div className="container">

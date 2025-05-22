@@ -11,6 +11,7 @@ export default function customizedservicesPageOne() {
             <Breadcrumb
                 heading="Customized Services"
                 currentPage="Customized Services"
+                backgroundImage="/assets/images/backgrounds/custome-service.jpg"
             />
             <section className="py-16 services-one pd-120-0-90 bg-white">
                 <div className="container">

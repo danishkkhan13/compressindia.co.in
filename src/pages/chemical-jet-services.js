@@ -12,6 +12,7 @@ export default function chemicaljetservicePageOne() {
             <Breadcrumb
                 heading="Chemical Jet Services"
                 currentPage="Chemical Jet Services"
+                backgroundImage="/assets/images/backgrounds/chemical-jet-service.jpg"
             />
             <section className="py-16 services-one pd-120-0-90 bg-white">
                 <div className="container">

@@ -12,6 +12,7 @@ export default function PcbboardservicesPageOne() {
             <Breadcrumb
                 heading="PCB Board Repair"
                 currentPage="PCB Board Repair"
+                backgroundImage="/assets/images/backgrounds/pcb-repaire.jpg"
             />
             <section className="py-16 services-one pd-120-0-90 bg-white">
                 <div className="container">

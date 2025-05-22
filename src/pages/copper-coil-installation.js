@@ -12,6 +12,7 @@ export default function coppercoilinstallationPageOne() {
             <Breadcrumb
                 heading="Copper Coil Installation"
                 currentPage="Copper Coil Installation"
+                backgroundImage="/assets/images/backgrounds/copper-coil.jpg"
             />
             <section className="py-16 services-one pd-120-0-90 bg-white">
                 <div className="container">

@@ -12,6 +12,7 @@ export default function AcinstallationservicesPageOne() {
             <Breadcrumb
                 heading="AC Installation Services"
                 currentPage="AC Installation Services"
+                backgroundImage="/assets/images/about/about-img.jpg"
             />
             <section className="py-16 services-one pd-120-0-90 bg-white">
                 <div className="container">

@@ -12,6 +12,7 @@ export default function capacitorelectricalpartPageOne() {
             <Breadcrumb
                 heading="Capacitor / Electrical Part"
                 currentPage="Capacitor / Electrical Part"
+                backgroundImage="/assets/images/backgrounds/commercial-electrical-wiring-service-500x500-1.jpg"
             />
             <section className="py-16 services-one pd-120-0-90 bg-white">
                 <div className="container">

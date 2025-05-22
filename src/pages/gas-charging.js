@@ -12,6 +12,7 @@ export default function GaschargingservicesPageOne() {
             <Breadcrumb
                 heading="GAS Charging"
                 currentPage="GAS Charging"
+                backgroundImage="/assets/images/backgrounds/ac-gas-charge.jpeg"
             />
             <section className="py-16 services-one pd-120-0-90 bg-white">
                 <div className="container">

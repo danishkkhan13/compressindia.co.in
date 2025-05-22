@@ -12,6 +12,7 @@ export default function acdismantleservicesPageOne() {
             <Breadcrumb
                 heading="AC Dismantle Services"
                 currentPage="AC Dismantle Services"
+                backgroundImage="/assets/images/backgrounds/dismantel-service.jpg"
             />
             <section className="py-16 services-one pd-120-0-90 bg-white">
                 <div className="container">

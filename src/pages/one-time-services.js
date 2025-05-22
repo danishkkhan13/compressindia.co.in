@@ -9,9 +9,11 @@ export default function onetimeservicePageOne() {
         <>
             <SEO pageTitle={"One Time Service"} />
             <HeaderOne />
+            
             <Breadcrumb
                 heading="One Time Service"
                 currentPage="One Time Service"
+                backgroundImage="/assets/images/backgrounds/one-time-service.jpeg"
             />
             <section className="py-16 services-one pd-120-0-90 bg-white">
                 <div className="container">
