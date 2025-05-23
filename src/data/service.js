@@ -3,15 +3,14 @@ export const ServiceOneData = [
     {
         id: 1,
         icon: "icon-house",
+        // image: "/assets/images/services/service1.jpg",
+        // heading: "Bedroom Cleaning",
+        // description: "We provide janitorial and this specialized is services.",
 
         image: "/assets/images/services/service1.jpg",
-        heading: "Bedroom Cleaning",
-        description: "We provide janitorial and this specialized is services.",
-
-        image: "/assets/images/services/services-v1-img1.jpg",
         heading: "AIR CONDITIONING ",
         description: "Sales / Repair & Maintenance / Services & Contracts.",
-        link: "/bedroom-cleaning",
+        // link: "/ac-installation-services",
         delay: "0ms",
         duration: "1500ms",
     },
@@ -19,47 +18,44 @@ export const ServiceOneData = [
         id: 2,
         icon: "icon-window-cleaning",
 
-        image: "/assets/images/services/service2.jpg",
-        heading: "Window Cleaning",
-        description: "We provide janitorial and this specialized is services.",
+        // image: "/assets/images/services/service2.jpg",
+        // heading: "Window Cleaning",
+        // description: "We provide janitorial and this specialized is services.",
 
-        image: "/assets/images/services/services-v1-img2.jpg",
+        image: "/assets/images/services/service2.jpg",
         heading: "REFRIGERATION & COOLING EQUIPMENTS",
         description: "Manufacturing / Sales / Repair & Maintenance / Services & Contracts.",
 
-        link: "/window-cleaning",
+        // link: "/chemical-jet-services",
         delay: "100ms",
         duration: "1500ms",
     },
     {
         id: 3,
-        icon: "icon-flat",
+        // icon: "icon-flat",
+        // image: "/assets/images/services/service5.jpg",
+        // heading: "Office Cleaning",
+        // description: "We provide janitorial and this specialized is services.",
 
-        image: "/assets/images/services/service3.jpg",
-        heading: "Office Cleaning",
-        description: "We provide janitorial and this specialized is services.",
-
-        image: "/assets/images/services/services-v1-img3.jpg",
+        image: "/assets/images/services/ducted-ac.webp",
         heading: "DUCTING & INSULATION",
         description: " Air Conditioning / Exhaust / Ventilation & Fresh Air ducting / Flare Lines. ",
-
-        link: "/office-cleaning",
+        // link: "/office-cleaning",
         delay: "200ms",
         duration: "1500ms",
     },
     {
         id: 4,
         icon: "icon-carpet-cleaner",
+        // image: "/assets/images/services/.jpg",
+        // heading: "Commercial Cleaning",
+        // description: "We provide janitorial and this specialized is services.",
 
         image: "/assets/images/services/service4.jpg",
-        heading: "Commercial Cleaning",
-        description: "We provide janitorial and this specialized is services.",
-
-        image: "/assets/images/services/services-v1-img4.jpg",
         heading: "HVAC",
         description: "Consulting / Design / Projects / Maintenance / Inspection & Audits.",
 
-        link: "/commercial-cleaning",
+        // link: "/commercial-cleaning",
         delay: "300ms",
         duration: "1500ms",
     },
@@ -67,15 +63,15 @@ export const ServiceOneData = [
         id: 5,
         icon: "icon-house-1",
 
-        image: "/assets/images/services/service5.jpg",
-        heading: "House Cleaning",
-        description: "We provide janitorial and this specialized is services.",
+        // image: "/assets/images/services/service5.jpg",
+        // heading: "House Cleaning",
+        // description: "We provide janitorial and this specialized is services.",
 
-        image: "/assets/images/services/services-v1-img5.jpg",
+        image: "/assets/images/services/service5.jpg",
         heading: "COMPRESSOR SALES & REPAIR ",
         description: "Rotary / Hermetic / Reciprocating / Scroll / Screw / Centrifugal Compressors. ",
 
-        link: "/house-cleaning",
+        // link: "/house-cleaning",
         delay: "400ms",
         duration: "1500ms",
     },
@@ -83,22 +79,22 @@ export const ServiceOneData = [
         id: 5,
         icon: "icon-electric-vehicle",
 
-        image: "/assets/images/services/service6.jpg",
-        heading: "Car Cleaning",
-        description: "We provide janitorial and this specialized is services.",
+        // image: "/assets/images/services/service6.jpg",
+        // heading: "Car Cleaning",
+        // description: "We provide janitorial and this specialized is services.",
 
-        image: "/assets/images/services/services-v1-img6.jpg",
+        image: "/assets/images/services/service6.jpg",
         heading: "ELECTRIC MOTOR SALES & REPAIR",
         description: "AC Motors / DC Motors / Shunt Motors.",
 
-        link: "/car-cleaning",
+        // link: "/car-cleaning",
         delay: "500ms",
         duration: "1500ms",
     },
     {
         id: 6,
         icon: "icon-electric-vehicle",
-        image: "/assets/images/services/services-v1-img6.jpg",
+        image: "/assets/images/services/cassette-AC.webp",
         heading: "PUMPS SALES & REPAIR",
         description: "Single & Double stage Reciprocating / Centrifugal / Vane / Lobe Pumps.",
         link: "/car-cleaning",
@@ -108,7 +104,7 @@ export const ServiceOneData = [
     {
         id: 7,
         icon: "icon-electric-vehicle",
-        image: "/assets/images/services/services-v1-img6.jpg",
+        image: "/assets/images/backgrounds/pcb-repaire.jpg",
         heading: "PCB & CONTROL PANNEL",
         description: "PCB Circuit Board / Control Panel Automation.",
         link: "/car-cleaning",
@@ -118,7 +114,7 @@ export const ServiceOneData = [
     {
         id: 8,
         icon: "icon-electric-vehicle",
-        image: "/assets/images/services/services-v1-img6.jpg",
+        image: "/assets/images/services/ducted-ac.webp",
         heading: "DUCT GRILLS + DIFFUSER + DAMPER",
         description: "Manufactures / Sales / Repair & Cleaning.",
         link: "/car-cleaning",
@@ -128,7 +124,7 @@ export const ServiceOneData = [
     {
         id: 9,
         icon: "icon-electric-vehicle",
-        image: "/assets/images/services/services-v1-img6.jpg",
+        image: "/assets/images/services/tower-AC.webp",
         heading: "S.S / MS PIPING & FABRICATION",
         description: "Projects / Repair & Maintenance / Inspection & Audits.",
         link: "/car-cleaning",
@@ -138,7 +134,7 @@ export const ServiceOneData = [
     {
         id: 10,
         icon: "icon-electric-vehicle",
-        image: "/assets/images/services/services-v1-img6.jpg",
+        image: "/assets/images/services/window-AC.webp",
         heading: "COIL & HEAT EXCHANGERS",
         description: "Manufactures / Sales / Pressure Testing & Customization.",
         link: "/car-cleaning",
@@ -148,7 +144,7 @@ export const ServiceOneData = [
     {
         id: 11,
         icon: "icon-electric-vehicle",
-        image: "/assets/images/services/services-v1-img6.jpg",
+        image: "/assets/images/services/Portable-AC.webp",
         heading: "BDS / CLEANING / DI – SCALLING",
         description: "AC Evaporator & Condenser Coils / Piping / Shell & Tube / Air Vents.",
         link: "/car-cleaning",
@@ -158,7 +154,7 @@ export const ServiceOneData = [
     {
         id: 12,
         icon: "icon-electric-vehicle",
-        image: "/assets/images/services/services-v1-img6.jpg",
+        image: "/assets/images/services/ac.webp",
         heading: "AHU + FCU + TFA",
         description: "Sales / Repair & Maintenance / Service & Contracts / Customization etc.",
         link: "/car-cleaning",
@@ -168,7 +164,7 @@ export const ServiceOneData = [
     {
         id: 13,
         icon: "icon-electric-vehicle",
-        image: "/assets/images/services/services-v1-img6.jpg",
+        image: "/assets/images/backgrounds/compressor.jpg",
         heading: "MAN POWER",
         description: "Chiller Plant Operator / Supervisors & Site Engineers / AC Technician / Helpers etc.",
         link: "/car-cleaning",
@@ -178,7 +174,7 @@ export const ServiceOneData = [
     {
         id: 14,
         icon: "icon-electric-vehicle",
-        image: "/assets/images/services/services-v1-img6.jpg",
+        image: "/assets/images/backgrounds/commercial-electrical-wiring-service-500x500-1.jpg",
         heading: "DOMESTIC AIR CONDITIONING SERVICE",
         description: "Sales / Repair & Maintenance / Service of Split / Window / Cassette / Portable ac’s etc.",
         link: "/car-cleaning",
@@ -188,7 +184,7 @@ export const ServiceOneData = [
     {
         id: 15,
         icon: "icon-electric-vehicle",
-        image: "/assets/images/services/services-v1-img6.jpg",
+        image: "/assets/images/backgrounds/chemical-jet-service.jpg",
         heading: "COMMERCIAL AIR CONTIONING SERVICE",
         description: "Sales / Repair & Maintenance / Service of Ducted / Package / Tower / Ceiling Suspended / VRV/VRF / AHU / FCU / TFA units etc.",
         link: "/car-cleaning",
@@ -198,7 +194,7 @@ export const ServiceOneData = [
     {
         id: 16,
         icon: "icon-electric-vehicle",
-        image: "/assets/images/services/services-v1-img6.jpg",
+        image: "/assets/images/backgrounds/ac-gas-charge.jpeg",
         heading: "CHILLER PLANT SERVICE",
         description: "Sales / Repair & Maintenance / Service & Contracts / Inspection & Audits in Air Cooled + Water Cooled Chiller Plants, for. Scroll mini Chillers / Screw Chillers / Reciprocating Chillers / Centrifugal Chillers etc.",
         delay: "500ms",

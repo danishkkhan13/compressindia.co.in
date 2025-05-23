@@ -19,7 +19,7 @@ const menu_data = [
     title: "-Offers+",
     link: "#",
     sub_menus: [
-      { link: "/blockbuster-deal", title: "Blockbuster Deal" },
+      { link: "/blockbuster-deal", title: "BLOCKBUSTER DEAL" },
       { link: "/desirable-deal", title: "DESIRABLE DEAL" },
       { link: "/incredible-deal", title: "INCREDIBLE DEAL" },
     ],

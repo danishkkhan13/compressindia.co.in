@@ -14,6 +14,7 @@ export default function ContactPage() {
 			<Breadcrumb
 				heading="Contact Page"
 				currentPage="Contact"
+				backgroundImage="/assets/images/backgrounds/blockbuster-deal.jpg"
 			/>
 			<ContactInfo />
 			<ContactThree />

@@ -35,7 +35,7 @@ export default function AboutPage() {
 						<div className="flex items-center ourvision">
 
 							{/* Text Section */}
-							<div className="col-xl-8">
+							<div className="col-xl-6">
 								<h2 className="text-3xl font-bold text-gray-900 mb-4">OUR VISION</h2>
 								<p className="text-gray-700 text-lg leading-relaxed">
 									At Compress India Private Limited, Our vision is clear to redefine the AC service / repair &amp; cooling industry <br />
@@ -47,7 +47,7 @@ export default function AboutPage() {
 							{/* Image Section */}
 							<div className="col-xl-4">
 								<img
-									src="/images/resources/vision.jpg"
+									src="/assets/images/resources/vision.jpg"
 									alt="Our Vision"
 									className="w-[350px] h-auto object-contain"
 								/>
