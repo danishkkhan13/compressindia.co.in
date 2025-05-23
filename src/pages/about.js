@@ -20,6 +20,7 @@ export default function AboutPage() {
 			<Breadcrumb
 				heading="About Page"
 				currentPage="About"
+				backgroundImage="/assets/images/about/about-img.jpg"
 			/>
 			<AboutOne />
 			<ServiceOne />
