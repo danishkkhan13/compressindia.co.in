@@ -125,8 +125,17 @@ const FooterOne = () => {
                             <div className="col-xl-12">
                                 <div className="footer-one__bottom-inner">
                                     <div className="footer-one__bottom-text">
-                                        <p>Copyright © 2023 <Link href="/">Washup</Link>. All Rights Reserved.</p>
+                                        <p>
+                                            Copyright © 2025 <Link href="/">Compress India</Link>. All Rights Reserved.
+
+                                            Developed <span style={{ color: 'red' }}>❤️</span>{" "}
+                                            <Link href="https://heartdynsimulation.com" target="_blank" rel="noopener noreferrer">
+                                                Dynsimulation
+                                            </Link>.
+                                        </p>
                                     </div>
+
+
                                 </div>
                             </div>
                         </div>

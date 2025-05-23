@@ -5,9 +5,9 @@ export default function Document() {
         <Html lang="en">
             <Head>
                 {/* favicons Icons */}
-                <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png" />
-                <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png" />
-                <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png" />
+                {/* <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png" /> */}
+                <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon.ico" />
                 <link rel="manifest" href="/assets/images/favicons/site.webmanifest" /><link href="" rel="stylesheet" />
 
                 <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css" />
@@ -39,7 +39,7 @@ export default function Document() {
             <body>
                 <Main />
                 <NextScript />
-                <script  src="/assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+                <script src="/assets/vendors/jquery/jquery-3.6.0.min.js"></script>
                 <script src="/assets/vendors/jquery-appear/jquery.appear.min.js"></script>
                 <script src="/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
                 <script src="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
