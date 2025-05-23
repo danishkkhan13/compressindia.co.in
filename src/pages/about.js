@@ -29,8 +29,8 @@ export default function AboutPage() {
 			{/* <BlogOne /> */}
 			?
 			<Product />
-			<section className="about-one pd-120-0-120">
-				<div className="container mx-auto px-4">
+			<section className="about-one pd-100-0-120">
+				<div className="container mx-auto px-4pb-20">
 					<div className="row">
 						<div className="flex items-center ourvision">
 
@@ -49,7 +49,10 @@ export default function AboutPage() {
 								<img
 									src="/assets/images/resources/vision.jpg"
 									alt="Our Vision"
-									className="w-[350px] h-auto object-contain"
+									className="w-[350px] h-auto object-contain pt-[50px] ourvisionimg" style={{
+										Width: '351px',
+
+									}}
 								/>
 							</div>
 

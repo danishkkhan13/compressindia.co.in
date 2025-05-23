@@ -166,7 +166,7 @@ ul {
 .ourvision {
     display: flex;
     align-items: center;
-
+    padding-bottom: 70px;
 }
 
 .icones .transform-shape {

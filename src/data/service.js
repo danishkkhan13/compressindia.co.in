@@ -32,7 +32,7 @@ export const ServiceOneData = [
     },
     {
         id: 3,
-        // icon: "icon-flat",
+        icon: "icon-flat",
         // image: "/assets/images/services/service5.jpg",
         // heading: "Office Cleaning",
         // description: "We provide janitorial and this specialized is services.",
