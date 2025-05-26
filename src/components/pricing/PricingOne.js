@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { PricingOneData } from '@/data/pricing';
+import { PricingOneData } from '../../data/pricing';
 import BackgroundOne from '../../../public/assets/images/backgrounds/priceing-plan-v1-bg.png';
 
 const PricingOne = () => {

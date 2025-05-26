@@ -121,10 +121,10 @@ const HeaderOne = () => {
                                     <a onClick={() => setIsActive(true)} className="mobile-nav__toggler"><i className="fa fa-bars"></i></a>
                                     <NavMenu />
                                 </div>
-                                <Link href="/contact" className="thm-btn main-header__btn">
+                                {/* <Link href="/contact" className="thm-btn main-header__btn">
                                     <span>Contact Us</span>
                                     <div className="liquid"></div>
-                                </Link>
+                                </Link> */}
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { ServiceOneData } from '@/data/service';
+import { ServiceOneData } from '../../data/service';
 import BackgroundOne from '../../../public/assets/images/pattern/services-v1-pattern.png';
 
 const ServiceOne = () => {
@@ -40,9 +40,9 @@ const ServiceOne = () => {
                                             alt={item.alt}
                                         />
                                     </div>
-                                    <div className="icon">
+                                    {/* <div className="icon">
                                         <span className={item.icon}></span>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="services-one__single-content text-center">
                                     <h2>
