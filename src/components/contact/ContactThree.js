@@ -89,21 +89,18 @@ const ContactThree = () => {
                                                 </div>
                                                 <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                     <div className="contact-page-form__input-box">
-                                                        <Field name="subject">
-                                                            {({ field, form }) => (
-                                                                <select
-                                                                    {...field}
-                                                                    onChange={(e) => form.setFieldValue("subject", e.target.value)}
-                                                                    className="w-full h-[65px] border-2 border-[#dddddd] text-[17px] font-normal text-[var(--thm-gray)] px-[30px] pr-[20px] bg-transparent rounded-[var(--thm-bdr-radius)] transition-all duration-[500ms] ease-in-out font-[var(--thm-font-two)] outline-none"
-                                                                >
-                                                                    <option value="">-- Please select a subject --</option>
-                                                                    <option value="ac-installation">AC Installation</option>
-                                                                    <option value="ac-repair">AC Repair</option>
-                                                                    <option value="ac-servicing">AC Servicing</option>
-                                                                    <option value="other">Other</option>
-                                                                </select>
-                                                            )}
+                                                        <Field
+                                                            as="select"
+                                                            name="subject"
+                                                            className="..."
+                                                        >
+                                                            <option value="">-- Please select a subject --</option>
+                                                            <option value="ac-installation">AC Installation</option>
+                                                            <option value="ac-repair">AC Repair</option>
+                                                            <option value="ac-servicing">AC Servicing</option>
+                                                            <option value="other">Other</option>
                                                         </Field>
+
                                                         <ErrorMessage name="subject" component="div" className="text-red-500 text-sm mt-1" />
 
 
