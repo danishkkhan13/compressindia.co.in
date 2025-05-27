@@ -1,10 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import 'font-awesome/css/font-awesome.min.css';;
 
 const FooterOne = () => {
     return (
         <>
+            {/* Call Button */}
+            <div className="call-btn">
+                <a href="tel:+918655011465">
+                    <i className="fa fa-phone"></i> <span>Call Us</span>
+                </a>
+            </div>
+
+            {/* WhatsApp Button */}
+            <div className="whatsapp-btn">
+                <a target='blank' href="https://api.whatsapp.com/send?phone=918655011465">
+                    <i className="fab fa-whatsapp"></i> <span>WhatsApp</span>
+                </a>
+            </div>
 
             <footer className="footer-one">
                 <div className="footer-one__bg" style={{ backgroundImage: `url(/assets/images/footer/footer.jpg)` }}></div>
@@ -128,8 +142,8 @@ const FooterOne = () => {
                                         <p>
                                             Copyright © 2025 <Link href="/">Compress India</Link>. All Rights Reserved.
 
-                                            Developed <span style={{ color: 'red' }}>❤️</span>{" "}
-                                            <Link href="https://heartdynsimulation.com" target="_blank" rel="noopener noreferrer">
+                                            Developed with<span style={{ color: 'red' }}>❤️</span>{" "}
+                                            <Link href="https://heartdynsimulation.com" target="_blank" rel="noopener noreferrer"> by
                                                 Dynsimulation
                                             </Link>.
                                         </p>

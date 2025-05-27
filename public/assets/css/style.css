@@ -35,6 +35,123 @@
     --bs-gutter-x: 30px;
 }
 
+
+/* Make sure Font Awesome is included in your project */
+.call-btn a,
+.whatsapp-btn a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.call-btn a {
+    color: white;
+}
+
+.whatsapp-btn a {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .call-btn {
+        position: fixed;
+        bottom: 80px;
+        left: 0px;
+        background: #1826be;
+        width: 50px;
+        height: 50px;
+        color: white;
+        padding: 5px 12.5px;
+        font-weight: 600;
+        font-size: 20px;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        transition: width 0.5s ease;
+    }
+
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        left: 0px;
+        background: #25d366;
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        padding: 5px 12px;
+        font-weight: 600;
+        font-size: 20px;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        transition: width 0.5s ease;
+    }
+
+    .call-btn a span,
+    .whatsapp-btn a span {
+        margin-left: 10px;
+        white-space: nowrap;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s ease;
+    }
+
+    .call-btn:hover,
+    .whatsapp-btn:hover {
+        width: 200px;
+    }
+
+    .call-btn:hover a span,
+    .whatsapp-btn:hover a span {
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0.3s;
+    }
+}
+
+@media (max-width: 768px) {
+    .call-btn {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        background: #1826be;
+        width: 50%;
+        height: 40px;
+        color: white;
+        padding: 5px 20px;
+        font-weight: 600;
+        font-size: 20px;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        background: #25d366;
+        width: 50%;
+        height: 40px;
+        color: #fff;
+        padding: 5px 11px;
+        font-weight: 600;
+        font-size: 20px;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .call-btn i,
+    .whatsapp-btn i {
+        margin-right: 8px;
+    }
+}
+
 .gutter-y-30 {
     --bs-gutter-y: 30px;
 }
@@ -47,6 +164,8 @@ body {
     font-weight: 400;
     overflow-x: hidden;
 }
+
+
 
 body.locked {
     overflow: hidden;
@@ -685,7 +804,7 @@ ul {
    Navigations One
 ===============================================*/
 .main-header {
-    position: relative;
+    position: sticky;
     display: block;
     background: #ffffff;
     width: 100%;
@@ -694,7 +813,7 @@ ul {
 }
 
 .main-header__top {
-    position: relative;
+    position: sticky;
     display: block;
     background-color: #ffffff;
     border-bottom: 1px solid #f1f1f1;
@@ -702,7 +821,7 @@ ul {
 }
 
 .main-header__top::before {
-    position: absolute;
+    position: sticky;
     top: 0;
     left: -100%;
     bottom: 0;
@@ -720,26 +839,26 @@ ul {
 }
 
 .main-header__top-inner {
-    position: relative;
+    position: sticky;
     display: block;
     padding: 4.5px 0px 5.5px;
     z-index: 1;
 }
 
 .main-header__top-left {
-    position: relative;
+    position: sticky;
     display: block;
     float: left;
 }
 
 .main-header__top-address {
-    position: relative;
+    position: sticky;
     display: flex;
     align-items: center;
 }
 
 .main-header__top-address li {
-    position: relative;
+    position: sticky;
     display: flex;
     align-items: center;
     line-height: 55px;
@@ -750,7 +869,7 @@ ul {
 }
 
 .main-header__top-address li .icon {
-    position: relative;
+    position: sticky;
     display: block;
 }
 
@@ -761,7 +880,7 @@ ul {
 }
 
 .main-header__top-address li .text {
-    position: relative;
+    position: sticky;
     display: block;
     margin-left: 10px;
 }
@@ -782,20 +901,20 @@ ul {
 }
 
 .main-header__top-right {
-    position: relative;
+    position: sticky;
     display: flex;
     float: right;
     align-items: center;
 }
 
 .main-header__top-right-search {
-    position: relative;
+    position: sticky;
     display: block;
     margin-right: 10px;
 }
 
 .main-header__top-right-search a {
-    position: relative;
+    position: sticky;
     display: block;
     width: 35px;
     height: 35px;
@@ -826,7 +945,7 @@ ul {
 }
 
 .main-header__top-right-search a i:before {
-    position: relative;
+    position: sticky;
     display: inline-block;
     color: var(--thm-base);
     font-size: 15px;
@@ -849,7 +968,7 @@ ul {
 }
 
 .main-header__top-right-social a {
-    position: relative;
+    position: sticky;
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -861,7 +980,7 @@ ul {
 }
 
 .main-header__top-right-social a:before {
-    position: absolute;
+    position: sticky;
     content: '';
     background-color: var(--thm-base);
     width: 100%;
@@ -879,7 +998,7 @@ ul {
 }
 
 .main-header__top-right-social a i::before {
-    position: relative;
+    position: sticky;
     display: inline-block;
     line-height: 35px;
 }
@@ -895,37 +1014,37 @@ ul {
 
 
 .main-menu {
-    position: relative;
+    position: sticky;
     background: #ffffff;
 }
 
 .main-menu-wrapper {
-    position: relative;
+    position: sticky;
     display: block;
 }
 
 .main-menu-wrapper__left {
-    position: relative;
+    position: sticky;
     display: block;
     float: left;
 }
 
 .main-menu-wrapper__logo {
-    position: relative;
+    position: sticky;
     float: left;
     padding-top: 37px;
     padding-bottom: 15px;
 }
 
 .main-menu-wrapper__right {
-    position: relative;
+    position: sticky;
     display: flex;
     float: right;
     align-items: center;
 }
 
 .main-menu-wrapper__main-menu {
-    position: relative;
+    position: sticky;
     display: block;
     margin-right: 50px;
 }
@@ -1188,36 +1307,36 @@ a.sc-hLseeU {
    Navigations Two
 ===============================================*/
 .main-header-two {
-    position: relative;
+    position: sticky;
     display: block;
 }
 
 .main-header-two__top {
-    position: relative;
+    position: sticky;
     display: block;
     background-color: var(--Washup-base);
 }
 
 .main-header-two__top-inner {
-    position: relative;
+    position: sticky;
     display: block;
 }
 
 .main-header-two__top-left {
-    position: relative;
+    position: sticky;
     display: block;
     float: left;
     padding: 5px 0;
 }
 
 .main-header-two__top-address {
-    position: relative;
+    position: sticky;
     display: flex;
     align-items: center;
 }
 
 .main-header-two__top-address li {
-    position: relative;
+    position: sticky;
     display: flex;
     align-items: center;
     line-height: 35px;
@@ -1262,7 +1381,7 @@ a.sc-hLseeU {
 }
 
 .main-header-two__top-right {
-    position: relative;
+    position: sticky;
     display: block;
     float: right;
 }

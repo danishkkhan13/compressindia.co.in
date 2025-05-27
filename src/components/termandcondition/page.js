@@ -8,7 +8,7 @@ export default function TermsAndConditions() {
                     <div className="row">
                         <div className="min-h-screen bg-white py-16 px-6 lg:px-24">
                             <div className="max-w-4xl mx-auto border-2 border-gray-300 rounded-2xl shadow-md p-10">
-                                <h1 className="text-3xl font-bold mb-6 text-center text-blue-700">Terms & Conditions</h1>
+                                <h1 className="text-3xl font-bold mb-6 text-center text-blue-700" style={{ paddingBottom: '20px' }}>Terms & Conditions</h1>
 
                                 <p className="mb-6 text-gray-700">
                                     These Terms and Conditions ("Terms") govern your access to and use of the Compress India website, products, and services. By accessing or using any part of our website or services, you agree to be bound by these Terms. If you do not agree, please do not use our services.

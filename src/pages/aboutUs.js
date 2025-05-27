@@ -3,7 +3,7 @@ import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import AboutOne from "../components/about/AboutOne";
 import ServiceOne from "../components/service/ServiceOne";
-import Product from "../components/product/page";
+// import Product from "../components/product/page";
 import ContactOne from "../components/contact/ContactOne";
 
 
@@ -15,11 +15,11 @@ import Image from 'next/image';
 export default function AboutPage() {
 	return (
 		<>
-			<SEO pageTitle={"About"} />
+			<SEO pageTitle={"About Us"} />
 			<HeaderOne />
 			<Breadcrumb
-				heading="About Page"
-				currentPage="About"
+				heading="About Us"
+				currentPage="About Us"
 				backgroundImage="/assets/images/about/about-img.jpg"
 			/>
 			<AboutOne />
@@ -28,7 +28,7 @@ export default function AboutPage() {
 			{/* <TeamOne /> */}
 			{/* <BlogOne /> */}
 			?
-			<Product />
+			{/* <Product /> */}
 			<section className="about-one pd-100-0-120">
 				<div className="container mx-auto px-4pb-20">
 					<div className="row">

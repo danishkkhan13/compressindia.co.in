@@ -1,7 +1,7 @@
 export const PricingOneData = [
     {
         heading: "Blockbuster Deal",
-        price: "₹1200",
+        price: "₹1500",
         duration: "per year",
         link: "https://compressindia.co.in/blockbuster-deal/",
         link_label: "KNOW MORE",

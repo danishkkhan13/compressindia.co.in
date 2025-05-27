@@ -2,6 +2,7 @@ import SEO from "../common/seo/Seo";
 import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import FooterOne from "../common/footer/FooterOne";
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function customizedservicesPageOne() {
     return (
@@ -104,9 +105,9 @@ export default function customizedservicesPageOne() {
                                     </div>
                                 </div>
                                 <div className="mb-12 text-center italic" style={{ paddingTop: '60px', fontSize: 'small' }}>
-                                    <p>
+                                    <h6>
                                         DISCAILMER : For any kind of customization works may which are not covered in this website please contact us on…..info@compressindia.com / sales.compressindia@gmail.com
-                                    </p>
+                                    </h6>
                                 </div>
                             </div>
                         </div>
@@ -116,13 +117,23 @@ export default function customizedservicesPageOne() {
                     textAlign: 'center',
                     paddingBottom: '40px'
                 }}>
-                    <button className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition" style={{
-                        width: '565px',
-                        backgroundColor: '#32373c',
-                        borderRadius: '5px'
-                    }}>
-                        Book Now
-                    </button>
+                    <a
+                        href="https://wa.me/918655011465"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button
+                            className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+                            style={{
+                                width: '565px',
+                                backgroundColor: '#32373c',
+                                borderRadius: '5px',
+                            }}
+                        >
+                            <FaWhatsapp size={24} color="#25D366" /> Book Now on WhatsApp
+                        </button>
+                    </a>
+
 
                 </div>
                 <div className="grid grid-rows-2 gap-6 py-10" style={{

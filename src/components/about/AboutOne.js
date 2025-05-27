@@ -17,7 +17,7 @@ const AboutOne = () => {
                                     <img src="/assets/images/about/about.jpg" alt="About" />
                                 </div>
                                 <div className="experince-box">
-                                    <h2>33 +Years Experince</h2>
+                                    <h2>10 +Years Experince</h2>
                                 </div>
                             </div>
                         </div>
@@ -28,15 +28,15 @@ const AboutOne = () => {
                             <div className="about-one__content">
                                 <div className="section-title">
                                     <span className="section-title__tagline">WHO WE ARE ?</span>
-                                    <h2 className="section-title__title">We Have 33 Years Of <br /> Experience In This Field</h2>
+                                    <h2 className="section-title__title">We Have 10 Years Of <br /> Experience In This Field</h2>
                                 </div>
                                 <div className="about-one__content-inner">
                                     {/* <p className="about-one__content-text1">will reenergize your ome and enhance your life. From every day this man housekeeping to. </p> */}
-                                    <p className="about-one__content-text2">Compress India Pvt. Ltd., based in Mumbai since 1990, specializes in air conditioning repair and has over 33 years of industry expertise. We offer a wide range of cooling and refrigeration services for both residential and commercial clients. Our certified technicians are dedicated to delivering top-notch maintenance and customer satisfaction.</p>
+                                    <p className="about-one__content-text2">Compress India Pvt. Ltd., based in Mumbai since 2015, specializes in air conditioning repair and has over 10 years of industry expertise. We offer a wide range of cooling and refrigeration services for both residential and commercial clients. Our certified technicians are dedicated to delivering top-notch maintenance and customer satisfaction.</p>
                                     <div className="about-one__content-list">
                                         <ul>
                                             <li>
-                                                <p>Compress India Pvt. Ltd., Mumbai-based since 1990, specializes in AC & HVAC service and manufacturing, offering a wide range of cooling and refrigeration products.</p>
+                                                <p>Compress India Pvt. Ltd., Mumbai-based since 2015, specializes in AC & HVAC service and manufacturing, offering a wide range of cooling and refrigeration products.</p>
                                             </li>
                                             <li>
                                                 <p>Our service division manages all repairs, maintenance, and contracts, while our manufacturing unit produces commercial cooling and refrigeration equipment.</p>

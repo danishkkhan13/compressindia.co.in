@@ -7,11 +7,12 @@ import FooterOne from "../common/footer/FooterOne";
 export default function TermsandConditionsPage() {
     return (
         <>
-            <SEO pageTitle={"Privacy Policy"} />
+            <SEO pageTitle={"Terms and Conditions"} />
             <HeaderOne />
             <Breadcrumb
-                heading="Privacy Policy"
-                currentPage="Privacy Policy"
+                heading="Terms and Conditions"
+                currentPage="Terms and Conditions"
+                backgroundImage="/assets/images/backgrounds/one-time-service.jpeg"
             />
             <Terms />
             {/* <TeamOne />

@@ -2,13 +2,13 @@
 
 export default function PrivacyPolicy() {
     return (
-        <section className="about-one">
+        <section className="about-one pd-120-0-120">
             <div className="innerpage-box">
                 <div className="container">
                     <div className="row">
                         <div className="min-h-screen bg-white py-16 px-6 lg:px-24">
                             <div className="max-w-4xl mx-auto border-2 border-gray-300 rounded-2xl shadow-md p-10">
-                                <h1 className="text-3xl font-bold mb-6 text-center text-blue-700">Privacy Policy</h1>
+                                <h1 className="text-3xl font-bold mb-6 text-center text-blue-700" style={{ paddingBottom: '20px' }}>Privacy Policy</h1>
 
                                 <p className="mb-6 text-gray-700">
                                     At Compress India, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.

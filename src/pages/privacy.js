@@ -12,6 +12,7 @@ export default function TeamDetailsPage() {
             <Breadcrumb
                 heading="Privacy Policy"
                 currentPage="Privacy Policy"
+                backgroundImage="/assets/images/backgrounds/one-time-service.jpeg"
             />
             <Privacy />
             {/* <TeamOne />

@@ -20,7 +20,7 @@ export default function WhyChooseUs() {
                 <div className="bg-gradient-to-r from-teal-300 to-cyan-400 w-full py-20 px-4">
 
                     <div className="max-w-7xl mx-auto">
-                        <h2 className="section-title__tagline text-center">Why Choose us</h2>
+                        <h2 className="section-title__title text-center">Why Choose us</h2>
 
                         <div className="flex cardchooseus">
                             {/* Card 1 */}

@@ -60,10 +60,10 @@ export default function OneTimeServices() {
                                     height={200}
                                     className="mx-auto object-contain h-48"
                                 />
-                                <p className="mt-4 font-semibold text-lg">
+                                <h5 className="mt-4 font-semibold text-lg">
                                     Price : {service.price}
                                     {service.suffix || '/-'}
-                                </p>
+                                </h5>
                                 <p className="text-sm uppercase mt-1 text-gray-700">{service.title}</p>
                             </div>
                         ))}

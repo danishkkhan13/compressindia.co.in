@@ -9,11 +9,11 @@ import FooterOne from "../common/footer/FooterOne";
 export default function ContactPage() {
 	return (
 		<>
-			<SEO pageTitle={"Contact Page"} />
+			<SEO pageTitle={"Contact Us"} />
 			<HeaderOne />
 			<Breadcrumb
-				heading="Contact Page"
-				currentPage="Contact"
+				heading="Contact Us"
+				currentPage="Contact Us"
 				backgroundImage="/assets/images/backgrounds/blockbuster-deal.jpg"
 			/>
 			<ContactInfo />

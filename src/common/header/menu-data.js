@@ -8,8 +8,8 @@ const menu_data = [
   {
     id: 2,
     has_dropdown: false,
-    title: "About",
-    link: "/about",
+    title: "About Us",
+    link: "/aboutUs",
   },
 
   {
@@ -68,8 +68,8 @@ const menu_data = [
     id: 5,
     mega_menu: false,
     has_dropdown: false,
-    title: "Contact",
-    link: "/contact",
+    title: "Contact Us",
+    link: "/contactUs",
   },
 ];
 export default menu_data;
