@@ -5,9 +5,9 @@ import AboutOne from "../components/about/AboutOne";
 import ServiceOne from "../components/service/ServiceOne";
 import Product from "../components/product/page";
 import ContactOne from "../components/contact/ContactOne";
-import TeamOne from "../components/team/TeamOne";
-import BlogOne from "../components/blog/BlogOne";
-import BrandOne from "../components/brand/BrandTwo";
+
+
+
 import FooterOne from "../common/footer/FooterOne";
 import Image from 'next/image';
 
