@@ -8,7 +8,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 export default function chemicaljetservicePageOne() {
     return (
         <>
-            <SEO pageTitle={"Chemical Jet Services"} />
+            <SEO pageTitle={"Chemical Jet Cleaning & Descaling Services in Mumbai | Compress India"} description={"Boost HVAC efficiency with expert chemical jet cleaning in Mumbai. Compress India offers advanced descaling for chillers, pipelines & condensers—trusted by industries."} />
             <HeaderOne />
             <Breadcrumb
                 heading="Chemical Jet Services"
