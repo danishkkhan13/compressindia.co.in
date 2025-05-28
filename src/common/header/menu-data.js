@@ -8,7 +8,7 @@ const menu_data = [
   {
     id: 2,
     has_dropdown: false,
-    title: "About Us",
+    title: "about",
     link: "/aboutUs",
   },
 
@@ -68,7 +68,7 @@ const menu_data = [
     id: 5,
     mega_menu: false,
     has_dropdown: false,
-    title: "Contact Us",
+    title: "Contact",
     link: "/contactUs",
   },
 ];

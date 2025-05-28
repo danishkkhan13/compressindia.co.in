@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Desirabledeal() {
     return (
-        <section className="about-one">
+        <section className="aboutUs-one">
             <div className="innerpage-box">
                 <div className="container">
                     <div className="row">
@@ -66,7 +66,7 @@ export default function Desirabledeal() {
                                                         <span className="text-green-600 mr-2">››</span>
                                                         <span>Our AMC contract customers will receive lowest maintenance rates compared to market prices.</span>
                                                     </li>
-                                                    <div className="about-one__content-btn">
+                                                    <div className="aboutUs-one__content-btn">
                                                         <Link href="/one-time-services" className="thm-btn">
                                                             <span>Find out More</span>
                                                             <div className="liquid"></div>
@@ -135,14 +135,14 @@ export default function Desirabledeal() {
                                 </h2>
 
                                 <div className="text-center flex">
-                                    {/* <div className="about-one__content-btn position-relative">
+                                    {/* <div className="aboutUs-one__content-btn position-relative">
                                         <button className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
                                             <span className="text position-relative" style={{ zIndex: 2 }}>Desirable Deal (ALC Contract)</span>
                                             <span className="liquids">
                                             </span>
                                         </button>
                                     </div> */}
-                                    <div className="about-one__content-btn position-relative">
+                                    <div className="aboutUs-one__content-btn position-relative">
                                         <button className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
                                             <span className="text position-relative" style={{ zIndex: 2 }}>Incredible Deal (AMC Contract)</span>
                                             <span className="liquids">

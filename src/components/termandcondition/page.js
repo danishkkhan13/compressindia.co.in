@@ -2,7 +2,7 @@
 
 export default function TermsAndConditions() {
     return (
-        <section className="about-one pd-120-0-120">
+        <section className="aboutUs-one pd-120-0-120">
             <div className="innerpage-box">
                 <div className="container">
                     <div className="row">

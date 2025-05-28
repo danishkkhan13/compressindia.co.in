@@ -2,7 +2,7 @@
 
 export default function PrivacyPolicy() {
     return (
-        <section className="about-one pd-120-0-120">
+        <section className="aboutUs-one pd-120-0-120">
             <div className="innerpage-box">
                 <div className="container">
                     <div className="row">
@@ -86,7 +86,7 @@ export default function PrivacyPolicy() {
 
                                 <h2 className="text-xl font-semibold mb-2 mt-8 text-blue-600">11. Contact Us</h2>
                                 <p className="text-gray-700">
-                                    If you have any questions or concerns about this Privacy Policy or our practices, contact us at:
+                                    If you have any questions or concerns aboutUs this Privacy Policy or our practices, contact us at:
                                 </p>
                                 <p className="mt-2 text-gray-700 font-medium">
                                     📧 support@compressindia.in <br />

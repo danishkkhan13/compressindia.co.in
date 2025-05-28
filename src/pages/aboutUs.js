@@ -1,7 +1,7 @@
 import SEO from "../common/seo/Seo";
 import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
-import AboutOne from "../components/about/AboutOne";
+import aboutOne from "../components/about/AboutOne";
 import ServiceOne from "../components/service/ServiceOne";
 // import Product from "../components/product/page";
 import ContactOne from "../components/contact/ContactOne";
@@ -12,7 +12,7 @@ import FooterOne from "../common/footer/FooterOne";
 import Image from 'next/image';
 
 
-export default function AboutPage() {
+export default function aboutUsPage() {
 	return (
 		<>
 			<SEO pageTitle={"About Us"} />
@@ -22,14 +22,14 @@ export default function AboutPage() {
 				currentPage="About Us"
 				backgroundImage="/assets/images/about/about-img.jpg"
 			/>
-			<AboutOne />
+			<aboutOne />
 			<ServiceOne />
 			{/* <ContactOne /> */}
 			{/* <TeamOne /> */}
 			{/* <BlogOne /> */}
 			?
 			{/* <Product /> */}
-			<section className="about-one pd-100-0-120">
+			<section className="aboutUs-one pd-100-0-120">
 				<div className="container mx-auto px-4pb-20">
 					<div className="row">
 						<div className="flex items-center ourvision">

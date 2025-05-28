@@ -3121,24 +3121,24 @@ div[class^="bubble-"] {
 
 /***
 =====================================================
-    About One Css
+    aboutUs One Css
 =====================================================
 ***/
-.about-one {
+.aboutUs-one {
     position: relative;
     display: block;
     background: #ffffff;
     z-index: 1;
 }
 
-.about-one__img2 {
+.aboutUs-one__img2 {
     position: absolute;
     top: 155px;
     right: 50px;
     z-index: -1;
 }
 
-.about-one__img {
+.aboutUs-one__img {
     position: relative;
     display: block;
     max-width: 570px;
@@ -3146,7 +3146,7 @@ div[class^="bubble-"] {
     padding-right: 40px;
 }
 
-.about-one__img .experince-box {
+.aboutUs-one__img .experince-box {
     position: absolute;
     top: 69px;
     right: 0px;
@@ -3158,7 +3158,7 @@ div[class^="bubble-"] {
     z-index: 5;
 }
 
-.about-one__img .experince-box h2 {
+.aboutUs-one__img .experince-box h2 {
     color: var(--thm-base);
     font-size: 24px;
     line-height: 29px;
@@ -3172,17 +3172,17 @@ div[class^="bubble-"] {
     transition: all 500ms ease;
 }
 
-.about-one__img:hover .experince-box h2 {
+.aboutUs-one__img:hover .experince-box h2 {
     letter-spacing: 0.05em;
 }
 
-.about-one__img-inner {
+.aboutUs-one__img-inner {
     position: relative;
     display: block;
     overflow: hidden;
 }
 
-.about-one__img-inner::before {
+.aboutUs-one__img-inner::before {
     position: absolute;
     top: 0;
     left: -100%;
@@ -3195,74 +3195,74 @@ div[class^="bubble-"] {
     z-index: 2;
 }
 
-.about-one__img:hover .about-one__img-inner::before {
+.aboutUs-one__img:hover .aboutUs-one__img-inner::before {
     -webkit-animation: shine 1.9s;
     animation: shine 1.9s;
 }
 
-.about-one__img-inner img {
+.aboutUs-one__img-inner img {
     width: 100%;
     transition: all 500ms linear;
     transition-delay: 0.2s;
 }
 
-.about-one__img:hover .about-one__img-inner img {
+.aboutUs-one__img:hover .aboutUs-one__img-inner img {
     transform: scale(1.1) rotate(0deg);
     transition: all 500ms linear;
     transition-delay: 0.1s;
 }
 
-.about-one__content {
+.aboutUs-one__content {
     position: relative;
     display: block;
     max-width: 500px;
     width: 100%;
 }
 
-.about-one__content .section-title {
+.aboutUs-one__content .section-title {
     padding-bottom: 38px;
 }
 
-.about-one__content-inner {
+.aboutUs-one__content-inner {
     position: relative;
     display: block;
 }
 
-.about-one__content-text1 {
+.aboutUs-one__content-text1 {
     color: #333333;
     font-weight: 600;
     margin-bottom: 14px;
 }
 
-.about-one__content-text2 {
+.aboutUs-one__content-text2 {
     margin: 0;
 }
 
-.about-one__content-list {
+.aboutUs-one__content-list {
     margin-top: 29px;
 }
 
-.about-one__content-list ul {
+.aboutUs-one__content-list ul {
     position: relative;
     display: block;
 }
 
-.about-one__content-list ul li {
+.aboutUs-one__content-list ul li {
     position: relative;
     display: block;
     margin-bottom: 8px;
 }
 
-.about-one__content-list ul li:last-child {
+.aboutUs-one__content-list ul li:last-child {
     margin-bottom: 0px;
 }
 
-.about-one__content-list ul li p {
+.aboutUs-one__content-list ul li p {
     position: relative;
     padding-left: 20px;
 }
 
-.about-one__content-list ul li p::before {
+.aboutUs-one__content-list ul li p::before {
     position: absolute;
     top: 9px;
     left: 0;
@@ -3273,7 +3273,7 @@ div[class^="bubble-"] {
     content: "";
 }
 
-.about-one__content-btn {
+.aboutUs-one__content-btn {
     position: relative;
     display: block;
     margin-top: 46px;
@@ -3899,7 +3899,7 @@ hr:not([size]) {
 
 
 /* Styling for the button */
-.about-one__content-btn button {
+.aboutUs-one__content-btn button {
     position: relative;
     overflow: hidden;
     border: none;
@@ -3916,14 +3916,14 @@ hr:not([size]) {
     z-index: 2;
 }
 
-.about-one__content-btn button:hover .text {
+.aboutUs-one__content-btn button:hover .text {
     color: #fff;
     /* Changes text color on hover */
     transform: scale(1.05);
     /* Slightly enlarge text */
 }
 
-.about-one__content-btn button:hover .liquids {
+.aboutUs-one__content-btn button:hover .liquids {
     width: 100%;
     /* Expands liquid span to cover button */
     height: 100%;
@@ -3935,7 +3935,7 @@ hr:not([size]) {
 }
 
 /* Styling for the text inside the button */
-.about-one__content-btn .text {
+.aboutUs-one__content-btn .text {
     position: relative;
     z-index: 2;
     color: #fff;
@@ -3943,7 +3943,7 @@ hr:not([size]) {
 }
 
 /* Styling for the liquid effect */
-.about-one__content-btn .liquids {
+.aboutUs-one__content-btn .liquids {
     position: absolute;
     top: 0;
     left: 0;
@@ -4760,50 +4760,50 @@ hr:not([size]) {
     margin-top: -5px;
 }
 
-.footer-widget__about {
+.footer-widget__aboutUs {
     position: relative;
     display: block;
     max-width: 280px;
     width: 100%;
 }
 
-.footer-widget__about-logo {
+.footer-widget__aboutUs-logo {
     position: relative;
     display: block;
     margin-bottom: 22px;
 }
 
-.footer-widget__about-logo a {
+.footer-widget__aboutUs-logo a {
     position: relative;
     display: inline-block;
 }
 
-.footer-widget__about-text {
+.footer-widget__aboutUs-text {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.footer-widget__about .social-link {
+.footer-widget__aboutUs .social-link {
     position: relative;
     display: block;
     margin-top: 26px;
 }
 
-.footer-widget__about .social-link ul {
+.footer-widget__aboutUs .social-link ul {
     position: relative;
     display: block;
 }
 
-.footer-widget__about .social-link ul li {
+.footer-widget__aboutUs .social-link ul li {
     position: relative;
     display: inline-block;
     margin-right: 6px;
 }
 
-.footer-widget__about .social-link ul li:last-child {
+.footer-widget__aboutUs .social-link ul li:last-child {
     margin-right: 0px;
 }
 
-.footer-widget__about .social-link ul li a {
+.footer-widget__aboutUs .social-link ul li a {
     position: relative;
     display: inline-block;
     width: 35px;
@@ -4818,11 +4818,11 @@ hr:not([size]) {
     z-index: 1;
 }
 
-.footer-widget__about .social-link ul li a:hover {
+.footer-widget__aboutUs .social-link ul li a:hover {
     color: #ffffff;
 }
 
-.footer-widget__about .social-link ul li a:before {
+.footer-widget__aboutUs .social-link ul li a:before {
     position: absolute;
     content: '';
     background-color: var(--thm-base);
@@ -4836,11 +4836,11 @@ hr:not([size]) {
     transition: all 500ms ease;
 }
 
-.footer-widget__about .social-link ul li a:hover:before {
+.footer-widget__aboutUs .social-link ul li a:hover:before {
     height: 100%;
 }
 
-.footer-widget__about .social-link ul li a span::before {
+.footer-widget__aboutUs .social-link ul li a span::before {
     position: relative;
     display: inline-block;
     line-height: 35px;
@@ -4980,39 +4980,39 @@ hr:not([size]) {
 
 /***
 =====================================================
-    About Two
+    aboutUs Two
 =====================================================
 ***/
-.about-two {
+.aboutUs-two {
     position: relative;
     display: block;
     padding: 120px 0px 140px;
 }
 
-.about-two__img {
+.aboutUs-two__img {
     position: relative;
     display: block;
     max-width: 560px;
     width: 100%;
 }
 
-.about-two__img1 {
+.aboutUs-two__img1 {
     position: relative;
     display: block;
 }
 
-.about-two__img1-inner {
+.aboutUs-two__img1-inner {
     position: relative;
     display: block;
     overflow: hidden;
 }
 
-.about-two__img1-inner img {
+.aboutUs-two__img1-inner img {
     width: 100%;
 }
 
 
-.about-two__img1-inner::before {
+.aboutUs-two__img1-inner::before {
     position: absolute;
     top: 0;
     left: -100%;
@@ -5025,19 +5025,19 @@ hr:not([size]) {
     z-index: 1;
 }
 
-.about-two__img1-inner:hover::before {
+.aboutUs-two__img1-inner:hover::before {
     -webkit-animation: shine 1.5s;
     animation: shine 1.5s;
 }
 
-.about-two__img2 {
+.aboutUs-two__img2 {
     position: absolute;
     left: -90px;
     bottom: -20px;
     z-index: 5;
 }
 
-.about-two__img2::before {
+.aboutUs-two__img2::before {
     position: absolute;
     top: -15px;
     left: -15px;
@@ -5049,18 +5049,18 @@ hr:not([size]) {
     z-index: 1;
 }
 
-.about-two__img2-inner {
+.aboutUs-two__img2-inner {
     position: relative;
     display: block;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.about-two__img2-inner img {
+.aboutUs-two__img2-inner img {
     width: 100%;
 }
 
-.about-two__content {
+.aboutUs-two__content {
     position: relative;
     display: block;
     max-width: 500px;
@@ -5069,51 +5069,51 @@ hr:not([size]) {
     margin-left: 10px;
 }
 
-.about-two__content .section-title {
+.aboutUs-two__content .section-title {
     padding-bottom: 32px;
 }
 
-.about-two__content-inner {
+.aboutUs-two__content-inner {
     position: relative;
     display: block;
 }
 
-.about-two__content-inner .text {
+.aboutUs-two__content-inner .text {
     position: relative;
     display: block;
 }
 
-.about-two__content-inner .text p {
+.aboutUs-two__content-inner .text p {
     margin: 0px;
 }
 
-.about-two__content-list {
+.aboutUs-two__content-list {
     position: relative;
     display: block;
     margin-top: 19px;
 }
 
-.about-two__content-list ul {
+.aboutUs-two__content-list ul {
     position: relative;
     display: block;
 }
 
-.about-two__content-list ul li {
+.aboutUs-two__content-list ul li {
     position: relative;
     display: block;
     margin-bottom: 8px;
 }
 
-.about-two__content-list ul li:last-child {
+.aboutUs-two__content-list ul li:last-child {
     margin-bottom: 0px;
 }
 
-.about-two__content-list ul li p {
+.aboutUs-two__content-list ul li p {
     position: relative;
     padding-left: 20px;
 }
 
-.about-two__content-list ul li p::before {
+.aboutUs-two__content-list ul li p::before {
     position: absolute;
     top: 9px;
     left: 0;
@@ -5125,24 +5125,24 @@ hr:not([size]) {
 }
 
 
-.about-two__progress {
+.aboutUs-two__progress {
     position: relative;
     display: block;
     width: 100%;
     margin-top: 30px;
 }
 
-.about-two__progress-single {
+.aboutUs-two__progress-single {
     position: relative;
     display: block;
     margin-bottom: 25px;
 }
 
-.about-two__progress-single.mar-b0 {
+.aboutUs-two__progress-single.mar-b0 {
     margin-bottom: 0px;
 }
 
-.about-two__progress-title {
+.aboutUs-two__progress-title {
     color: var(--thm-base);
     font-size: 17px;
     font-weight: 500;
@@ -5152,7 +5152,7 @@ hr:not([size]) {
     font-family: var(--thm-font);
 }
 
-.about-two__progress .bar {
+.aboutUs-two__progress .bar {
     position: relative;
     width: 100%;
     height: 3px;
@@ -5161,7 +5161,7 @@ hr:not([size]) {
     margin-bottom: 6px;
 }
 
-.about-two__progress .bar-inner {
+.aboutUs-two__progress .bar-inner {
     position: relative;
     display: block;
     width: 0px;
@@ -5175,7 +5175,7 @@ hr:not([size]) {
     transition: all 1500ms ease;
 }
 
-.about-two__progress .count-text {
+.aboutUs-two__progress .count-text {
     position: absolute;
     top: -32px;
     right: 0px;
@@ -6122,59 +6122,59 @@ hr:not([size]) {
 
 /***
 =====================================================
-    About Three
+    aboutUs Three
 =====================================================
 ***/
-.about-three {
+.aboutUs-three {
     position: relative;
     display: block;
     background: #ffffff;
     padding: 120px 0px 90px;
 }
 
-.about-three__img {
+.aboutUs-three__img {
     position: relative;
     display: block;
     max-width: 530px;
     width: 100%;
 }
 
-.about-three__img1 {
+.aboutUs-three__img1 {
     position: relative;
     display: block;
 }
 
-.about-three__img1-inner {
+.aboutUs-three__img1-inner {
     position: relative;
     display: block;
     overflow: hidden;
 }
 
-.about-three__content {
+.aboutUs-three__content {
     position: relative;
     display: block;
 }
 
-.about-three__content .section-title {
+.aboutUs-three__content .section-title {
     padding-bottom: 18px;
 }
 
-.about-three__content-inner {
+.aboutUs-three__content-inner {
     position: relative;
     display: block;
 }
 
-.about-three__content-inner .text {
+.aboutUs-three__content-inner .text {
     position: relative;
     display: block;
     margin-bottom: 16px;
 }
 
-.about-three__content-inner .text p {
+.aboutUs-three__content-inner .text p {
     margin: 0;
 }
 
-.about-three__content-counter {
+.aboutUs-three__content-counter {
     position: relative;
     display: block;
 }

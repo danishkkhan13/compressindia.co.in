@@ -58,7 +58,7 @@ const HeroOne = () => {
                                     <p>Revive, Repair, Reconnect: Precision PCB Board Repairing for <br /> Seamless Performance. Your Electronics Deserve Expert Care, We Deliver Excellence.</p>
                                 </div>
                                 <div className="btn-box">
-                                    <Link href="/contact" className="thm-btn">
+                                    <Link href="/contactUs" className="thm-btn">
                                         <span>Request Services</span>
                                         <div className="liquid"></div>
                                     </Link>
@@ -84,7 +84,7 @@ const HeroOne = () => {
                                     <p>Seamless AC Solutions: Expert Installation & Hassle-Free <br />Dismantle Services. Your Comfort, Our Craftsmanship. </p>
                                 </div>
                                 <div className="btn-box">
-                                    <Link href="/contact" className="thm-btn">
+                                    <Link href="/contactUs" className="thm-btn">
                                         <span>Request Services</span>
                                         <div className="liquid"></div>
                                     </Link>
@@ -112,7 +112,7 @@ const HeroOne = () => {
                                     <p>Preserve Peak Performance: Elevate your AC's lifespan with<br />our meticulous Maintenance Services. Breathe Easy,<br />Stay Cool, and Keep Your Comfort in Check.	</p>
                                 </div>
                                 <div className="btn-box">
-                                    <Link href="/contact" className="thm-btn">
+                                    <Link href="/contactUs" className="thm-btn">
                                         <span>Select Deal</span>
                                         <div className="liquid"></div>
                                     </Link>

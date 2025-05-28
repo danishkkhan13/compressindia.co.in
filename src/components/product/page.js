@@ -15,7 +15,7 @@ export default function FactoryProducts() {
     ];
 
     return (
-        <section className="about-one pd-120-0-120">
+        <section className="aboutUs-one pd-120-0-120">
             <div className="my-[60px]">
                 <div className="container">
                     <div className="m-6">

@@ -30,8 +30,8 @@ const FooterOne = () => {
                                     <div className="row">
                                         {/* Start Footer Widget Column */}
                                         <div className="col-xl-4 col-lg-4 col-md-4 wow animated fadeInUp" data-wow-delay="0.1s">
-                                            <div className="footer-widget__column footer-widget__about">
-                                                <div className="footer-widget__about-logo">
+                                            <div className="footer-widget__column footer-widget__aboutUs">
+                                                <div className="footer-widget__aboutUs-logo">
                                                     <Link href="/">
                                                         <Image
                                                             src="/assets/images/resources/logo-1.png"
@@ -42,7 +42,7 @@ const FooterOne = () => {
                                                         />
                                                     </Link>
                                                 </div>
-                                                <p className="footer-widget__about-text">We help businesses maximize their
+                                                <p className="footer-widget__aboutUs-text">We help businesses maximize their
                                                     online presence with a personalized approach to digital marketing.</p>
 
                                                 <div className="social-link">
@@ -62,11 +62,11 @@ const FooterOne = () => {
                                             <div className="footer-widget__column footer-widget__links mar-l">
                                                 <h2 className="footer-widget__title">Useful Links</h2>
                                                 <ul className="footer-widget__links-list">
-                                                    <li className="footer-widget__links-list-item"><Link href="/about">About</Link></li>
-                                                    <li className="footer-widget__links-list-item"><Link href="/service-one">Services</Link></li>
+                                                    <li className="footer-widget__links-list-item"><Link href="/aboutUs">About Us</Link></li>
+                                                    {/* <li className="footer-widget__links-list-item"><Link href="/service-one">Services</Link></li> */}
                                                     <li className="footer-widget__links-list-item"><Link href="/privacy">Privacy Policy</Link></li>
                                                     <li className="footer-widget__links-list-item"><Link href="/term">Terms and Conditions</Link></li>
-                                                    <li className="footer-widget__links-list-item"><Link href="/contact">Contact</Link></li>
+                                                    <li className="footer-widget__links-list-item"><Link href="/contactUs">Contact Us</Link></li>
                                                 </ul>
                                             </div>
                                         </div>

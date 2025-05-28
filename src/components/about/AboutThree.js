@@ -1,38 +1,38 @@
 import React from 'react';
 
-const AboutThree = () => {
+const aboutUsThree = () => {
     return (
         <>
-            <section class="about-three">
+            <section class="aboutUs-three">
                 <div class="container">
                     <div class="row">
-                        {/* Start About Three Img */}
+                        {/* Start aboutUs Three Img */}
                         <div class="col-xl-6">
-                            <div class="about-three__img clearfix">
-                                <div class="about-three__img1">
-                                    <div class="about-three__img1-inner js-tilt">
-                                        <img src="/assets/images/about/about-img.jpg" alt="" />
+                            <div class="aboutUs-three__img clearfix">
+                                <div class="aboutUs-three__img1">
+                                    <div class="aboutUs-three__img1-inner js-tilt">
+                                        <img src="/assets/images/aboutUs/aboutUs-img.jpg" alt="" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        {/* End About Three Img */}
+                        {/* End aboutUs Three Img */}
 
-                        {/* Start About Three Content */}
+                        {/* Start aboutUs Three Content */}
                         <div class="col-xl-6">
-                            <div class="about-three__content">
+                            <div class="aboutUs-three__content">
                                 <div class="section-title">
-                                    <span class="section-title__tagline">About Us</span>
+                                    <span class="section-title__tagline">aboutUs Us</span>
                                     <h2 class="section-title__title">We Have 25 Years Of <br /> Experience In This Field
                                     </h2>
                                 </div>
 
-                                <div class="about-three__content-inner">
+                                <div class="aboutUs-three__content-inner">
                                     <div class="text">
                                         <p>will reenergize your ome and enhance your life. From everyday <br /> housekeeping
                                             to routine cleanings, our professional this to <br /> members can provide you.</p>
                                     </div>
-                                    <div class="about-three__content-counter">
+                                    <div class="aboutUs-three__content-counter">
                                         <div class="row">
                                             {/* Start Counter One Single */}
                                             <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="0ms">
@@ -110,7 +110,7 @@ const AboutThree = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* End About Three Content */}
+                        {/* End aboutUs Three Content */}
                     </div>
                 </div>
             </section>
@@ -118,4 +118,4 @@ const AboutThree = () => {
     )
 }
 
-export default AboutThree;
+export default aboutUsThree;
