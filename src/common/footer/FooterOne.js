@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import 'font-awesome/css/font-awesome.min.css';;
+import 'font-awesome/css/font-awesome.min.css';
 
 const FooterOne = () => {
     return (

@@ -4,6 +4,22 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+// Custom Select Component
+const CustomSelect = ({ field, form, ...props }) => {
+  const { name } = field;
+  const { touched, errors } = form;
+  
+  return (
+    <select 
+      {...field} 
+      {...props}
+      className={`form-select ${touched[name] && errors[name] ? 'is-invalid' : ''}`}
+    >
+      {props.children}
+    </select>
+  );
+};
+
 const ContactThree = () => {
     const initialValues = {
         name: '',
@@ -19,7 +35,9 @@ const ContactThree = () => {
             .matches(/^\d{10}$/, 'Phone must be 10 digits')
             .required('Phone is required'),
         email: Yup.string().email('Invalid email address').required('Email is required'),
-        subject: Yup.string().required('Please select a subject'),
+        subject: Yup.string()
+        .required('Please select a subject')
+        .test('not-empty', 'Please select a subject', value => value && value.trim() !== ''),
         message: Yup.string().required('Message is required'),
     });
 
@@ -61,9 +79,8 @@ const ContactThree = () => {
                                     initialValues={initialValues}
                                     validationSchema={validationSchema}
                                     onSubmit={handleSubmit}
-                                    validateOnMount={false}
                                 >
-                                    {({ isSubmitting, values, errors, touched, setFieldValue, setFieldTouched }) => (
+                                    {({ isSubmitting, errors, touched }) => (
                                         <Form className="contact-page-form__form">
                                             <div className="row">
                                                 <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -104,25 +121,17 @@ const ContactThree = () => {
                                                 </div>
                                                 <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                     <div className="contact-page-form__input-box">
-                                                        <select
+                                                        <Field
                                                             name="subject"
-                                                            value={values.subject}
-                                                            className={`form-select ${errors.subject && touched.subject ? 'is-invalid' : ''}`}
-                                                            onChange={(e) => {
-                                                                setFieldValue('subject', e.target.value);
-                                                                setFieldTouched('subject', true, false);
-                                                            }}
-                                                            onBlur={() => setFieldTouched('subject', true)}
+                                                            component={CustomSelect}
                                                         >
                                                             <option value="">-- Please select a subject --</option>
                                                             <option value="ac-installation">AC Installation</option>
                                                             <option value="ac-repair">AC Repair</option>
                                                             <option value="ac-servicing">AC Servicing</option>
                                                             <option value="other">Other</option>
-                                                        </select>
-                                                        {errors.subject && touched.subject && (
-                                                            <div className="error-message">{errors.subject}</div>
-                                                        )}
+                                                        </Field>
+                                                        <ErrorMessage name="subject" component="div" className="error-message" />
                                                     </div>
                                                 </div>
                                             </div>
