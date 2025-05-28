@@ -61,7 +61,7 @@ export default function AboutPage() {
                     Width: "351px",
                   }}
                   height={350}
-                  width={350}
+                  width={450}
                 />
               </div>
             </div>
