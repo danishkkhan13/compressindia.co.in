@@ -8,27 +8,33 @@ import FooterOne from "../common/footer/FooterOne";
 import FaqOne from "../components/faq/FaqOne";
 import PricingOne from "../components/pricing/PricingOne";
 
-
 export default function Home() {
-	return (
-		<>
-			<SEO pageTitle={"Home One"} />
-			<HeaderOne />
-			<HeroOne />
-			<AboutOne />
-			<WhyChooseUs />
-			<FaqOne />
-			<ContactOne />
-			<PricingOne />
-			{/* <ProjectOne /> */}
+  return (
+    <>
+      <SEO
+        pageTitle={
+          "HVAC & Industrial Refrigeration Experts in Mumbai | Compress India"
+        }
+        description={
+          "Reliable HVAC system design, turnkey execution, and custom refrigeration in Mumbai. Serving pharma, food, hospitality, & more. Elevate your climate control today!"
+        }
+      />
+      <HeaderOne />
+      <HeroOne />
+      <AboutOne />
+      <WhyChooseUs />
+      <FaqOne />
+      <ContactOne />
+      <PricingOne />
+      {/* <ProjectOne /> */}
 
-			{/* <TeamOne />
+      {/* <TeamOne />
 			<WhyChooseUsOne />
 			<TestimonialOne /> */}
-			{/* <CtaOne />
+      {/* <CtaOne />
 			<BlogOne />
 			<BrandOne /> */}
-			<FooterOne />
-		</>
-	);
+      <FooterOne />
+    </>
+  );
 }

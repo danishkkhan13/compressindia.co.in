@@ -5,20 +5,27 @@ import Terms from "../components/termandcondition/page";
 import FooterOne from "../common/footer/FooterOne";
 
 export default function TermsandConditionsPage() {
-    return (
-        <>
-            <SEO pageTitle={"Terms and Conditions"} />
-            <HeaderOne />
-            <Breadcrumb
-                heading="Terms and Conditions"
-                currentPage="Terms and Conditions"
-                backgroundImage="/assets/images/backgrounds/one-time-service.jpeg"
-            />
-            <Terms />
-            {/* <TeamOne />
+  return (
+    <>
+      <SEO
+        pageTitle={
+          "Terms & Conditions | Compress India – HVAC Services in Mumbai"
+        }
+        description={
+          "Review Compress India’s terms and conditions outlining service use, responsibilities, and client rights. Committed to transparency in all HVAC operations across Mumbai."
+        }
+      />
+      <HeaderOne />
+      <Breadcrumb
+        heading="Terms and Conditions"
+        currentPage="Terms and Conditions"
+        backgroundImage="/assets/images/backgrounds/one-time-service.jpeg"
+      />
+      <Terms />
+      {/* <TeamOne />
             <ContactFour />
             <BrandOne /> */}
-            <FooterOne />
-        </>
-    );
+      <FooterOne />
+    </>
+  );
 }

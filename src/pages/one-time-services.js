@@ -8,7 +8,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 export default function onetimeservicePageOne() {
     return (
         <>
-            <SEO pageTitle={"One Time Service"} />
+            <SEO pageTitle={"One-Time HVAC Maintenance & Repair in Mumbai | Compress India"} description={"Get fast, expert HVAC service in Mumbai with Compress India's one-time solutions—repairs, inspections, descaling & system optimization for industrial performance."} />
             <HeaderOne />
 
             <Breadcrumb

@@ -46,7 +46,7 @@ export default function aboutUsPage() {
 
 							{/* Image Section */}
 							<div className="col-xl-4">
-								<img
+								<Image
 									src="/assets/images/resources/vision.jpg"
 									alt="Our Vision"
 									className="w-[350px] h-auto object-contain pt-[50px] ourvisionimg" style={{
@@ -55,7 +55,6 @@ export default function aboutUsPage() {
 									}}
 								/>
 							</div>
-
 						</div>
 					</div>
 				</div>
