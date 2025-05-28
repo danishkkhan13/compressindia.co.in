@@ -2,16 +2,16 @@ import React from 'react';
 import Link from 'next/link';
 
 const ErrorContent = () => {
-    return (
-        <>
-            <section class="error-page">
+	return (
+		<>
+			<section class="error-page">
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-12">
 							<div class="error-page__wrapper text-center">
 								<div class="error-page__content">
 									<h2>404</h2>
-									<h3>Opps! Page Not Found</h3>
+									<h3>Opps! Page Is Not Found</h3>
 									<p>Sorry, but the page you are looking for does not exist.</p>
 									<div class="btn-box">
 										<Link href="/" class="thm-btn">
@@ -25,8 +25,8 @@ const ErrorContent = () => {
 					</div>
 				</div>
 			</section>
-        </>
-    )
+		</>
+	)
 }
 
 export default ErrorContent;
