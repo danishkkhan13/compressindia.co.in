@@ -1,26 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import * as Yup from 'yup';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-// Custom Select Component
-const CustomSelect = ({ field, form, ...props }) => {
-  const { name } = field;
-  const { touched, errors } = form;
-  
-  return (
-    <select 
-      {...field} 
-      {...props}
-      className={`form-select ${touched[name] && errors[name] ? 'is-invalid' : ''}`}
-    >
-      {props.children}
-    </select>
-  );
-};
+import $ from 'jquery'; // Make sure jQuery is installed
 
 const ContactThree = () => {
+    useEffect(() => {
+        $('.disable-nice-select').each(function () {
+            if ($(this).next('.nice-select').length) {
+                $(this).next('.nice-select').remove();
+                $(this).show();
+            }
+        });
+    }, []);
+
     const initialValues = {
         name: '',
         phone: '',
@@ -35,9 +29,7 @@ const ContactThree = () => {
             .matches(/^\d{10}$/, 'Phone must be 10 digits')
             .required('Phone is required'),
         email: Yup.string().email('Invalid email address').required('Email is required'),
-        subject: Yup.string()
-        .required('Please select a subject')
-        .test('not-empty', 'Please select a subject', value => value && value.trim() !== ''),
+        subject: Yup.string().required('Please select a subject'),
         message: Yup.string().required('Message is required'),
     });
 
@@ -45,12 +37,9 @@ const ContactThree = () => {
         try {
             const response = await fetch("/api/contact", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(values),
             });
-
             const data = await response.json();
 
             if (response.ok) {
@@ -73,7 +62,7 @@ const ContactThree = () => {
             <section className="contact-page-form">
                 <div className="container">
                     <div className="row">
-                        <div className="col-xl-12 col-lg-12">
+                        <div className="col-xl-12">
                             <div className="contact-page-form__inner">
                                 <Formik
                                     initialValues={initialValues}
@@ -85,22 +74,23 @@ const ContactThree = () => {
                                             <div className="row">
                                                 <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                     <div className="contact-page-form__input-box">
-                                                        <Field 
-                                                            name="name" 
-                                                            type="text" 
-                                                            placeholder="Your name" 
-                                                            className={`form-control ${errors.name && touched.name ? 'is-invalid' : ''}`}
+                                                        <Field
+                                                            name="name"
+                                                            type="text"
+                                                            placeholder="Your name"
+                                                            className={`form-control ${touched.name && errors.name ? 'is-invalid' : ''}`}
                                                         />
                                                         <ErrorMessage name="name" component="div" className="error-message" />
                                                     </div>
                                                 </div>
+
                                                 <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                     <div className="contact-page-form__input-box">
-                                                        <Field 
-                                                            name="phone" 
-                                                            type="text" 
-                                                            placeholder="Phone number" 
-                                                            className={`form-control ${errors.phone && touched.phone ? 'is-invalid' : ''}`}
+                                                        <Field
+                                                            name="phone"
+                                                            type="text"
+                                                            placeholder="Phone number"
+                                                            className={`form-control ${touched.phone && errors.phone ? 'is-invalid' : ''}`}
                                                         />
                                                         <ErrorMessage name="phone" component="div" className="error-message" />
                                                     </div>
@@ -110,26 +100,32 @@ const ContactThree = () => {
                                             <div className="row">
                                                 <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                     <div className="contact-page-form__input-box">
-                                                        <Field 
-                                                            name="email" 
-                                                            type="email" 
-                                                            placeholder="Email address" 
-                                                            className={`form-control ${errors.email && touched.email ? 'is-invalid' : ''}`}
+                                                        <Field
+                                                            name="email"
+                                                            type="email"
+                                                            placeholder="Email address"
+                                                            className={`form-control ${touched.email && errors.email ? 'is-invalid' : ''}`}
                                                         />
                                                         <ErrorMessage name="email" component="div" className="error-message" />
                                                     </div>
                                                 </div>
+
                                                 <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                                     <div className="contact-page-form__input-box">
                                                         <Field
                                                             name="subject"
-                                                            component={CustomSelect}
+                                                            as="select"
+                                                            className={`form-control disable-nice-select ${touched.subject && errors.subject ? 'is-invalid' : ''}`}
                                                         >
-                                                            <option value="">-- Please select a subject --</option>
-                                                            <option value="ac-installation">AC Installation</option>
+                                                            <option value="" disabled>Select Category</option>
                                                             <option value="ac-repair">AC Repair</option>
-                                                            <option value="ac-servicing">AC Servicing</option>
-                                                            <option value="other">Other</option>
+                                                            <option value="ac-installation-and-dismantle">AC Installation & Dismantle</option>
+                                                            <option value="gas-services">GAS Services</option>
+                                                            <option value="chemical-jet-services">Chemical Jet Services</option>
+                                                            <option value="pressure-testing">Pressure Testing</option>
+                                                            <option value="fan-motor-installation">Fan Motor Installation</option>
+                                                            <option value="coper-coil-installation">Copper Coil Installation</option>
+                                                            <option value="customized-services">Customized Services</option>
                                                         </Field>
                                                         <ErrorMessage name="subject" component="div" className="error-message" />
                                                     </div>
@@ -139,18 +135,19 @@ const ContactThree = () => {
                                             <div className="row">
                                                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                                     <div className="contact-page-form__input-box">
-                                                        <Field 
-                                                            as="textarea" 
-                                                            name="message" 
-                                                            placeholder="Write message" 
-                                                            className={`form-control ${errors.message && touched.message ? 'is-invalid' : ''}`}
+                                                        <Field
+                                                            as="textarea"
+                                                            name="message"
+                                                            placeholder="Write message"
+                                                            className={`form-control ${touched.message && errors.message ? 'is-invalid' : ''}`}
                                                         />
                                                         <ErrorMessage name="message" component="div" className="error-message" />
                                                     </div>
+
                                                     <div className="contact-page-form__btn">
-                                                        <button 
-                                                            className="thm-btn" 
-                                                            type="submit" 
+                                                        <button
+                                                            type="submit"
+                                                            className="thm-btn"
                                                             disabled={isSubmitting}
                                                         >
                                                             <span>{isSubmitting ? 'Please wait...' : 'Send Us Message'}</span>
@@ -167,41 +164,6 @@ const ContactThree = () => {
                     </div>
                 </div>
             </section>
-
-            <style jsx>{`
-                .error-message {
-                    color: #dc3545;
-                    font-size: 0.875rem;
-                    margin-top: 0.25rem;
-                }
-                .is-invalid {
-                    border-color: #dc3545 !important;
-                }
-                .form-control, .form-select {
-                    display: block;
-                    width: 100%;
-                    padding: 0.5rem 1rem;
-                    font-size: 1rem;
-                    line-height: 1.5;
-                    color: #212529;
-                    background-color: #fff;
-                    border: 1px solid #ced4da;
-                    border-radius: 0.25rem;
-                    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-                }
-                .form-select {
-                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
-                    background-repeat: no-repeat;
-                    background-position: right 0.75rem center;
-                    background-size: 16px 12px;
-                    appearance: none;
-                }
-                .form-control:focus, .form-select:focus {
-                    border-color: #86b7fe;
-                    outline: 0;
-                    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-                }
-            `}</style>
         </>
     );
 };

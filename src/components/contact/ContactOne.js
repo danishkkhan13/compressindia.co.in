@@ -1,16 +1,81 @@
 import React, { useEffect } from 'react';
 import BackgroundOne from '../../../public/assets/images/about/contact.jpg';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+import * as Yup from 'yup';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import $ from 'jquery';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const ContactOne = () => {
     useEffect(() => {
-
-        $('select').niceSelect();
-
+        document
+            .querySelectorAll('.disable-nice-select')
+            .forEach(sel => {
+                const wrap = sel.nextElementSibling;
+                if (wrap?.classList.contains('nice-select')) {
+                    wrap.remove();
+                    sel.style.display = '';  // restore the original select
+                }
+            });
     }, []);
+
+    useEffect(() => {
+        $('.disable-nice-select').each(function () {
+            if ($(this).next('.nice-select').length) {
+                $(this).next('.nice-select').remove();
+                $(this).show();
+            }
+        });
+    }, []);
+    // useEffect(() => {
+    //     $('select:not(.disable-nice-select)').niceSelect();
+    // }, []);
+
+    const initialValues = {
+        name: '',
+        phone: '',
+        email: '',
+        subject: '',
+        message: '',
+    };
+
+    const validationSchema = Yup.object({
+        name: Yup.string().required('Name is required'),
+        phone: Yup.string()
+            .matches(/^\d{10}$/, 'Phone must be 10 digits')
+            .required('Phone is required'),
+        email: Yup.string().email('Invalid email address').required('Email is required'),
+        subject: Yup.string().required('Please select a subject'),
+        message: Yup.string().required('Message is required'),
+    });
+
+    const handleSubmit = async (values, { setSubmitting, resetForm }) => {
+        try {
+            const response = await fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(values),
+            });
+            const data = await response.json();
+
+            if (response.ok) {
+                toast.success("✅ Message sent successfully!");
+                resetForm();
+            } else {
+                toast.error("❌ " + (data.message || "Failed to send message"));
+            }
+        } catch (err) {
+            console.error("❌ Fetch failed:", err);
+            toast.error("Failed to send message. Please try again.");
+        } finally {
+            setSubmitting(false);
+        }
+    };
     return (
         <>
-
+            <ToastContainer />
             <section className="contact-one pd-120-0-120">
                 <div className="contact-one__bg jarallax" data-jarallax data-speed="0.2" data-imgposition="50% 0%" style={{ backgroundImage: `url(${BackgroundOne.src})` }}>
                 </div>
@@ -24,55 +89,76 @@ const ContactOne = () => {
                                     <span className="section-title__tagline">Contact With Us</span>
                                     <h2 className="section-title__title">Write A Message</h2>
                                 </div>
-                                <form id="contact-form" name="contact_form" className="default-form2" action="assets/inc/sendmail.php" method="post">
-                                    <div className="row">
-                                        <div className="col-12">
-                                            <div className="input-box">
-                                                <input type="text" name="form_name" placeholder="Your Name" required />
-                                            </div>
-                                        </div>
-
-                                        <div className="col-12">
-                                            <div className="input-box">
-                                                <input type="email" name="form_email" placeholder="Your Email" required />
-                                            </div>
-                                        </div>
-
-                                        <div className="col-12">
-                                            <div className="input-box">
-                                                <div className="select-box">
-                                                    <select className="selectmenu wide" name="form_category" required>
-                                                        <option value="" disabled selected>Select Category</option>
-                                                        <option value="ac-repair">AC Repair</option>
-                                                        <option value="ac-installation-and-dismantle">AC Installation &amp; Dismantle</option>
-                                                        <option value="gas-services">GAS Services</option>
-                                                        <option value="chemical-jet-services">Chemical Jet Services</option>
-                                                        <option value="pressure-testing">Pressure Testing</option>
-                                                        <option value="fan-motor-installation">Fan Motor Installation</option>
-                                                        <option value="coper-coil-installation">Coper Coil Installation</option>
-                                                        <option value="customized-services">Customized Services</option>
-                                                    </select>
+                                <Formik
+                                    initialValues={initialValues}
+                                    validationSchema={validationSchema}
+                                    onSubmit={handleSubmit}
+                                >
+                                    {({ isSubmitting }) => (
+                                        <Form id="contact-form" name="contact_form" className="default-form2">
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <div className="input-box">
+                                                        <Field type="text" name="name" placeholder="Your Name" required />
+                                                        <ErrorMessage name="name" component="div" className="error-message" />
+                                                    </div>
                                                 </div>
 
-                                            </div>
-                                        </div>
-                                        <div className="col-12">
-                                            <div className="input-box">
-                                                <textarea name="form_message" placeholder="Your Message" required rows="5"></textarea>
-                                            </div>
-                                        </div>
+                                                <div className="col-12">
+                                                    <div className="input-box">
+                                                        <Field type="email" name="email" placeholder="Your Email" required />
+                                                        <ErrorMessage name="email" component="div" className="error-message" />
+                                                    </div>
+                                                </div>
 
-                                        <div className="col-12 text-center">
-                                            <div className="button-box">
-                                                <input id="form_botcheck" name="form_botcheck" className="form-control" type="hidden" value="" />
-                                                <button className="thm-btn" type="submit" data-loading-text="Please wait...">
-                                                    <span>Confirm Appointment</span>
-                                                    <i className="liquid"></i>
-                                                </button>
+                                                <div className="col-12">
+                                                    <div className="input-box">
+                                                        <Field type="text" name="phone" placeholder="Your Phone" required />
+                                                        <ErrorMessage name="phone" component="div" className="error-message" />
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-12">
+                                                    <div className="input-box">
+                                                        <div className="select-box">
+                                                            <Field as="select" name="subject" className="selectmenu wide disable-nice-select">
+
+                                                                <option value="" disabled>Select Category</option>
+                                                                <option value="ac-repair">AC Repair</option>
+                                                                <option value="ac-installation-and-dismantle">AC Installation &amp; Dismantle</option>
+                                                                <option value="gas-services">GAS Services</option>
+                                                                <option value="chemical-jet-services">Chemical Jet Services</option>
+                                                                <option value="pressure-testing">Pressure Testing</option>
+                                                                <option value="fan-motor-installation">Fan Motor Installation</option>
+                                                                <option value="coper-coil-installation">Coper Coil Installation</option>
+                                                                <option value="customized-services">Customized Services</option>
+                                                            </Field>
+                                                            <ErrorMessage name="subject" component="div" className="error-message" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-12">
+                                                    <div className="input-box">
+                                                        <Field as="textarea" name="message" placeholder="Your Message" required rows="5" />
+                                                        <ErrorMessage name="message" component="div" className="error-message" />
+                                                    </div>
+                                                </div>
+
+                                                <div className="col-12 text-center">
+                                                    <div className="button-box">
+                                                        <Field type="hidden" name="form_botcheck" value="" />
+                                                        <button className="thm-btn" type="submit" disabled={isSubmitting}>
+                                                            <span>{isSubmitting ? 'Please wait...' : 'Confirm Appointment'}</span>
+                                                            <i className="liquid"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </form>
+                                        </Form>
+                                    )}
+                                </Formik>
+
                             </div>
                         </div>
                         {/* End Contact One Form Box */}
