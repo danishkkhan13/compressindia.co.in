@@ -47,7 +47,7 @@ const aboutUsOne = () => {
                                         </ul>
                                     </div>
                                     <div className="aboutUs-one__content-btn">
-                                        <Link href="/aboutUsUs" className="thm-btn">
+                                        <Link href="/aboutUs" className="thm-btn">
                                             <span>aboutUs More</span>
                                             <div className="liquid"></div>
                                         </Link>

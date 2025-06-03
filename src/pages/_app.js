@@ -1,38 +1,55 @@
-import React, { useEffect } from 'react';
-import { animationCreate } from "../../utils/utils";
-import ScrollToTop from "react-scroll-to-top";
+'use client';
+
+import { useEffect } from 'react';
+import Head from 'next/head';
+import $ from 'jquery';
+import HeaderOne from '../common/header/HeaderOne';
+import StickyHeader from '../common/header/StickyHeader';
+import ScrollToTop from 'react-scroll-to-top';
 import { FaAngleUp } from 'react-icons/fa';
-import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    setTimeout(() => {
-      animationCreate();
-    }, 500);
+    if (typeof window !== 'undefined') {
+      const handleScroll = () => {
+        const scrollTop = $(window).scrollTop();
+        if (scrollTop > 100) {
+          $('#mainHeader').slideUp(200);
+          $('#stickyHeader').fadeIn(200);
+        } else {
+          $('#mainHeader').slideDown(200);
+          $('#stickyHeader').fadeOut(200);
+        }
+      };
+
+      $(window).on('scroll', handleScroll);
+
+      return () => {
+        $(window).off('scroll', handleScroll);
+      };
+    }
   }, []);
 
   return (
     <>
       <Head>
-        {/* Google Tag Manager */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GC4YBL2XXF"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-GC4YBL2XXF');
-            `,
-          }}
-        />
+        <title>My App</title>
       </Head>
 
-      <div className="page-wrapper">
+      {/* Main header */}
+      <div id="mainHeader">
+        <HeaderOne />
+      </div>
+
+      {/* Sticky header (hidden initially) */}
+      <StickyHeader />
+
+      {/* Content area */}
+      <div className="pt-[80px]">
         <Component {...pageProps} />
       </div>
 
-      <ScrollToTop className="scroll-to-top" smooth component={<FaAngleUp />} />
+      <ScrollToTop smooth component={<FaAngleUp />} />
     </>
   );
 }

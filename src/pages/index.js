@@ -1,5 +1,6 @@
 import SEO from "../common/seo/Seo";
 import HeaderOne from "../common/header/HeaderOne";
+import StickyHeader from "../common/header/StickyHeader";
 import HeroOne from "../components/hero/HeroOne";
 import AboutOne from "../components/about/AboutOne";
 import WhyChooseUs from "../components/whychoose_us/chooseus";
@@ -7,6 +8,7 @@ import ContactOne from "../components/contact/ContactOne";
 import FooterOne from "../common/footer/FooterOne";
 import FaqOne from "../components/faq/FaqOne";
 import PricingOne from "../components/pricing/PricingOne";
+
 
 export default function Home() {
   return (
@@ -20,6 +22,7 @@ export default function Home() {
         }
       />
       <HeaderOne />
+      <StickyHeader />
       <HeroOne />
       <AboutOne />
       <WhyChooseUs />
@@ -35,6 +38,7 @@ export default function Home() {
 			<BlogOne />
 			<BrandOne /> */}
       <FooterOne />
+
     </>
   );
 }
