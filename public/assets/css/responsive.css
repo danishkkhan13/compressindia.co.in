@@ -147,7 +147,35 @@
 
 
 
+    .main-menu__list li {
+        position: relative;
+    }
 
+    .main-menu__list li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        z-index: 9999;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        min-width: 220px;
+    }
+
+    .main-menu__list li:hover>ul {
+        display: block;
+    }
+
+    .main-menu__list li ul li {
+        padding: 8px 20px;
+    }
+
+    .main-menu__list li ul li a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+    }
 
 
 

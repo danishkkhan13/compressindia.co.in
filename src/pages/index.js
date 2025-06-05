@@ -1,6 +1,5 @@
 import SEO from "../common/seo/Seo";
 import HeaderOne from "../common/header/HeaderOne";
-import StickyHeader from "../common/header/StickyHeader";
 import HeroOne from "../components/hero/HeroOne";
 import AboutOne from "../components/about/AboutOne";
 import WhyChooseUs from "../components/whychoose_us/chooseus";
@@ -22,7 +21,7 @@ export default function Home() {
         }
       />
       <HeaderOne />
-      <StickyHeader />
+
       <HeroOne />
       <AboutOne />
       <WhyChooseUs />

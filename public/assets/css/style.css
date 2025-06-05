@@ -819,13 +819,18 @@ html {
    Navigations One
 ===============================================*/
 .main-header {
-    position: absolute;
+    /* position: absolute; */
     display: block;
     background: #ffffff;
     width: 100%;
     z-index: 999;
     transition: all 500ms ease;
 }
+
+#stickyHeader {
+    position: static !important;
+}
+
 
 .main-header__top {
     position: sticky;
@@ -1031,11 +1036,7 @@ html {
 .main-menu {
     position: sticky;
     background: #ffffff;
-}
-
-.main-menu-wrapper {
-    position: sticky;
-    display: block;
+    z-index: 417 !important;
 }
 
 .main-menu-wrapper__left {
@@ -1216,6 +1217,8 @@ a.sc-hLseeU {
     padding-top: 10px;
     padding-bottom: 10px;
     transition: 500ms;
+    position: relative;
+    z-index: 2 !important;
 }
 
 .main-menu .main-menu__list li ul li:hover>a,
@@ -1525,9 +1528,82 @@ a.sc-hLseeU {
 }
 
 .stricky-header.main-menu-two {
-    background-color: var(--Washup-white);
+    /* background-color: var(--Washup-white); */
     padding: 0 0 0;
 }
+
+.dropdowne {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    min-width: 270px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: center top;
+    transform: scaleY(0) translateZ(100px);
+    z-index: 99;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: opacity 500ms, visibility 500ms, transform 700ms;
+    padding: 31px 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*==============================================
    Navigations Three
@@ -3053,7 +3129,7 @@ div[class^="bubble-"] {
     bottom: 0;
     right: 0;
     background: rgba(var(--thm-black-rgb), .5);
-    z-index: -1;
+    z-index: -1 !important;
 }
 
 .page-header__wrapper {
