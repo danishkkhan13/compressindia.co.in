@@ -207,6 +207,10 @@
         color: #004a94;
     }
 
+    .button-mobile {
+        width: 360px !important;
+    }
+
     .call-btn i,
     .whatsapp-btn i {
         margin-right: 8px;
@@ -536,6 +540,10 @@
 
     .section-title__title br {
         display: none;
+    }
+
+    .button-mobile {
+        width: 360px !important;
     }
 
     .section-title__text br {
@@ -1202,6 +1210,10 @@
         padding-left: 160px;
     }
 
+    .hide {
+        display: none;
+    }
+
     .main-slider-one__single .top-shape {
         display: none;
     }
@@ -1242,6 +1254,10 @@
 
     /*Main Slider One*/
     .main-slider-one__single .top-shape {
+        display: none;
+    }
+
+    .hide {
         display: none;
     }
 

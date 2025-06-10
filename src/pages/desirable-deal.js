@@ -19,7 +19,7 @@ export default function BlockbusterdealPage() {
       <Breadcrumb
         heading="DESIRABLE DEAL"
         currentPage="DESIRABLE DEAL"
-        backgroundImage="/assets/images/backgrounds/blockbuster-deal.jpg"
+        backgroundImage="/assets/images/backgrounds/blockbuster-deal.webp"
       />
       <Blockbusterdeal />
       <FooterOne />

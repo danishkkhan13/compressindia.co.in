@@ -19,7 +19,7 @@ export default function IncredibledealPage() {
       <Breadcrumb
         heading="INCREDIBLE DEAL"
         currentPage="INCREDIBLE DEAL"
-        backgroundImage="/assets/images/backgrounds/blockbuster-deal.jpg"
+        backgroundImage="/assets/images/backgrounds/blockbuster-deal.webp"
       />
       <Blockbusterdeal />
       <FooterOne />

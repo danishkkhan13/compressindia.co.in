@@ -4,6 +4,7 @@ import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import Onetimeservice from "../components/service/Onetimeservice";
 import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function onetimeservicePageOne() {
     return (
@@ -47,7 +48,7 @@ export default function onetimeservicePageOne() {
                         rel="noopener noreferrer"
                     >
                         <button
-                            className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+                            className="button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
                             style={{
                                 width: '565px',
                                 backgroundColor: '#32373c',
@@ -65,13 +66,18 @@ export default function onetimeservicePageOne() {
                     paddingBottom: '40px'
                 }}>
 
-                    <button className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition" style={{
-                        width: '565px',
-                        backgroundColor: '#32373c',
-                        borderRadius: '5px'
-                    }}>
-                        Compare with same deal
-                    </button>
+                    <Link href="/chemical-jet-services">
+                        <button
+                            className="button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+                            style={{
+                                width: "565px",
+                                backgroundColor: "#32373c",
+                                borderRadius: "5px",
+                            }}
+                        >
+                            Compare with same deal
+                        </button>
+                    </Link>
                 </div>
             </section>
 

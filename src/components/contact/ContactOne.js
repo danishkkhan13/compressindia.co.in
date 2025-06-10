@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import BackgroundOne from '../../../public/assets/images/about/contact.jpg';
+import BackgroundOne from '../../../public/assets/images/about/contact.webp';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 import * as Yup from 'yup';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
@@ -165,7 +165,7 @@ const ContactOne = () => {
 
                         {/* Start Card Side Column */}
                         <div className="col-xl-4">
-                            <div className="card shadow-sm p-4" style={{ background: "linear-gradient(to bottom right, #30cfd0 0%, #330867 100%)", color: "#fff", border: "none", borderRadius: "12px" }}>
+                            <div className="card shadow-sm p-4" style={{ background: "linear-gradient(to bottom right, #30cfd0 0%, #330867 100%)", color: "#fff", border: "none", borderRadius: "12px", marginTop: "45px" }}>
                                 <div className="section-title text-center mb-4">
                                     <div className="title"><strong>Contact Us</strong></div>
                                     <p className="small !text-left mt-[20px]">

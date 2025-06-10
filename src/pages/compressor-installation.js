@@ -4,6 +4,7 @@ import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import Onetimeservice from "../components/service/Onetimeservice";
 import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from "react-icons/fa";
+import Link from 'next/link';
 
 export default function compressorinstallationPageOne() {
   return (
@@ -20,7 +21,7 @@ export default function compressorinstallationPageOne() {
       <Breadcrumb
         heading="compressor-installation"
         currentPage="compressor-installation"
-        backgroundImage="/assets/images/backgrounds/compressor.jpg"
+        backgroundImage="/assets/images/backgrounds/compressor.webp"
       />
       <section className="py-16 services-one pd-120-0-90 bg-white">
         <div className="container">
@@ -70,7 +71,7 @@ export default function compressorinstallationPageOne() {
             rel="noopener noreferrer"
           >
             <button
-              className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+              className="button-mobile button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
               style={{
                 width: "565px",
                 backgroundColor: "#32373c",
@@ -88,16 +89,18 @@ export default function compressorinstallationPageOne() {
             paddingBottom: "40px",
           }}
         >
-          <button
-            className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
-            style={{
-              width: "565px",
-              backgroundColor: "#32373c",
-              borderRadius: "5px",
-            }}
-          >
-            Compare with same deal
-          </button>
+          <Link href="/fan-motor-installation">
+            <button
+              className="button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+              style={{
+                width: "565px",
+                backgroundColor: "#32373c",
+                borderRadius: "5px",
+              }}
+            >
+              Compare with same deal
+            </button>
+          </Link>
         </div>
       </section>
       {/* <BrandOne /> */}

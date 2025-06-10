@@ -4,6 +4,7 @@ import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import Onetimeservice from "../components/service/Onetimeservice";
 import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from "react-icons/fa";
+import Link from 'next/link';
 
 export default function AcdismantleservicesPageOne() {
   return (
@@ -20,7 +21,7 @@ export default function AcdismantleservicesPageOne() {
       <Breadcrumb
         heading="Dismantle Services"
         currentPage="Dismantle Services"
-        backgroundImage="/assets/images/backgrounds/dismantel-service.jpg"
+        backgroundImage="/assets/images/backgrounds/dismantel-service.webp"
       />
       <section className="py-16 services-one pd-120-0-90 bg-white">
         <div className="container">
@@ -68,7 +69,7 @@ export default function AcdismantleservicesPageOne() {
             rel="noopener noreferrer"
           >
             <button
-              className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+              className="button-mobile button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
               style={{
                 width: "565px",
                 backgroundColor: "#32373c",
@@ -86,16 +87,19 @@ export default function AcdismantleservicesPageOne() {
             paddingBottom: "40px",
           }}
         >
-          <button
-            className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
-            style={{
-              width: "565px",
-              backgroundColor: "#32373c",
-              borderRadius: "5px",
-            }}
-          >
-            Compare with same deal
-          </button>
+          <Link href="/ac-installation-services">
+            <button
+              className="button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+              style={{
+                width: "565px",
+                backgroundColor: "#32373c",
+                borderRadius: "5px",
+              }}
+            >
+              Compare with same deal
+            </button>
+          </Link>
+
         </div>
       </section>
       {/* <BrandOne /> */}

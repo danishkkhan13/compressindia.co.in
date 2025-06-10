@@ -4,6 +4,7 @@ import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import Onetimeservice from "../components/service/Onetimeservice";
 import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from "react-icons/fa";
+import Link from 'next/link';
 
 export default function PcbboardservicesPageOne() {
   return (
@@ -18,7 +19,7 @@ export default function PcbboardservicesPageOne() {
       <Breadcrumb
         heading="PCB Board Repair"
         currentPage="PCB Board Repair"
-        backgroundImage="/assets/images/backgrounds/pcb-repaire.jpg"
+        backgroundImage="/assets/images/backgrounds/pcb-repaire.webp"
       />
       <section className="py-16 services-one pd-120-0-90 bg-white">
         <div className="container">
@@ -68,7 +69,7 @@ export default function PcbboardservicesPageOne() {
             rel="noopener noreferrer"
           >
             <button
-              className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+              className="button-mobile button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
               style={{
                 width: "565px",
                 backgroundColor: "#32373c",
@@ -86,16 +87,18 @@ export default function PcbboardservicesPageOne() {
             paddingBottom: "40px",
           }}
         >
-          <button
-            className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
-            style={{
-              width: "565px",
-              backgroundColor: "#32373c",
-              borderRadius: "5px",
-            }}
-          >
-            Compare with same deal
-          </button>
+          <Link href="/capacitor-electrical-part">
+            <button
+              className="button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+              style={{
+                width: "565px",
+                backgroundColor: "#32373c",
+                borderRadius: "5px",
+              }}
+            >
+              Compare with same deal
+            </button>
+          </Link>
         </div>
       </section>
       {/* <BrandOne /> */}
