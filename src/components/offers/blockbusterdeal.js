@@ -92,12 +92,12 @@ export default function Blockbusterdeal() {
 
                 <div className="text-center flex">
                   <div className="aboutUs-one__content-btn position-relative">
-                    <button className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
+                    <button href="desirable-deal" className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
                       <span className="text position-relative" style={{ zIndex: 2 }}>Desirable Deal (ALC Contract)</span>
                       <span className="liquids">
                       </span>
                     </button>
-                  </div>
+                  </div> 
                   <div className="aboutUs-one__content-btn position-relative">
                     <button className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
                       <span className="text position-relative" style={{ zIndex: 2 }}>Incredible Deal (AMC Contract)</span>
