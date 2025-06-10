@@ -999,6 +999,20 @@ html {
     text-align: center;
 }
 
+.clearfix {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.svg1 {
+    color: #1826bf;
+}
+
+.svg1:hover {
+    color: #64d747;
+}
+
 .main-header__top-right-social a:before {
     position: sticky;
     content: '';
@@ -1062,7 +1076,7 @@ html {
 .main-menu-wrapper__main-menu {
     position: sticky;
     display: block;
-    margin-right: 50px;
+    margin-right: 74px;
 }
 
 .stricky-header.main-menu {
