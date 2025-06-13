@@ -24,7 +24,7 @@ export default function Desirabledeal() {
                                     <div className="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex pt-4">
 
                                         <div className="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                            <h2 className="wp-block-heading">PRICE : 2,550/-</h2>
+                                            <h2 className="wp-block-heading">PRICE : 1850/-</h2>
                                         </div>
 
                                         <div className="offers">

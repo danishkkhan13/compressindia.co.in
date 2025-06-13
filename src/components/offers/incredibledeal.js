@@ -24,7 +24,7 @@ export default function Desirabledeal() {
                                     <div className="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex pt-4">
 
                                         <div className="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                            <h2 className="wp-block-heading">PRICE : 2,550/-</h2>
+                                            <h2 className="wp-block-heading">PRICE : 2,850/-</h2>
                                         </div>
 
                                         <div className="offers">
@@ -35,7 +35,7 @@ export default function Desirabledeal() {
                                                     <li className="text-green-600">›› <span className="text-gray-700">Yearly Labor + Service Contract.</span></li>
                                                     <li className="text-green-600">›› <span className="text-gray-700">Purpose of contract : Labor + Service Only .</span></li>
                                                     <li className="text-green-600">›› <span className="text-gray-700">Type of contract  : AMC Contract.</span></li>
-                                                    <li className="text-green-600">›› <span className="text-gray-700">Amount : 3,550/- yearly.</span></li>
+                                                    <li className="text-green-600">›› <span className="text-gray-700">Amount : 2,850/- yearly.</span></li>
                                                     <li className="text-green-600">›› <span className="text-gray-700">Total services included : 03 services.</span></li>
                                                     <li className="text-green-600">›› <span className="text-gray-700">Duration of service : Each service after 04 months.</span></li>
                                                     <li className="text-green-600">›› <span className="text-gray-700">Validity of contract : 12 months only.</span></li>
