@@ -1,5 +1,6 @@
 'use client'; // Only for App Router (Next.js 13+)
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 
@@ -124,11 +125,13 @@ export default function Desirabledeal() {
                                         </button>
                                     </div> */}
                                     <div className="aboutUs-one__content-btn position-relative">
-                                        <button className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
-                                            <span className="text position-relative" style={{ zIndex: 2 }}>Incredible Deal (AMC Contract)</span>
-                                            <span className="liquids">
-                                            </span>
-                                        </button>
+                                        <Link href="/incredible-deal">
+                                            <button className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
+                                                <span className="text position-relative" style={{ zIndex: 2 }}>Incredible Deal (AMC Contract)</span>
+                                                <span className="liquids">
+                                                </span>
+                                            </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div> {/* closes bg-white */}

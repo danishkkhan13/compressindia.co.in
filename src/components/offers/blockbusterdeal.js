@@ -1,4 +1,5 @@
 'use client'; // Only for App Router (Next.js 13+)
+import Link from "next/link";
 
 
 
@@ -23,7 +24,7 @@ export default function Blockbusterdeal() {
                         <ul className="text-gray-700 space-y-2">
                           <li className="text-green-600">›› <span className="text-gray-700">Purpose of contract : Service Only.</span></li>
                           <li className="text-green-600">›› <span className="text-gray-700">Type of contract : Non AMC Contract.</span></li>
-                          <li className="text-green-600">›› <span className="text-gray-700">Amount : 1,200/- yearly.</span></li>
+                          <li className="text-green-600">›› <span className="text-gray-700">Amount : 1,500/- yearly.</span></li>
                           <li className="text-green-600">›› <span className="text-gray-700">Total services included : 03 services.</span></li>
                           <li className="text-green-600">›› <span className="text-gray-700">Duration of service : Each service after 04 months.</span></li>
                           <li className="text-green-600">›› <span className="text-gray-700">Validity of contract : 12 months only.</span></li>
@@ -92,18 +93,22 @@ export default function Blockbusterdeal() {
 
                 <div className="text-center flex">
                   <div className="aboutUs-one__content-btn position-relative">
-                    <button href="desirable-deal" className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
-                      <span className="text position-relative" style={{ zIndex: 2 }}>Desirable Deal (ALC Contract)</span>
-                      <span className="liquids">
-                      </span>
-                    </button>
-                  </div> 
+                    <Link href="/desirable-deal">
+                      <button href="desirable-deal" className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
+                        <span className="text position-relative" style={{ zIndex: 2 }}>Desirable Deal (ALC Contract)</span>
+                        <span className="liquids">
+                        </span>
+                      </button>
+                    </Link>
+                  </div>
                   <div className="aboutUs-one__content-btn position-relative">
-                    <button className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
-                      <span className="text position-relative" style={{ zIndex: 2 }}>Incredible Deal (AMC Contract)</span>
-                      <span className="liquids">
-                      </span>
-                    </button>
+                    <Link href="/incredible-deal">
+                      <button className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
+                        <span className="text position-relative" style={{ zIndex: 2 }}>Incredible Deal (AMC Contract)</span>
+                        <span className="liquids">
+                        </span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div> {/* closes bg-white */}
