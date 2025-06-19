@@ -143,7 +143,7 @@ const FooterOne = () => {
                                             Copyright © 2025 <Link href="/">Compress India</Link>. All Rights Reserved.
 
                                             Developed with<span style={{ color: 'red' }}>❤️</span>{" "}
-                                            <Link href="https://heartdynsimulation.com" target="_blank" rel="noopener noreferrer"> by
+                                            <Link href="https://dynsimulation.com" target="_blank" rel="noopener noreferrer"> by
                                                 Dynsimulation
                                             </Link>.
                                         </p>
