@@ -145,7 +145,7 @@ const FooterOne = () => {
                                             Developed with<span style={{ color: 'red' }}>❤️</span>{" "}
                                             <Link href="https://dynsimulation.com" target="_blank" rel="noopener noreferrer"> by
                                                 Dynsimulation
-                                            </Link>.
+                                            </Link>
                                         </p>
                                     </div>
 

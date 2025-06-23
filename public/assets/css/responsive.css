@@ -1246,6 +1246,8 @@
 
 
 
+
+
 }
 
 
@@ -1337,7 +1339,17 @@
         display: none;
     }
 
-
+    .ceoimage {
+        height: 252px;
+        width: 198px;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: cover;
+        color: transparent;
+        padding-bottom: 34px;
+    }
 
 
 
