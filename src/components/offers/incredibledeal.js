@@ -22,7 +22,8 @@ export default function Desirabledeal() {
                             <div className="bg-white px-6 py-12 md:px-16 md:py-20">
                                 <div className="max-w-7xl mx-auto" style={{ paddingBottom: '40px' }}>
                                     <div className="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex pt-4">
-
+                                        <div className="pt-6">
+                                            <h2 className="text-center pb-4 pt-4">MAINTENANCE CONTRACT</h2></div>
                                         <div className="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
                                             <h2 className="wp-block-heading">PRICE : 2,850/-</h2>
                                         </div>
@@ -32,7 +33,7 @@ export default function Desirabledeal() {
                                             <div className="col-xl-6">
                                                 <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>ANNUAL LABOR CONTRACT :</strong></h3>
                                                 <ul className="text-gray-700 space-y-2">
-                                                    <li className="text-green-600">›› <span className="text-gray-700">Yearly Labor + Service Contract.</span></li>
+                                                    <li className="text-green-600">›› <span className="text-gray-700">Maintenance + Service Contract.</span></li>
                                                     <li className="text-green-600">›› <span className="text-gray-700">Purpose of contract : Labor + Service Only .</span></li>
                                                     <li className="text-green-600">›› <span className="text-gray-700">Type of contract  : AMC Contract.</span></li>
                                                     <li className="text-green-600">›› <span className="text-gray-700">Amount : 2,850/- yearly.</span></li>

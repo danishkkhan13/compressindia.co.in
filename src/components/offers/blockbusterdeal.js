@@ -13,6 +13,8 @@ export default function Blockbusterdeal() {
               <div className="bg-white px-6 py-12 md:px-16 md:py-20">
                 <div className="max-w-7xl mx-auto" style={{ paddingBottom: '40px' }}>
                   <div className="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+                    <div className="pt-6">
+                      <h2 className="text-center pb-4 pt-4">MAINTENANCE CONTRACT</h2></div>
                     <div className="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
                       <h2 className="wp-block-heading">PRICE : 1,500/-</h2>
                     </div>

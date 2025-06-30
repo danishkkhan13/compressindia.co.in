@@ -1416,8 +1416,11 @@
         padding: 40px 0;
     }
 
-
-
+    .team-section {
+        padding: 25px;
+        background-color: #d1ebcb;
+        font-family: Arial, sans-serif;
+    }
 
 
 

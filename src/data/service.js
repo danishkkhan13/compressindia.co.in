@@ -74,7 +74,7 @@ export const ServiceTwoData = [
     {
         id: 1,
 
-        image: "/assets/images/services/services-v1-img1.jpg",
+        image: "/assets/images/services/Cold Rooms.webp",
         alt: "Service",
         heading: "Cold Rooms",
 
@@ -85,7 +85,7 @@ export const ServiceTwoData = [
     {
         id: 2,
 
-        image: "/assets/images/services/services-v1-img3.jpg",
+        image: "/assets/images/services/Blast Freezers & Hardeners.webp",
         alt: "Service",
         heading: "Blast Freezers & Hardeners",
 
@@ -96,7 +96,7 @@ export const ServiceTwoData = [
     {
         id: 3,
 
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/Ice Plants.webp",
         alt: "Service",
         heading: "Ice Plants",
 
@@ -107,7 +107,7 @@ export const ServiceTwoData = [
     {
         id: 4,
 
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/Commercial Freezers.webp",
         alt: "Service",
         heading: "Commercial Freezers",
 
@@ -118,7 +118,7 @@ export const ServiceTwoData = [
     {
         id: 5,
 
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/Mini Water Chillers.webp",
         alt: "Service",
         heading: "Mini Water Chillers",
 
@@ -129,7 +129,7 @@ export const ServiceTwoData = [
     {
         id: 6,
 
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/Process Air-Cooled Chillers.webp",
         alt: "Service",
         heading: "Process Air-Cooled Chillers",
 
@@ -140,7 +140,7 @@ export const ServiceTwoData = [
     {
         id: 7,
 
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/Cooling Chambers.webp",
         alt: "Service",
         heading: "Cooling Chambers",
 
@@ -154,14 +154,14 @@ export const ServiceTwoData = [
 export const ServiceThreeData = [
     {
         id: 1,
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/Pharmaceutical & Life Sciences.webp",
         heading: "Pharmaceutical & Life Sciences",
 
         delay: "0ms",
     },
     {
         id: 2,
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/Healthcare & Hospitals.webp",
         heading: "Healthcare & Hospitals",
 
 
@@ -169,7 +169,7 @@ export const ServiceThreeData = [
     },
     {
         id: 3,
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/IT & Telecommunications.webp",
         heading: "IT & Telecommunications",
 
 
@@ -177,7 +177,7 @@ export const ServiceThreeData = [
     },
     {
         id: 4,
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/Logistics & Warehousing.webp",
         heading: "Logistics & Warehousing",
 
 
@@ -185,28 +185,28 @@ export const ServiceThreeData = [
     },
     {
         id: 5,
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/Steel & Heavy Industries.webp",
         heading: "Steel & Heavy Industries",
 
         delay: "400ms",
     },
     {
         id: 6,
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/Textile & Chemical Manufacturing.webp",
         heading: "Textile & Chemical Manufacturing",
 
         delay: "500ms",
     },
     {
         id: 7,
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/Food Processing & Dairy.webp",
         heading: "Food Processing & Dairy",
 
         delay: "500ms",
     },
     {
         id: 8,
-        image: "/assets/images/services/services-v1-img4.jpg",
+        image: "/assets/images/services/Finance & Educational Institutions.webp",
         heading: "Finance & Educational Institutions",
 
         delay: "500ms",
@@ -214,6 +214,26 @@ export const ServiceThreeData = [
 ];
 
 const teamMembers = [
+    {
+        name: 'Wasik',
+        role: 'Founder & CEO',
+        description:
+            'Visionary leader with over [X] years in the HVAC industry. Known for strategic thinking, technical expertise, and a relentless pursuit of excellence.',
+    },
+    {
+        name: 'Roger Rubin',
+        role: 'Director of Operations',
+        description:
+            'Oversees end-to-end project execution, quality control, and customer relations. Passionate about timely delivery and innovation in HVAC practices.',
+    },
+    {
+        name: 'Roger Rubin',
+        role: 'Head of Design & Engineering',
+        description:
+            'Leads a team of engineers in developing efficient, customized HVAC and refrigeration solutions tailored to industrial requirements.',
+    },
+
+
     {
         name: 'Wasik',
         role: 'Founder & CEO',
