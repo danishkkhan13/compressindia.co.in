@@ -35,6 +35,28 @@
     --bs-gutter-x: 30px;
 }
 
+.clints {
+    padding-right: 3.5rem !important;
+    padding-left: 7.5rem !important;
+}
+
+.colorunset {
+    color: unset !important;
+}
+
+.backgrounds {
+    background: linear-gradient(220deg, #1826be 0%, #25d366 100%);
+}
+
+.whatwedo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.whatwedolist {
+    display: flex;
+}
 
 /* Make sure Font Awesome is included in your project */
 .call-btn a,
@@ -96,6 +118,25 @@
     text-align: left;
     gap: 16px;
     transition: 0.3s;
+    align-items: center;
+}
+
+.team-cards {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 350px;
+    text-align: left;
+    gap: 4px;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.team-cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .team-card:hover {
@@ -127,6 +168,14 @@
     color: #4b5563;
     font-size: 14px;
     line-height: 20px;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.object-cover {
+    object-fit: cover;
 }
 
 .ceoimage {
@@ -912,9 +961,9 @@ html {
    Navigations One
 ===============================================*/
 .main-header {
-    /* position: absolute; */
+    position: absolute;
     display: block;
-    background: #ffffff;
+    /* background: #ffffff; */
     width: 100%;
     z-index: 999;
     transition: all 500ms ease;
@@ -1142,7 +1191,7 @@ html {
 
 .main-menu {
     position: sticky;
-    background: #ffffff;
+    background: transparent;
     z-index: 417 !important;
 }
 
@@ -1218,12 +1267,66 @@ a.sc-hLseeU {
     position: relative;
     display: flex;
     align-items: center;
-    color: var(--thm-gray);
+    color: white;
     font-size: 17px;
     line-height: 28px;
     font-weight: 500;
     transition: all 500ms ease;
     font-family: var(--thm-font-two);
+}
+
+.video-section {
+    position: relative;
+}
+
+.video-heading {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    /* min-height: 100vh; */
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    color: white;
+    padding: 20px;
+
+    /* optional dark overlay for better visibility */
+    border-radius: 12px;
+}
+
+.herotext {
+    text-align: left;
+    padding-bottom: 35px;
+}
+
+.video-heading h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.video-heading p {
+    font-size: 1.5rem;
+}
+
+.hero-section-content {
+    width: 100%;
+    max-width: 70%;
+    color: white;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
 
 .main-menu .main-menu__list>li>a::before,
