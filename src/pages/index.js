@@ -36,7 +36,7 @@ export default function Home() {
 
 
 
-      <div className="relative min-h-screen video-section">
+      <div className="absolute min-h-screen video-section">
         {/* Video Background */}
         <div className="w-full overflow-hidden flex items-center">
           <video
@@ -56,22 +56,25 @@ export default function Home() {
         </div>
 
         {/* Text Overlay */}
-        <section className="custom-section">
-          <div className="video-heading">
-            <div className="herotext">
-              <p className="section-title__tagline colorunset">ALL YOUR PROPERTIES REQURIEMENTS</p>
-              <h1 className="section-title__title" style={{ color: '#ffffff' }}>We build future , Where Engineering Excellence Meets Climate Control</h1>
-              <p className="aboutUs-one__content-text2">ALL YOUR PROPERTIES REQURIEMENTS</p>
-            </div>
-            <div className="btn-box">
-              <Link href="/contactUs" className="thm-btn">
-                <span>Request Services</span>
-                <div className="liquid"></div>
-              </Link>
+        <section className="mx-auto max-w-screen-xl px-[20px] py-5 font-medium text-sm z-50  justify-between">
+          <div className="container">
+            <div className="video-heading">
+              <div className="herotext">
+                <p className="section-title__tagline colorunset">ALL YOUR PROPERTIES REQURIEMENTS</p>
+                <h1 className="section-title__title" style={{ color: '#ffffff' }}>We build future , Where <br />Engineering Excellence Meets<br /> Climate Control</h1>
+                <p className="aboutUs-one__content-text2">ALL YOUR PROPERTIES REQURIEMENTS</p>
+              </div>
+              <div className="btn-box">
+                <Link href="/contactUs" className="thm-btn">
+                  <span>Request Services</span>
+                  <div className="liquid"></div>
+                </Link>
+              </div>
             </div>
           </div>
-        </section>
-      </div>
+          <section className="Toastify" aria-live="polite" aria-atomic="false" aria-relevant="additions text" aria-label="Notifications Alt+T"></section>
+        </section >
+      </div >
 
 
 

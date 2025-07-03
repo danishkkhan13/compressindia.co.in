@@ -5,34 +5,34 @@ import Image from 'next/image';
 const services = [
     {
         title: 'Split Air Conditioners',
-        price: 1200,
+        price: 850,
         image: '/assets/images/services/ac.webp',
     },
     {
         title: 'Window Air Conditioners',
-        price: 950,
+        price: 750,
         image: '/assets/images/services/window-AC.webp',
     },
     {
         title: 'Portable Air Conditioners',
-        price: 950,
+        price: 750,
         image: '/assets/images/services/Portable-AC.webp',
     },
     {
         title: 'Cassette Air Conditioners',
-        price: 1850,
+        price: 1200,
         image: '/assets/images/services/cassette-AC.webp',
         suffix: '/-TR',
     },
     {
         title: 'Tower Air Conditioners',
-        price: 800,
+        price: 650,
         image: '/assets/images/services/tower-AC.webp',
         suffix: '/-TR',
     },
     {
         title: 'Ducted Air Conditioners',
-        price: 800,
+        price: 650,
         image: '/assets/images/services/ducted-ac.webp',
         suffix: '/-TR',
     },

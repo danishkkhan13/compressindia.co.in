@@ -5,8 +5,52 @@ import Onetimeservice from "../components/service/Onetimeservice";
 import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function chemicaljetservicePageOne() {
+    const services = [
+        {
+            title: 'Split Air Conditioners',
+            price: 1200,
+            image: '/assets/images/services/ac.webp',
+        },
+        {
+            title: 'Window Air Conditioners',
+            price: 950,
+            image: '/assets/images/services/window-AC.webp',
+        },
+        {
+            title: 'Portable Air Conditioners',
+            price: 950,
+            image: '/assets/images/services/Portable-AC.webp',
+        },
+        {
+            title: 'Cassette Air Conditioners',
+            price: 1850,
+            image: '/assets/images/services/cassette-AC.webp',
+            suffix: '/-TR',
+        },
+        {
+            title: 'Tower Air Conditioners',
+            price: 800,
+            image: '/assets/images/services/tower-AC.webp',
+            suffix: '/-TR',
+        },
+        {
+            title: 'Ducted Air Conditioners',
+            price: 800,
+            image: '/assets/images/services/ducted-ac.webp',
+            suffix: '/-TR',
+        },
+    ];
+
+
+    // Dynamically calculate rows
+    const rows = [];
+    for (let i = 0; i < services.length; i += 3) {
+        rows.push(services.slice(i, i + 3));
+    }
+
     return (
         <>
             <SEO pageTitle={"Chemical Jet Cleaning & Descaling Services in Mumbai | Compress India"} description={"Boost HVAC efficiency with expert chemical jet cleaning in Mumbai. Compress India offers advanced descaling for chillers, pipelines & condensers—trusted by industries."} />
@@ -26,10 +70,39 @@ export default function chemicaljetservicePageOne() {
                                 <p className="text-gray-600 mt-2">Breakdown Services ! Upgrade version of water service to improve cooling efficiency</p>
                             </div>
                             <div>
+                                <div className="max-w-6xl mx-auto px-4 space-y-12">
+                                    {rows.map((row, rowIndex) => (
+                                        <div key={rowIndex}>
+                                            <div className="servicese">
+                                                {row.map((service, idx) => (
+                                                    <div key={idx} className="text-center w-full md:w-1/3">
+                                                        <Image
+                                                            src={service.image}
+                                                            alt={service.title}
+                                                            width={300}
+                                                            height={200}
+                                                            className="mx-auto object-contain h-48"
+                                                        />
+                                                        <h5 className="mt-4 font-semibold text-lg">
+                                                            Price : {service.price}
+                                                            {service.suffix || '/-'}
+                                                        </h5>
+                                                        <p className="text-sm uppercase mt-1 text-gray-700">{service.title}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            {rowIndex < rows.length - 1 && (
+                                                <hr className="border-t border-black mt-10 mb-2 w-full" />
+                                            )}
+                                        </div>
+                                    ))}
+
+                                </div>
                                 <Onetimeservice />
                                 <div className="mb-12 text-center italic" style={{ paddingTop: '60px', fontSize: 'small' }}>
                                     <h6>
-                                        DISCLAIMER : This is only Dismantle service charges , If breakdown / repair required rates may vary as per standard charges in the market
+                                        DISCLAIMER : This is only
+                                        Chemical Jet Services charges , If breakdown / repair required rates may vary as per standard charges in the market
                                     </h6>
                                 </div>
                             </div>

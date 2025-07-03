@@ -125,7 +125,7 @@ export default function customizedservicesPageOne() {
                   <div className="grid md:grid-cols-2 gap-8">
                     <div>
                       <h2 className="text-2xl font-bold text-blue-600">
-                        Start @ ₹949/-
+                        Start @ ₹1,850/-
                       </h2>
                       <p className="text-lg font-medium">
                         <strong>COPPER TUBE INSULATION REPLACEMENT</strong>
@@ -138,7 +138,7 @@ export default function customizedservicesPageOne() {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h2 className="text-2xl font-bold text-blue-600">
-                      Start @ ₹1,499/-
+                      Start @ ₹2,250/-
                     </h2>
                     <p className="text-lg font-medium">
                       <strong>POWER / COMMUNICATION REPLACEMENT</strong>

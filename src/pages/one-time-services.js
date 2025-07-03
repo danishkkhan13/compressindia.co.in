@@ -30,7 +30,8 @@ export default function onetimeservicePageOne() {
                                 <Onetimeservice />
                                 <div className="mb-12 text-center italic" style={{ paddingTop: '60px', fontSize: 'small' }}>
                                     <h6>
-                                        DISCLAIMER : This is only chemical jet service charges , If breakdown / repair required rates may vary as per standard charges in the market
+                                        DISCLAIMER : This is only
+                                        One Time Service Charges , If breakdown / repair required rates may vary as per standard charges in the market
                                     </h6>
                                 </div>
                             </div>
