@@ -1,7 +1,6 @@
 import SEO from "../common/seo/Seo";
 import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
-import Onetimeservice from "../components/service/Onetimeservice";
 import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
@@ -98,7 +97,7 @@ export default function chemicaljetservicePageOne() {
                                     ))}
 
                                 </div>
-                                <Onetimeservice />
+
                                 <div className="mb-12 text-center italic" style={{ paddingTop: '60px', fontSize: 'small' }}>
                                     <h6>
                                         DISCLAIMER : This is only
