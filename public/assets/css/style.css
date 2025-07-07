@@ -385,7 +385,13 @@ ul {
 .cardchooseus {
     display: flex;
     font-size: 13px;
+    /* font-size: 13px; */
     padding-top: 34px;
+    justify-content: flex-end;
+    column-gap: 16px;
+    padding-left: -11px;
+    /* margin-left: 67px; */
+    max-width: 1170px;
 }
 
 .whychoose {
@@ -411,6 +417,30 @@ ul {
     transition: all 300ms ease;
 }
 
+
+
+.icones .transform-shape {
+    width: 60px;
+    height: 60px;
+    background: #004890;
+    /* teal-100 */
+    border-radius: 50%;
+    /* Initially circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cardswhy_chose:hover .icones .transform-shape {
+    border-radius: 12px;
+    /* Rounded cube */
+    background-color: #65d746;
+    /* teal-700 */
+    color: #ffffff;
+}
+
 .icones {
     margin-left: 84px;
 }
@@ -429,31 +459,6 @@ ul {
     align-items: center;
     padding-bottom: 70px;
 }
-
-.icones .transform-shape {
-    width: 60px;
-    height: 60px;
-    background: #004890;
-    /* teal-100 */
-    border-radius: 50%;
-    /* Initially circle */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.icones .transform-shape:hover {
-    border-radius: 12px;
-    /* Rounded cube */
-    background-color: #65d746;
-    /* teal-700 */
-    color: #ffffff;
-}
-
-
-
 
 
 .container {
@@ -1310,6 +1315,36 @@ a.sc-hLseeU {
 .video-heading p {
     font-size: 1.5rem;
 }
+
+.cardswhy_chose {
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    gap: 4px;
+    transition: 0.3s;
+    align-items: center;
+    padding-top: 40px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.cardswhy_chose:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+    filter: brightness(1.05);
+    background: #004890;
+    ;
+    color: #ffff;
+
+}
+
+.cardswhy_chose:hover h4,
+.cardswhy_chose:hover p {
+    color: #fff;
+    /* text turns white */
+}
+
 
 .hero-section-content {
     width: 100%;

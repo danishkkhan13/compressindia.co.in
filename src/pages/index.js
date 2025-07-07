@@ -56,7 +56,7 @@ export default function Home() {
         </div>
 
         {/* Text Overlay */}
-        <section className="mx-auto max-w-screen-xl px-[20px] py-5 font-medium text-sm z-50  justify-between">
+        <section className="mx-auto max-w-screen-xl px-[20px] font-medium text-sm z-50  justify-between">
           <div className="container">
             <div className="video-heading">
               <div className="herotext">

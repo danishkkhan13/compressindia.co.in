@@ -207,6 +207,10 @@
         color: #004a94;
     }
 
+    .cardswhy_chose.flex.col-md-3.col-sm-6.ml-0.mr-\[22px\].mb-\[11px\].mt-0 {
+        margin-top: 26px !important;
+    }
+
     .button-mobile {
         width: 360px !important;
     }
@@ -536,6 +540,10 @@
     .section-title__title {
         font-size: 30px;
         line-height: 40px;
+    }
+
+    .cardswhy_chose.flex.col-md-3.col-sm-6.ml-0.mr-\[22px\].mb-\[11px\].mt-0 {
+        margin-top: 26px !important;
     }
 
     .section-title__title br {
