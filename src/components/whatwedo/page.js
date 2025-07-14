@@ -28,7 +28,7 @@ export default function WhatWeDo() {
                     <div className="col-xl-6">
                         <p className="subtitle pb-4 text-black">Compress India began as a small venture offering air conditioning services across industries. Through relentless hard work and the strength of our experienced team, we have grown into a specialized HVAC company delivering comprehensive design, consultation, and project execution services.</p>
                         <div className="whatwedolist">
-                            <div className="col-xl-6 col-lg-6">
+                            <div className="col-xl-6 col-lg-6 wedo">
                                 {donots.map((item, index) => (
                                     <div key={index} className="text-black items-center mb-3 shadow-md team-cards">
 
@@ -38,7 +38,7 @@ export default function WhatWeDo() {
                                     </div>
                                 ))}
                             </div>
-                            <div className="col-xl-6 col-lg-6" style={{ paddingLeft: '18px' }}>
+                            <div className="col-xl-6 col-lg-6 wedo" style={{ paddingLeft: '18px' }}>
                                 {dos.map((item, index) => (
                                     <div key={index} className="text-black items-center mb-3 shadow-md team-cards">
 

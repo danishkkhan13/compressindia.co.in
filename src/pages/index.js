@@ -41,7 +41,8 @@ export default function Home() {
         <div className="w-full overflow-hidden flex items-center">
           <video
             className="absolute top-0 left-0 w-full h-full object-cover z-[-1]" style={{
-              width: '100%', height: '100%'
+              width: '100%', height: '100%',
+              minHeight: '100vh;'
             }}
             autoPlay
             loop
@@ -61,7 +62,7 @@ export default function Home() {
             <div className="video-heading">
               <div className="herotext">
                 <p className="section-title__tagline colorunset">ALL YOUR PROPERTIES REQURIEMENTS</p>
-                <h1 className="section-title__title" style={{ color: '#ffffff' }}>We build future , Where <br />Engineering Excellence Meets<br /> Climate Control</h1>
+                <h1 className="section-title__title section-title__titles" style={{ color: '#ffffff' }}>We build future , Where <br />Engineering Excellence Meets<br /> Climate Control</h1>
                 <p className="aboutUs-one__content-text2">ALL YOUR PROPERTIES REQURIEMENTS</p>
               </div>
               <div className="btn-box">

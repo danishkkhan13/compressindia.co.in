@@ -12,7 +12,7 @@ const ServicesSection = ({ data, title, tagline, description }) => {
 
 
     return (
-        <section className="services-one" style={{ padding: '75px 75px' }}>
+        <section className="services-one" style={{ padding: '20px 20px' }}>
             <div className="container">
                 <div className="section-title text-center">
                     <span className="section-title__tagline">{tagline}</span>

@@ -124,7 +124,7 @@
 .team-cards {
     background: #fff;
     border-radius: 12px;
-    padding: 15px;
+    padding: 14px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     max-width: 350px;
@@ -441,9 +441,9 @@ ul {
     color: #ffffff;
 }
 
-.icones {
+/* .icones {
     margin-left: 84px;
-}
+} */
 
 .icones {
     color: #14b8a6;
@@ -452,6 +452,7 @@ ul {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-left: 90px;
 }
 
 .ourvision {
@@ -459,6 +460,7 @@ ul {
     align-items: center;
     padding-bottom: 70px;
 }
+
 
 
 .container {
@@ -3627,7 +3629,7 @@ div[class^="bubble-"] {
 .services-one {
     position: relative;
     display: block;
-    background: #f1f5f9;
+    /* background: #f1f5f9; */
     z-index: 1;
 }
 

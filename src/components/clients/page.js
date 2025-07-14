@@ -85,20 +85,42 @@ export default function ClientsSection() {
                 <div className="">
                     <Swiper
                         modules={[Autoplay]}
-                        slidesPerView={5}
-                        spaceBetween={4}
-                        loop={true}
+                        loop
+                        speed={1050}
+                        grabCursor
                         autoplay={{
                             delay: 500,
                             disableOnInteraction: false,
                             pauseOnMouseEnter: true,
                         }}
-                        speed={1050} // smooth continuous scroll
-                        grabCursor={true}
+                        spaceBetween={4}
+
+                        // Default for large screens
+                        slidesPerView={5}
+
+                        // Override for smaller breakpoints
+                        breakpoints={{
+                            // when window width is >= 0px
+                            0: {
+                                slidesPerView: 2,
+                            },
+                            // when window width is >= 640px
+                            640: {
+                                slidesPerView: 2,
+                            },
+                            // when window width is >= 768px
+                            768: {
+                                slidesPerView: 3,
+                            },
+                            // when window width is >= 1024px
+                            1024: {
+                                slidesPerView: 5,
+                            },
+                        }}
                     >
                         {clients.map((client, index) => (
                             <SwiperSlide key={index}>
-                                <div className="p-1 rounded-md shadow-md justify-center">
+                                <div className="p-1 rounded-md shadow-md flex items-center justify-center">
                                     <Image
                                         src={client.src}
                                         alt={client.alt}
