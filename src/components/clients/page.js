@@ -88,6 +88,7 @@ export default function ClientsSection() {
                         loop
                         speed={1050}
                         grabCursor
+                        centeredSlides={true}      // ← center the active slide
                         autoplay={{
                             delay: 500,
                             disableOnInteraction: false,
@@ -100,38 +101,43 @@ export default function ClientsSection() {
 
                         // Override for smaller breakpoints
                         breakpoints={{
-                            // when window width is >= 0px
                             0: {
-                                slidesPerView: 2,
+                                slidesPerView: 'auto',   // slide width = content width
+                                centeredSlides: true,    // center that auto‑width slide
+                                spaceBetween: 4,
                             },
-                            // when window width is >= 640px
                             640: {
                                 slidesPerView: 2,
+                                centeredSlides: false,
                             },
-                            // when window width is >= 768px
                             768: {
                                 slidesPerView: 3,
+                                centeredSlides: false,
                             },
-                            // when window width is >= 1024px
                             1024: {
                                 slidesPerView: 5,
+                                centeredSlides: false,
                             },
                         }}
                     >
                         {clients.map((client, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="p-1 rounded-md shadow-md flex items-center justify-center">
+                            <SwiperSlide
+                                key={index}
+                                className="flex items-center justify-center"  // make slide container flex-centering
+                            >
+                                <div className="p-1 rounded-md shadow-md clintsresponce">
                                     <Image
                                         src={client.src}
                                         alt={client.alt}
                                         width={180}
                                         height={90}
-                                        className="object-contain max-h-full"
+                                        className="object-contain clints1"
                                     />
                                 </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>
+
                 </div>
             </div>
         </section>

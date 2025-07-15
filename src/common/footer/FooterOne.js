@@ -34,7 +34,7 @@ const FooterOne = () => {
                                                 <div className="footer-widget__aboutUs-logo">
                                                     <Link href="/">
                                                         <Image
-                                                            src="/assets/images/resources/logo-1.png"
+                                                            src="/assets/images/resources/Compress White Logo.svg"
                                                             alt="Logo"
                                                             width={235}
                                                             height={44}

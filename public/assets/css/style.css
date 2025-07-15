@@ -3629,7 +3629,7 @@ div[class^="bubble-"] {
 .services-one {
     position: relative;
     display: block;
-    /* background: #f1f5f9; */
+    background: #f1f5f9;
     z-index: 1;
 }
 

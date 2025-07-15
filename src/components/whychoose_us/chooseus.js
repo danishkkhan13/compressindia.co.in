@@ -5,7 +5,7 @@ import { MdLocalHospital } from 'react-icons/md';
 
 export default function WhyChooseUs() {
     return (
-        <section className="services-one pd-120-0-90">
+        <section className="services-one pd-120-0-90" style={{ background: '#f1f5f' }}>
 
             <div className="container">
 
