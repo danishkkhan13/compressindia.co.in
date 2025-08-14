@@ -9,10 +9,10 @@ export default function BlockbusterdealPage() {
     <>
       <SEO
         pageTitle={
-          "Desirable HVAC Service Deals in Mumbai | Compress India Offers"
+          "Desirable Deal - AC Maintenance Specials (Mumbai & Navi Mumbai) | Compress India"
         }
         description={
-          "Looking for value-driven HVAC solutions in Mumbai? Compress India’s Desirable Deal offers reliable climate control, maintenance & cooling system upgrades at great prices."
+          "Explore the Desirable Deal from Compress India—exclusive AC maintenance specials in Mumbai & Navi Mumbai for cleaner, efficient cooling systems."
         }
       />
       <HeaderOne />

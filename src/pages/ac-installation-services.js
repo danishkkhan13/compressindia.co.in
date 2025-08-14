@@ -54,10 +54,10 @@ export default function AcinstallationservicesPageOne() {
     <>
       <SEO
         pageTitle={
-          "AC Installation Services in Mumbai | Industrial & Commercial HVAC Experts"
+          "Best AC Installation Services in Mumbai | Compress India"
         }
         description={
-          "Compress India delivers expert AC installation in Mumbai for industrial, commercial & institutional spaces. Reliable setup, energy efficiency & system integration."
+          "Expert AC installation in Mumbai for Split, Window, Portable, Cassette, Tower, and Ducted ACs at affordable rates. Call now to book installation!"
         }
       />
       <HeaderOne />

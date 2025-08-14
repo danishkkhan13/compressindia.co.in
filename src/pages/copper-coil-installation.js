@@ -53,10 +53,10 @@ export default function coppercoilinstallationPageOne() {
     <>
       <SEO
         pageTitle={
-          "Copper Coil Installation in Mumbai | Industrial HVAC Services – Compress India"
+          "Copper Coil Installation Services in Mumbai | Compress India"
         }
         description={
-          "Expert copper coil installation for HVAC systems in Mumbai. Compress India delivers precise fitting, high thermal efficiency, and durable performance for chillers & ACs."
+          "Professional Copper Coil Installation Services in Mumbai by Compress India. Split/Window/Portable ₹3500, Cassette ₹4850/TR, Tower ₹6050/TR, Ducted ₹7500/TR. Call now for expert installation!"
         }
       />
       <HeaderOne />

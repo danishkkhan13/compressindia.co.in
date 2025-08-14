@@ -54,10 +54,10 @@ export default function AcpressuretestservicesPageOne() {
     <>
       <SEO
         pageTitle={
-          "AC Pressure Testing Services in Mumbai | HVAC Leak Detection Experts"
+          "AC Pressure Testing Services in Mumbai | Compress India"
         }
         description={
-          "Ensure system safety with expert AC pressure testing in Mumbai. Compress India specializes in leak detection, performance checks & HVAC integrity validation."
+          "Professional AC pressure testing in Mumbai. Split, Window, Portable - ₹2499 each. Detect leaks early. Contact us now!"
         }
       />
       <HeaderOne />

@@ -8,9 +8,9 @@ export default function TeamDetailsPage() {
   return (
     <>
       <SEO
-        pageTitle={"Privacy Policy | Compress India – HVAC Services in Mumbai"}
+        pageTitle={"Privacy Policy — Compress India HVAC Services (Mumbai)"}
         description={
-          "Read Compress India’s privacy policy to learn how we collect, use, and protect your data. We value your trust while delivering top-tier HVAC solutions in Mumbai."
+          "Read the Privacy Policy of Compress India HVAC Services in Mumbai. Learn how we collect, use, and protect your personal information."
         }
       />
       <HeaderOne />

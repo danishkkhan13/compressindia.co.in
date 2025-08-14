@@ -17,10 +17,10 @@ export default function Home() {
     <>
       <SEO
         pageTitle={
-          "HVAC & Industrial Refrigeration Experts in Mumbai | Compress India"
+          "Affortable Air Compressor Repair & Services in Mumbai | Compress India"
         }
         description={
-          "Reliable HVAC system design, turnkey execution, and custom refrigeration in Mumbai. Serving pharma, food, hospitality, & more. Elevate your climate control today!"
+          "Reliable air compressor repair & services in Mumbai by Compress India. Get expert maintenance, servicing, and repair for all industrial compressor models at competitive rates."
         }
       />
       <HeaderOne />

@@ -9,7 +9,7 @@ import Link from 'next/link';
 export default function onetimeservicePageOne() {
     return (
         <>
-            <SEO pageTitle={"One-Time HVAC Maintenance & Repair in Mumbai | Compress India"} description={"Get fast, expert HVAC service in Mumbai with Compress India's one-time solutions—repairs, inspections, descaling & system optimization for industrial performance."} />
+            <SEO pageTitle={"Expert AC Repair & Service in Mumbai | Compress India"} description={"Get affordable AC repair & service in Mumbai with Compress India. Our certified experts handle Split ACs (₹850), Window ACs (₹750), and Portable ACs (₹750) repairs. Ensure smooth cooling and longer AC life. Book your repair today!"} />
             <HeaderOne />
 
             <Breadcrumb

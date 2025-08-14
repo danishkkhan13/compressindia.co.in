@@ -11,10 +11,10 @@ export default function ContactPage() {
     <>
       <SEO
         pageTitle={
-          "Contact Compress India | HVAC & Cooling Solutions in Mumbai"
+          "Get in Touch with Compress India | AC & HVAC Services in Mumbai"
         }
         description={
-          "Reach out to Compress India for expert HVAC & industrial cooling solutions in Mumbai. Call or message us to discuss your project or service requirements today."
+          "Contact Compress India—your trusted AC & HVAC solutions provider in Mumbai & Navi Mumbai. Call, email, or visit us for expert service and support."
         }
       />
       <HeaderOne />

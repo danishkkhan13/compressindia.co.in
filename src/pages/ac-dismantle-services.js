@@ -55,10 +55,10 @@ export default function acdismantleservicesPageOne() {
     <>
       <SEO
         pageTitle={
-          "AC Dismantling Services in Mumbai | Compress India HVAC Experts"
+          "AC Dismantle & Reinstallation Services in Mumbai | Compress India"
         }
         description={
-          "Get safe and efficient AC dismantling in Mumbai with Compress India. Industrial HVAC unit removal, site clearance & compliant disposal by trained professionals."
+          "Cost-efficient AC dismantle & reinstallation in Mumbai. Split (₹800), Window (₹700), Portable (₹700), Cassette (₹1500). Book today!"
         }
       />
       <HeaderOne />

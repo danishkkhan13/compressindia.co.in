@@ -9,10 +9,10 @@ export default function BlockbusterDealPage() {
     <>
       <SEO
         pageTitle={
-          "Limited-Time HVAC Offers in Mumbai | Compress India Blockbuster Deal"
+          "Blockbuster Deal – AC Water-Jet Maintenance Service (Mumbai & Navi Mumbai) | Compress India"
         }
         description={
-          "Unlock exclusive HVAC deals in Mumbai with Compress India! Save on industrial cooling, chiller systems & more. Limited-time offer—grab your climate upgrade now!"
+          "Grab the Blockbuster Deal from Compress India! Get expert AC water-jet maintenance service in Mumbai & Navi Mumbai for cleaner, cooler performance."
         }
       />
       <HeaderOne />

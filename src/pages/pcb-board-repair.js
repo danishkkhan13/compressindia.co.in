@@ -52,9 +52,9 @@ export default function PcbboardservicesPageOne() {
   return (
     <>
       <SEO
-        pageTitle={"HVAC PCB Board Repair Services in Mumbai | Compress India"}
+        pageTitle={"Reliable PCB Board Repair Services in Mumbai | Compress India"}
         description={
-          "Expert PCB board repair for HVAC systems in Mumbai. Compress India diagnoses and restores AC control boards to ensure reliable, cost-effective climate system performance."
+          "PCB repair for Split, Window, Portable - ₹1750 each. Quick, expert service. Schedule now!"
         }
       />
       <HeaderOne />

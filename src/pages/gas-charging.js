@@ -53,10 +53,10 @@ export default function GaschargingservicesPageOne() {
     <>
       <SEO
         pageTitle={
-          "AC & Chiller Gas Charging Services in Mumbai | Compress India"
+          "Affordable AC Gas Charging Services in Mumbai | Compress India"
         }
         description={
-          "Reliable gas charging services for AC units and chillers in Mumbai. Compress India ensures optimal HVAC performance with expert refrigerant top-up and leak checks."
+          "AC gas charging in Mumbai – Split, Window, Portable ₹1850 each. Restore cooling power. Book refill today!"
         }
       />
       <HeaderOne />

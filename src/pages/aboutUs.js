@@ -15,7 +15,12 @@ import Image from 'next/image';
 export default function aboutUsPage() {
 	return (
 		<>
-			<SEO pageTitle={"About Us"} />
+			<SEO
+				pageTitle={"About Industrial HVAC Solutions in India | Compress India"}
+				description={
+					"Discover Compress India, a trusted industrial HVAC solutions provider in India. We offer high-quality air conditioning, ventilation, and cooling systems tailored for industrial needs nationwide."
+				}
+			/>
 			<HeaderOne />
 			<Breadcrumb
 				heading="About Us"

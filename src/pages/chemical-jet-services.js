@@ -52,7 +52,7 @@ export default function chemicaljetservicePageOne() {
 
     return (
         <>
-            <SEO pageTitle={"Chemical Jet Cleaning & Descaling Services in Mumbai | Compress India"} description={"Boost HVAC efficiency with expert chemical jet cleaning in Mumbai. Compress India offers advanced descaling for chillers, pipelines & condensers—trusted by industries."} />
+            <SEO pageTitle={"Experienced Chemical Jet Services in Mumbai | Compress India"} description={"Affordable chemical jet cleaning in Mumbai by Compress India. Pricing: Split (₹1200), Window (₹950), Portable (₹950), Cassette (₹1850). Remove dirt, improve cooling, and boost efficiency. Schedule your cleaning now!"} />
             <HeaderOne />
             <Breadcrumb
                 heading="Chemical Jet Services"

@@ -53,10 +53,10 @@ export default function compressorinstallationPageOne() {
     <>
       <SEO
         pageTitle={
-          "Compressor Installation Services in Mumbai | HVAC Experts - Compress India"
+          "Compressor Installation Services in Mumbai | Compress India"
         }
         description={
-          "Professional compressor installation in Mumbai for chillers, AC systems & industrial HVAC. Compress India ensures precision setup, energy efficiency & peak performance."
+          "Expert Compressor Installation in Mumbai by Compress India. All AC types serviced. Split ₹8500, Cassette ₹9500/TR. Call now to restore cooling!"
         }
       />
       <HeaderOne />

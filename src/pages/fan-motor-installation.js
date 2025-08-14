@@ -53,10 +53,10 @@ export default function fanmotorinstallationPageOne() {
     <>
       <SEO
         pageTitle={
-          "Fan Motor Installation Services in Mumbai | HVAC Motor Experts"
+          "Fan Motor Installation Services in Mumbai | Compress India"
         }
         description={
-          "Get expert fan motor installation in Mumbai for HVAC systems, chillers & cooling units. Compress India ensures reliable setup and performance optimization."
+          "Professional Fan Motor Installation Services in Mumbai by Compress India. Split/Window/Portable ₹3500, Cassette ₹4850/TR, Tower ₹6050/TR, Ducted ₹7500/TR. Call now!"
         }
       />
       <HeaderOne />
