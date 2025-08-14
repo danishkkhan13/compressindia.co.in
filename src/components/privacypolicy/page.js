@@ -8,16 +8,21 @@ export default function PrivacyPolicy() {
                     <div className="row">
                         <div className="min-h-screen bg-white py-16 px-6 lg:px-24">
                             <div className="max-w-4xl mx-auto border-2 border-gray-300 rounded-2xl shadow-md p-10">
-                                <h1 className="text-3xl font-bold mb-6 text-center text-blue-700" style={{ paddingBottom: '20px' }}>Privacy Policy</h1>
+                                <h1 className="text-3xl font-bold mb-6 text-center text-blue-700" style={{ paddingBottom: '20px' }}>Privacy Policy — Compress India HVAC Services in Mumbai</h1>
 
                                 <p className="mb-6 text-gray-700">
-                                    At Compress India, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+                                    Explore how Compress India HVAC Services in Mumbai collects, uses, and protects your personal data. This policy clarifies our practices for customer privacy, data protection in HVAC services, and ensures transparency when you interact with us.
                                 </p>
 
-                                <h2 className="text-xl font-semibold mb-2 mt-8 text-blue-600">1. Information We Collect</h2>
-                                <p className="text-gray-700 mb-4">
-                                    We collect personal and non-personal information including:
-                                </p>
+                                <h2 className="text-xl font-semibold mb-2 mt-8 text-blue-600">1. Collection of Personal Information</h2>
+                                <h3 className="text-xl font-semibold mt-8 text-blue-300" style={{ paddingTop: '20px', paddingBottom: '20px', fontSize: 18 }}>Information You Provide:</h3>
+                                <ol className="list-disc list-inside ml-4 text-gray-700 mb-4" style={{ listStyleType: 'disc', listStylePosition: 'inside' }}>
+                                    <li>Air Conditioning Repair & Maintenance.</li>
+                                    <li>HVAC System Installation.</li>
+                                    <li>Chiller Plant Servicing.</li>
+                                    <li>Industrial Cooling Solutions.</li>
+                                    <li>Ducting & Fabrication.</li>
+                                </ol>
                                 <ul className="list-disc list-inside mt-2 ml-4 text-gray-700">
                                     <li>Full Name, Email Address, Phone Number</li>
                                     <li>Location, Service Address</li>
