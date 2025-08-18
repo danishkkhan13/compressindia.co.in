@@ -147,7 +147,35 @@
 
 
 
+    .main-menu__list li {
+        position: relative;
+    }
 
+    .main-menu__list li ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        z-index: 9999;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        min-width: 220px;
+    }
+
+    .main-menu__list li:hover>ul {
+        display: block;
+    }
+
+    .main-menu__list li ul li {
+        padding: 8px 20px;
+    }
+
+    .main-menu__list li ul li a {
+        display: block;
+        color: #000;
+        text-decoration: none;
+    }
 
 
 
@@ -179,6 +207,14 @@
         color: #004a94;
     }
 
+    .cardswhy_chose.flex.col-md-3.col-sm-6.ml-0.mr-\[22px\].mb-\[11px\].mt-0 {
+        margin-top: 26px !important;
+    }
+
+    .button-mobile {
+        width: 360px !important;
+    }
+
     .call-btn i,
     .whatsapp-btn i {
         margin-right: 8px;
@@ -188,7 +224,7 @@
         position: fixed;
         bottom: 80px;
         left: 0px;
-        background: #fdd639;
+        background: #1826be;
         width: 50px;
         height: 50px;
         border: 2px solid #000;
@@ -274,9 +310,6 @@
         margin-left: 0px;
     }
 
-    .footer-widget__links.mrt-60 {
-        margin-top: 60px;
-    }
 
     .footer-widget__gallery.mrt-60 {
         margin-top: 60px;
@@ -506,8 +539,66 @@
         line-height: 40px;
     }
 
+    .footer-widget__links {
+        padding-top: 50px;
+    }
+
+    .clintsresponce {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .clints1 {
+        width: 70%;
+        height: auto;
+    }
+
+    .icones {
+        margin-left: 91px;
+        align-items: center !important;
+    }
+
+    .video-heading p {
+        font-size: 17px;
+    }
+
+    .wedo {
+        position: relative;
+        padding-left: 20px !important;
+    }
+
+    .clearfix {
+        display: block;
+    }
+
+    .whatwedolist {
+        display: block;
+        padding-bottom: 25px;
+    }
+
+    .items-start {
+        padding-bottom: 18px;
+    }
+
+    .video-heading h1 {
+        font-size: 35px;
+    }
+
+    .herotext {
+        text-align: center;
+        font-size: 4px;
+    }
+
+    .cardswhy_chose.flex.col-md-3.col-sm-6.ml-0.mr-\[22px\].mb-\[11px\].mt-0 {
+        margin-top: 26px !important;
+    }
+
     .section-title__title br {
         display: none;
+    }
+
+    .button-mobile {
+        width: 360px !important;
     }
 
     .section-title__text br {
@@ -586,9 +677,6 @@
         margin-top: 60px;
     }
 
-    .footer-widget__links.mrt-60 {
-        margin-top: 60px;
-    }
 
     .footer-widget__gallery.mrt-60 {
         margin-top: 60px;
@@ -1174,6 +1262,14 @@
         padding-left: 160px;
     }
 
+    .icones {
+        margin-left: 36px;
+    }
+
+    .hide {
+        display: none;
+    }
+
     .main-slider-one__single .top-shape {
         display: none;
     }
@@ -1206,6 +1302,8 @@
 
 
 
+
+
 }
 
 
@@ -1214,6 +1312,10 @@
 
     /*Main Slider One*/
     .main-slider-one__single .top-shape {
+        display: none;
+    }
+
+    .hide {
         display: none;
     }
 
@@ -1293,7 +1395,17 @@
         display: none;
     }
 
-
+    .ceoimage {
+        height: 252px;
+        width: 198px;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: cover;
+        color: transparent;
+        padding-bottom: 34px;
+    }
 
 
 
@@ -1360,8 +1472,11 @@
         padding: 40px 0;
     }
 
-
-
+    .team-section {
+        padding: 25px;
+        background-color: #d1ebcb;
+        font-family: Arial, sans-serif;
+    }
 
 
 

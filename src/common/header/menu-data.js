@@ -16,7 +16,7 @@ const menu_data = [
     id: 3,
     mega_menu: false,
     has_dropdown: true,
-    title: "-Offers+",
+    title: "Offers",
     link: "#",
     sub_menus: [
       { link: "/blockbuster-deal", title: "BLOCKBUSTER DEAL" },
@@ -27,7 +27,7 @@ const menu_data = [
   {
     id: 4,
     has_dropdown: true,
-    title: "-Service+",
+    title: "Service",
     link: "#",
     sub_menus: [
       { link: "/one-time-services", title: "One Time Services" },
@@ -71,5 +71,10 @@ const menu_data = [
     title: "Contact",
     link: "/contactUs",
   },
+
+
+
+
+
 ];
 export default menu_data;

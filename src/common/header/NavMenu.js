@@ -10,7 +10,7 @@ const NavMenu = () => {
           <li key={i} className={`${item.has_dropdown ? "dropdown" : ''}`}>
             <Link href={item.link}>{item.title}</Link>
             {item.sub_menus && (
-              <ul>
+              <ul className="dropdowne">
                 {item.sub_menus.map((sub_item, sub_i) => (
                   <li key={sub_i}>
                     <Link href={sub_item.link}>{sub_item.title}</Link>

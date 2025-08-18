@@ -35,7 +35,7 @@ export const PricingOneData = [
         link_label: "KNOW MORE",
         delay: "200ms",
         feature_one: "Yearly Labor + Service Contract",
-        feature_two: "Purpose of contract : Maintenance + Service Only",
+        feature_two: "Purpose of contract : Maintenance + Service Contract",
         feature_three: "Type of contract  : AMC Contract",
         feature_four: "Breakdown : All repair charges included for a year",
         feature_five: "Type of service : Water Jet Services",

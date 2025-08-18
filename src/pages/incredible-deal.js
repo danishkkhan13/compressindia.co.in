@@ -9,17 +9,17 @@ export default function IncredibledealPage() {
     <>
       <SEO
         pageTitle={
-          "Incredible HVAC & Cooling Deals in Mumbai | Compress India Limited Offer"
+          "Incredible Deal – Annual AC Maintenance Contract (Water-Jet Service) | Compress India"
         }
         description={
-          "Take advantage of Compress India’s Incredible Deal—premium HVAC and industrial cooling services in Mumbai at unbeatable prices. Don’t miss out—offer ends soon!"
+          "Unlock the Incredible Deal from Compress India—annual AC maintenance contract with water-jet service for long-lasting, efficient cooling performance."
         }
       />
       <HeaderOne />
       <Breadcrumb
         heading="INCREDIBLE DEAL"
         currentPage="INCREDIBLE DEAL"
-        backgroundImage="/assets/images/backgrounds/blockbuster-deal.jpg"
+        backgroundImage="/assets/images/backgrounds/blockbuster-deal.webp"
       />
       <Blockbusterdeal />
       <FooterOne />

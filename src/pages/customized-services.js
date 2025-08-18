@@ -19,7 +19,7 @@ export default function customizedservicesPageOne() {
       <Breadcrumb
         heading="Customized Services"
         currentPage="Customized Services"
-        backgroundImage="/assets/images/backgrounds/custome-service.jpg"
+        backgroundImage="/assets/images/backgrounds/custome-service.webp"
       />
       <section className="py-16 services-one pd-120-0-90 bg-white">
         <div className="container">
@@ -125,7 +125,7 @@ export default function customizedservicesPageOne() {
                   <div className="grid md:grid-cols-2 gap-8">
                     <div>
                       <h2 className="text-2xl font-bold text-blue-600">
-                        Start @ ₹949/-
+                        Start @ ₹1,850/-
                       </h2>
                       <p className="text-lg font-medium">
                         <strong>COPPER TUBE INSULATION REPLACEMENT</strong>
@@ -138,7 +138,7 @@ export default function customizedservicesPageOne() {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h2 className="text-2xl font-bold text-blue-600">
-                      Start @ ₹1,499/-
+                      Start @ ₹2,250/-
                     </h2>
                     <p className="text-lg font-medium">
                       <strong>POWER / COMMUNICATION REPLACEMENT</strong>
@@ -172,7 +172,7 @@ export default function customizedservicesPageOne() {
             rel="noopener noreferrer"
           >
             <button
-              className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+              className="button-mobile button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
               style={{
                 width: "565px",
                 backgroundColor: "#32373c",
@@ -190,8 +190,8 @@ export default function customizedservicesPageOne() {
             paddingBottom: "40px",
           }}
         >
-          <button
-            className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+          {/* <button
+            className="button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
             style={{
               width: "565px",
               backgroundColor: "#32373c",
@@ -199,7 +199,7 @@ export default function customizedservicesPageOne() {
             }}
           >
             Our Factory Products
-          </button>
+          </button> */}
         </div>
       </section>
       {/* <BrandOne /> */}

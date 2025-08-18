@@ -9,10 +9,10 @@ export default function TermsandConditionsPage() {
     <>
       <SEO
         pageTitle={
-          "Terms & Conditions | Compress India – HVAC Services in Mumbai"
+          "Terms & Conditions — Compress India HVAC Services (Mumbai)"
         }
         description={
-          "Review Compress India’s terms and conditions outlining service use, responsibilities, and client rights. Committed to transparency in all HVAC operations across Mumbai."
+          "View the Terms & Conditions of Compress India HVAC Services in Mumbai. Learn our service policies, terms, and guidelines for industrial cooling solutions."
         }
       />
       <HeaderOne />

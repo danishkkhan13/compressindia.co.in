@@ -4,11 +4,12 @@ import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import Onetimeservice from "../components/service/Onetimeservice";
 import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function onetimeservicePageOne() {
     return (
         <>
-            <SEO pageTitle={"One-Time HVAC Maintenance & Repair in Mumbai | Compress India"} description={"Get fast, expert HVAC service in Mumbai with Compress India's one-time solutions—repairs, inspections, descaling & system optimization for industrial performance."} />
+            <SEO pageTitle={"Expert AC Repair & Service in Mumbai | Compress India"} description={"Get affordable AC repair & service in Mumbai with Compress India. Our certified experts handle Split ACs (₹850), Window ACs (₹750), and Portable ACs (₹750) repairs. Ensure smooth cooling and longer AC life. Book your repair today!"} />
             <HeaderOne />
 
             <Breadcrumb
@@ -29,7 +30,8 @@ export default function onetimeservicePageOne() {
                                 <Onetimeservice />
                                 <div className="mb-12 text-center italic" style={{ paddingTop: '60px', fontSize: 'small' }}>
                                     <h6>
-                                        DISCLAIMER : This is only chemical jet service charges , If breakdown / repair required rates may vary as per standard charges in the market
+                                        DISCLAIMER : This is only
+                                        One Time Service Charges , If breakdown / repair required rates may vary as per standard charges in the market
                                     </h6>
                                 </div>
                             </div>
@@ -47,7 +49,7 @@ export default function onetimeservicePageOne() {
                         rel="noopener noreferrer"
                     >
                         <button
-                            className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+                            className="button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
                             style={{
                                 width: '565px',
                                 backgroundColor: '#32373c',
@@ -65,13 +67,18 @@ export default function onetimeservicePageOne() {
                     paddingBottom: '40px'
                 }}>
 
-                    <button className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition" style={{
-                        width: '565px',
-                        backgroundColor: '#32373c',
-                        borderRadius: '5px'
-                    }}>
-                        Compare with same deal
-                    </button>
+                    <Link href="/chemical-jet-services">
+                        <button
+                            className="button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+                            style={{
+                                width: "565px",
+                                backgroundColor: "#32373c",
+                                borderRadius: "5px",
+                            }}
+                        >
+                            Compare with same deal
+                        </button>
+                    </Link>
                 </div>
             </section>
 

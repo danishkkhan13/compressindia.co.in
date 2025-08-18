@@ -5,9 +5,9 @@ const aboutUsOne = () => {
     return (
         <>
             <section className="aboutUs-one pd-120-0-120">
-                <div className="aboutUs-one__img2 wow slideInRight" data-wow-delay="500ms">
+                {/* <div className="aboutUs-one__img2 wow slideInRight" data-wow-delay="500ms">
                     <img className="float-bob-x" src="/assets/images/aboutUs/aboutUs.png" alt="aboutUs" />
-                </div>
+                </div> */}
                 <div className="container">
                     <div className="row">
                         {/* Start aboutUs One Img */}
@@ -47,7 +47,7 @@ const aboutUsOne = () => {
                                         </ul>
                                     </div>
                                     <div className="aboutUs-one__content-btn">
-                                        <Link href="/aboutUsUs" className="thm-btn">
+                                        <Link href="/aboutUs" className="thm-btn">
                                             <span>aboutUs More</span>
                                             <div className="liquid"></div>
                                         </Link>

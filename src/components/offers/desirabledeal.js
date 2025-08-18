@@ -1,5 +1,6 @@
 'use client'; // Only for App Router (Next.js 13+)
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 
@@ -21,9 +22,10 @@ export default function Desirabledeal() {
                             <div className="bg-white px-6 py-12 md:px-16 md:py-20">
                                 <div className="max-w-7xl mx-auto" style={{ paddingBottom: '40px' }}>
                                     <div className="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex pt-4">
-
+                                        <div className="pt-6">
+                                            <h2 className="text-center pb-4 pt-4">MAINTENANCE CONTRACT</h2></div>
                                         <div className="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
-                                            <h2 className="wp-block-heading">PRICE : 2,550/-</h2>
+                                            <h2 className="wp-block-heading">PRICE : 1850/-</h2>
                                         </div>
 
                                         <div className="offers">
@@ -87,7 +89,7 @@ export default function Desirabledeal() {
                                                     <li className="text-green-600">›› <span className="text-gray-700"> Gas leakage problem in unit may be in evaporator (cooling coil), Copper tubes, Condenser, Drier etc. </span></li>
                                                     <li className="text-green-600">›› <span className="text-gray-700"> Blockage of Driers, Copper tubes (may be in headers, Distributor, Capillary tubes, Expansion valves etc. </span></li>
                                                     <li className="text-green-600">›› <span className="text-gray-700"> Damage of Insulation of Communication & Power cables & Copper tubes/Pipe etc. </span></li>
-                                                    <li className="text-green-600">›› <span className="text-gray-700"> Natural damages will not considered in this format. Please read all the specifications & technical details carefully before selection of the contracts. </span></li>
+                                                    <li className="text-green-600">›› <span className="text-gray-700"> Only labor charges are included under this coverage </span></li>
 
                                                 </ul>
                                             </div>
@@ -124,11 +126,13 @@ export default function Desirabledeal() {
                                         </button>
                                     </div> */}
                                     <div className="aboutUs-one__content-btn position-relative">
-                                        <button className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
-                                            <span className="text position-relative" style={{ zIndex: 2 }}>Incredible Deal (AMC Contract)</span>
-                                            <span className="liquids">
-                                            </span>
-                                        </button>
+                                        <Link href="/incredible-deal">
+                                            <button className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
+                                                <span className="text position-relative" style={{ zIndex: 2 }}>Incredible Deal (AMC Contract)</span>
+                                                <span className="liquids">
+                                                </span>
+                                            </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div> {/* closes bg-white */}

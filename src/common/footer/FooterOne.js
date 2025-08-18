@@ -34,7 +34,7 @@ const FooterOne = () => {
                                                 <div className="footer-widget__aboutUs-logo">
                                                     <Link href="/">
                                                         <Image
-                                                            src="/assets/images/resources/logo-1.png"
+                                                            src="/assets/images/resources/Compress White Logo.svg"
                                                             alt="Logo"
                                                             width={235}
                                                             height={44}
@@ -143,9 +143,9 @@ const FooterOne = () => {
                                             Copyright © 2025 <Link href="/">Compress India</Link>. All Rights Reserved.
 
                                             Developed with<span style={{ color: 'red' }}>❤️</span>{" "}
-                                            <Link href="https://heartdynsimulation.com" target="_blank" rel="noopener noreferrer"> by
+                                            <Link href="https://dynsimulation.com" target="_blank" rel="noopener noreferrer"> by
                                                 Dynsimulation
-                                            </Link>.
+                                            </Link>
                                         </p>
                                     </div>
 

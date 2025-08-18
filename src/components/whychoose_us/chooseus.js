@@ -5,7 +5,7 @@ import { MdLocalHospital } from 'react-icons/md';
 
 export default function WhyChooseUs() {
     return (
-        <section className="services-one pd-120-0-90">
+        <section className="services-one pd-120-0-90" style={{ background: '#f1f5f' }}>
 
             <div className="container">
 
@@ -24,53 +24,53 @@ export default function WhyChooseUs() {
 
                         <div className="flex cardchooseus">
                             {/* Card 1 */}
-                            <div className="flex col-md-3 col-sm-6 ml-0 mr-[22px] mb-[11px] mt-0">
+                            <div className="cardswhy_chose flex col-md-3 col-sm-6 ml-0 mr-[22px] mb-[11px] mt-0">
                                 <div className="text-teal-500 text-2xl font-bold mb-2 text-center owl-nav icones">
                                     <div className="whychoose text-teal-500 rounded-full w-20 h-20 flex items-center justify-center mb-4 transform-shape">
                                         <FaRupeeSign style={{ fontSize: '31px' }} className="text-teal-500 text-3xl text-center owl-nav" />
                                     </div>
                                 </div>
-                                <h3 className="text-teal-500 text-lg font-semibold mb-2">Minimum Charges</h3>
-                                <p className="text-teal-500 text-sm max-w-xs ml-0 mr-[22px] mb-[11px] mt-0">
+                                <h4 className="text-center text-teal-500 text-lg font-semibold font-semibolds mb-2">Minimum Charges</h4>
+                                <p className="text-center text-teal-500 text-sm max-w-xs ml-0 mr-[22px] mb-[11px] mt-0">
                                     Minimum Charges for Maximum Chill – Your Trusted Partner in Air Conditioner Repair.
                                 </p>
                             </div>
 
                             {/* Card 2 */}
-                            <div className="flex col-md-3 col-sm-6 ml-0 mr-[22px] mb-[11px] mt-0">
+                            <div className="cardswhy_chose flex col-md-3 col-sm-6 ml-0 mr-[22px] mb-[11px] mt-0">
                                 <div className="text-teal-500 text-2xl font-bold mb-2 text-center owl-nav icones">
                                     <div className="whychoose text-teal-500 rounded-full w-20 h-20 flex items-center justify-center mb-4 transform-shape">
                                         <FaHome style={{ fontSize: '31px' }} className="text-teal-500 text-3xl text-center owl-nav" />
                                     </div>
                                 </div>
-                                <h3 className="text-teal-500 text-lg font-semibold mb-2">Home Base Service</h3>
-                                <p className="text-teal-500 text-sm max-w-xs ml-0 mr-[22px] mb-[11px] mt-0">
+                                <h4 className="text-center text-teal-500 text-lg font-semibold mb-2">Home Base Service</h4>
+                                <p className="text-center text-teal-500 text-sm max-w-xs ml-0 mr-[22px] mb-[11px] mt-0">
                                     Experience the Ease of Home Base Service: We Bring Expertise to Your Doorstep. Your Home, Our Priority.
                                 </p>
                             </div>
 
                             {/* Card 3 */}
-                            <div className="flex col-md-3 col-sm-6 ml-0 mr-[22px] mb-[11px] mt-0">
+                            <div className="cardswhy_chose flex col-md-3 col-sm-6 ml-0 mr-[22px] mb-[11px] mt-0">
                                 <div className="text-teal-500 text-2xl font-bold mb-2 text-center owl-nav icones">
                                     <div className="whychoose w-20 h-20 rounded-full bg-teal-100 flex items-center justify-center mb-4 shadow-md transform-shape">
                                         <MdLocalHospital className="text-teal-600" style={{ fontSize: '31px' }} />
                                     </div>
                                 </div>
-                                <h3 className="text-teal-500 text-lg font-semibold mb-2">24 Hours Emergency</h3>
-                                <p className="text-teal-500 text-sm max-w-xs ml-0 mr-[22px] mb-[11px] mt-0">
+                                <h4 className="text-center text-teal-500 text-lg font-semibold mb-2">24 Hours Emergency</h4>
+                                <p className="text-center text-teal-500 text-sm max-w-xs ml-0 mr-[22px] mb-[11px] mt-0">
                                     Reliable 24/7 Emergency Service: We're Always On Call to Tackle Your Urgent Needs. Your Safety, Our Swift Response.
                                 </p>
                             </div>
 
                             {/* Card 4 */}
-                            <div className="flex col-md-3 col-sm-6 ml-0 mr-[22px] mb-[11px] mt-0">
+                            <div className="cardswhy_chose flex col-md-3 col-sm-6 ml-0 mr-[22px] mb-[11px] mt-0">
                                 <div className="text-teal-500 text-2xl font-bold mb-2 text-center owl-nav icones">
                                     <div className="whychoose rounded-full w-20 h-20 flex items-center justify-center mb-4 transform-shape">
                                         <FaHeart style={{ fontSize: '31px' }} className="text-teal-500 text-center" />
                                     </div>
                                 </div>
-                                <h3 className="text-teal-500 text-lg font-semibold mb-2 ml-0 mr-[22px] mb-[11px] mt-0">Off Season Discount</h3>
-                                <p className="text-teal-500 text-sm max-w-xs">
+                                <h4 className="text-center text-teal-500 text-lg font-semibold mb-2 ml-0 mr-[22px] mb-[11px] mt-0">Off Season Discount</h4>
+                                <p className="text-center text-teal-500 text-sm max-w-xs">
                                     Off-Season Bliss: Chill Out with Cool Savings! Enjoy Exclusive Discounts on Air Conditioner Repair Services. Embrace Comfort, Embrace Savings.
                                 </p>
                             </div>

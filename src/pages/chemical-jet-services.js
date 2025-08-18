@@ -1,19 +1,63 @@
 import SEO from "../common/seo/Seo";
 import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
-import Onetimeservice from "../components/service/Onetimeservice";
 import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from 'react-icons/fa';
+import Link from 'next/link';
+import Image from "next/image";
 
 export default function chemicaljetservicePageOne() {
+    const services = [
+        {
+            title: 'Split Air Conditioners',
+            price: 1200,
+            image: '/assets/images/services/ac.webp',
+        },
+        {
+            title: 'Window Air Conditioners',
+            price: 950,
+            image: '/assets/images/services/window-AC.webp',
+        },
+        {
+            title: 'Portable Air Conditioners',
+            price: 950,
+            image: '/assets/images/services/Portable-AC.webp',
+        },
+        {
+            title: 'Cassette Air Conditioners',
+            price: 1850,
+            image: '/assets/images/services/cassette-AC.webp',
+            suffix: '/-TR',
+        },
+        {
+            title: 'Tower Air Conditioners',
+            price: 800,
+            image: '/assets/images/services/tower-AC.webp',
+            suffix: '/-TR',
+        },
+        {
+            title: 'Ducted Air Conditioners',
+            price: 800,
+            image: '/assets/images/services/ducted-ac.webp',
+            suffix: '/-TR',
+        },
+    ];
+
+
+    // Dynamically calculate rows
+    const rows = [];
+    for (let i = 0; i < services.length; i += 3) {
+        rows.push(services.slice(i, i + 3));
+    }
+
     return (
         <>
-            <SEO pageTitle={"Chemical Jet Cleaning & Descaling Services in Mumbai | Compress India"} description={"Boost HVAC efficiency with expert chemical jet cleaning in Mumbai. Compress India offers advanced descaling for chillers, pipelines & condensers—trusted by industries."} />
+            <SEO pageTitle={"Experienced Chemical Jet Services in Mumbai | Compress India"} description={"Affordable chemical jet cleaning in Mumbai by Compress India. Pricing: Split (₹1200), Window (₹950), Portable (₹950), Cassette (₹1850). Remove dirt, improve cooling, and boost efficiency. Schedule your cleaning now!"} />
             <HeaderOne />
             <Breadcrumb
                 heading="Chemical Jet Services"
                 currentPage="Chemical Jet Services"
-                backgroundImage="/assets/images/backgrounds/chemical-jet-service.jpg"
+                backgroundImage="/assets/images/backgrounds/chemical-jet-service.webp"
             />
             <section className="py-16 services-one pd-120-0-90 bg-white">
                 <div className="container">
@@ -25,10 +69,39 @@ export default function chemicaljetservicePageOne() {
                                 <p className="text-gray-600 mt-2">Breakdown Services ! Upgrade version of water service to improve cooling efficiency</p>
                             </div>
                             <div>
-                                <Onetimeservice />
+                                <div className="max-w-6xl mx-auto px-4 space-y-12">
+                                    {rows.map((row, rowIndex) => (
+                                        <div key={rowIndex}>
+                                            <div className="servicese">
+                                                {row.map((service, idx) => (
+                                                    <div key={idx} className="text-center w-full md:w-1/3">
+                                                        <Image
+                                                            src={service.image}
+                                                            alt={service.title}
+                                                            width={300}
+                                                            height={200}
+                                                            className="mx-auto object-contain h-48"
+                                                        />
+                                                        <h5 className="mt-4 font-semibold text-lg">
+                                                            Price : {service.price}
+                                                            {service.suffix || '/-'}
+                                                        </h5>
+                                                        <p className="text-sm uppercase mt-1 text-gray-700">{service.title}</p>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            {rowIndex < rows.length - 1 && (
+                                                <hr className="border-t border-black mt-10 mb-2 w-full" />
+                                            )}
+                                        </div>
+                                    ))}
+
+                                </div>
+
                                 <div className="mb-12 text-center italic" style={{ paddingTop: '60px', fontSize: 'small' }}>
                                     <h6>
-                                        DISCLAIMER : This is only Dismantle service charges , If breakdown / repair required rates may vary as per standard charges in the market
+                                        DISCLAIMER : This is only
+                                        Chemical Jet Services charges , If breakdown / repair required rates may vary as per standard charges in the market
                                     </h6>
                                 </div>
                             </div>
@@ -45,7 +118,7 @@ export default function chemicaljetservicePageOne() {
                         rel="noopener noreferrer"
                     >
                         <button
-                            className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+                            className="button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
                             style={{
                                 width: '565px',
                                 backgroundColor: '#32373c',
@@ -63,13 +136,18 @@ export default function chemicaljetservicePageOne() {
                     paddingBottom: '40px'
                 }}>
 
-                    <button className="w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition" style={{
-                        width: '565px',
-                        backgroundColor: '#32373c',
-                        borderRadius: '5px'
-                    }}>
-                        Compare with same deal
-                    </button>
+                    <Link href="/ac-dismantle-services-2-2">
+                        <button
+                            className="button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
+                            style={{
+                                width: "565px",
+                                backgroundColor: "#32373c",
+                                borderRadius: "5px",
+                            }}
+                        >
+                            Compare with same deal
+                        </button>
+                    </Link>
                 </div>
             </section>
             {/* <BrandOne /> */}

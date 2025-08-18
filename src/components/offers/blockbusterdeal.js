@@ -1,4 +1,5 @@
 'use client'; // Only for App Router (Next.js 13+)
+import Link from "next/link";
 
 
 
@@ -12,6 +13,8 @@ export default function Blockbusterdeal() {
               <div className="bg-white px-6 py-12 md:px-16 md:py-20">
                 <div className="max-w-7xl mx-auto" style={{ paddingBottom: '40px' }}>
                   <div className="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+                    <div className="pt-6">
+                      <h2 className="text-center pb-4 pt-4">MAINTENANCE CONTRACT</h2></div>
                     <div className="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
                       <h2 className="wp-block-heading">PRICE : 1,500/-</h2>
                     </div>
@@ -23,7 +26,7 @@ export default function Blockbusterdeal() {
                         <ul className="text-gray-700 space-y-2">
                           <li className="text-green-600">›› <span className="text-gray-700">Purpose of contract : Service Only.</span></li>
                           <li className="text-green-600">›› <span className="text-gray-700">Type of contract : Non AMC Contract.</span></li>
-                          <li className="text-green-600">›› <span className="text-gray-700">Amount : 1,200/- yearly.</span></li>
+                          <li className="text-green-600">›› <span className="text-gray-700">Amount : 1,500/- yearly.</span></li>
                           <li className="text-green-600">›› <span className="text-gray-700">Total services included : 03 services.</span></li>
                           <li className="text-green-600">›› <span className="text-gray-700">Duration of service : Each service after 04 months.</span></li>
                           <li className="text-green-600">›› <span className="text-gray-700">Validity of contract : 12 months only.</span></li>
@@ -92,18 +95,22 @@ export default function Blockbusterdeal() {
 
                 <div className="text-center flex">
                   <div className="aboutUs-one__content-btn position-relative">
-                    <button className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
-                      <span className="text position-relative" style={{ zIndex: 2 }}>Desirable Deal (ALC Contract)</span>
-                      <span className="liquids">
-                      </span>
-                    </button>
+                    <Link href="/desirable-deal">
+                      <button href="desirable-deal" className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
+                        <span className="text position-relative" style={{ zIndex: 2 }}>Desirable Deal (ALC Contract)</span>
+                        <span className="liquids">
+                        </span>
+                      </button>
+                    </Link>
                   </div>
                   <div className="aboutUs-one__content-btn position-relative">
-                    <button className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
-                      <span className="text position-relative" style={{ zIndex: 2 }}>Incredible Deal (AMC Contract)</span>
-                      <span className="liquids">
-                      </span>
-                    </button>
+                    <Link href="/incredible-deal">
+                      <button className="thm-btns position-relative overflow-hidden" fdprocessedid="7vbap">
+                        <span className="text position-relative" style={{ zIndex: 2 }}>Incredible Deal (AMC Contract)</span>
+                        <span className="liquids">
+                        </span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div> {/* closes bg-white */}
