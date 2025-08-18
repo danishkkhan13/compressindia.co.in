@@ -6,36 +6,6 @@ import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function AcinstallationservicesPageOne() {
-<<<<<<< HEAD
-    return (
-        <>
-            <SEO pageTitle={"AC Installation Services"} />
-            <HeaderOne />
-            <Breadcrumb
-                heading="AC Installation Services"
-                currentPage="AC Installation Services"
-                backgroundImage="/assets/images/aboutUs/aboutUs-img.jpg"
-            />
-            <section className="py-16 services-one pd-120-0-90 bg-white">
-                <div className="container">
-                    <div className="row">
-                        <div className="innerpage-whiteboxs main-timeline">
-                            <div className="text-center mb-12" style={{ paddingBottom: '60px' }}>
-                                <h5 className="text text-center pb-4">Effective rates for our valuable customers</h5>
-                                <h2 className="text-3xl font-bold">INSTALLATION SERVICES</h2>
-                                <p className="text-gray-600 mt-2">AC Fitting Services !</p>
-                            </div>
-                            <div>
-                                <Onetimeservice />
-                                <div className="mb-12 text-center italic" style={{ paddingTop: '60px', fontSize: 'small' }}>
-                                    <h6>
-                                        DISCAILMER : This is only AC Installation charges , If breakdown / repair required rates may vary as per standard charges in the market
-                                    </h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-=======
   return (
     <>
       <SEO
@@ -77,7 +47,6 @@ export default function AcinstallationservicesPageOne() {
                     breakdown / repair required rates may vary as per standard
                     charges in the market
                   </h6>
->>>>>>> 039a3e336752d298b06dd28f8930834796a495fe
                 </div>
               </div>
             </div>
