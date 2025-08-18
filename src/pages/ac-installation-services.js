@@ -7,8 +7,6 @@ import Link from 'next/link';
 import Image from "next/image";
 
 export default function AcinstallationservicesPageOne() {
-<<<<<<< HEAD
-=======
   const services = [
     {
       title: 'Split Air Conditioners',
@@ -52,7 +50,6 @@ export default function AcinstallationservicesPageOne() {
     rows.push(services.slice(i, i + 3));
   }
 
->>>>>>> 30fae357803d608ce65d933f2759d26c0f76c6cb
   return (
     <>
       <SEO

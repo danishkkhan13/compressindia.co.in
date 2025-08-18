@@ -78,22 +78,6 @@ export default function Home() {
       </div >
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <AboutOne />
       <WhyChooseUs />
       <FaqOne />
