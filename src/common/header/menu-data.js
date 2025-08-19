@@ -32,7 +32,7 @@ const menu_data = [
     sub_menus: [
       { link: "/one-time-services", title: "One Time Services" },
       { link: "/chemical-jet-services", title: "Chemical Jet Services" },
-      { link: "/ac-dismantle-services-2-2", title: "Dismantle Services" },
+      { link: "/dismantle-services", title: "Dismantle Services" },
       { link: "/ac-installation-services", title: "AC Installation Services" },
       { link: "/ac-dismantle-services", title: "AC Dismantle Services" },
       { link: "/ac-pressure-testing-services", title: "AC Pressure Testing Services" },

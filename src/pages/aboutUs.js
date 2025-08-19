@@ -6,11 +6,8 @@ import ServiceOne from "../components/service/ServiceOne";
 // import Product from "../components/product/page";
 import ContactOne from "../components/contact/ContactOne";
 
-
-
 import FooterOne from "../common/footer/FooterOne";
-import Image from 'next/image';
-
+import Image from "next/image";
 
 export default function aboutUsPage() {
 	return (
@@ -121,8 +118,8 @@ export default function aboutUsPage() {
 			{/* <ContactOne />
 			<TeamOne />
 			<BlogOne /> */}
-			{/* <BrandOne /> */}
-			<FooterOne />
-		</>
-	);
+      {/* <BrandOne /> */}
+      <FooterOne />
+    </>
+  );
 }
