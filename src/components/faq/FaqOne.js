@@ -26,7 +26,6 @@ const FaqOne = () => {
                     <h2 className="section-title__title">Frequently Asked Question</h2>
                 </div>
 
-
                 <div className="row">
                     <div className="col-xl-6 col-lg-6">
                         <div className="faq-one__right">
