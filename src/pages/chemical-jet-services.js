@@ -136,7 +136,7 @@ export default function chemicaljetservicePageOne() {
                     paddingBottom: '40px'
                 }}>
 
-                    <Link href="/ac-dismantle-services-2-2">
+                    <Link href="/ac-dismantle-services">
                         <button
                             className="button-mobile w-full bg-[#2F3338] text-white text-center py-4 rounded-full text-lg font-normal hover:bg-[#3c4045] transition"
                             style={{
