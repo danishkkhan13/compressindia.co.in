@@ -1,6 +1,6 @@
 'use client'; // Only for App Router (Next.js 13+)
 import Link from "next/link";
-import FaqOne from "../faq/FaqOne";
+import FaqTwo from "../faq/FaqTwo";
 
 
 
@@ -162,7 +162,7 @@ export default function Blockbusterdeal() {
         </div> {/* closes container */}
       </div> {/* closes innerpage-box */}
       <div />
-      <FaqOne />
+      <FaqTwo />
     </section>
 
 
