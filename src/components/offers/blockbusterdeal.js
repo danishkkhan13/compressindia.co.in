@@ -1,6 +1,6 @@
 'use client'; // Only for App Router (Next.js 13+)
 import Link from "next/link";
-import FaqTwo from "../faq/FaqTwo";
+import FaqTwo from "../faq2/FaqTwo";
 
 
 
