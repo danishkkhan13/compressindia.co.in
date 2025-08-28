@@ -3,24 +3,183 @@ import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from "react-icons/fa";
+import Script from "next/script";
+
 
 export default function customizedservicesPageOne() {
+  const CANONICAL = "https://www.compressindia.co.in/customized-services";
+  const TITLE =
+    "Customized HVAC Services in Mumbai | Bespoke AC Solutions – Compress India";
+  const DESCRIPTION =
+    "Tailor-made HVAC services in Mumbai & Navi Mumbai: inspection visits, spray painting, flap/swing motor fixes, copper tube insulation, power/communication rewiring and more. Book a custom solution today.";
+
   return (
     <>
-      <SEO
-        pageTitle={
-          "Customized HVAC Solutions in Mumbai | Tailored Services by Compress India"
-        }
-        description={
-          "Get fully customized HVAC and refrigeration services in Mumbai. Compress India designs bespoke climate systems to meet unique industrial and commercial requirements."
-        }
+      <SEO pageTitle={TITLE} description={DESCRIPTION} canonical={CANONICAL} />
+
+      {/* BreadcrumbList (Home → Customized Services) */}
+      <Script
+        id="ld-breadcrumbs-customized"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.compressindia.co.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Customized Services",
+                item: CANONICAL,
+              },
+            ],
+          }),
+        }}
       />
+
+      {/* WebPage schema */}
+      <Script
+        id="ld-webpage-customized"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `${CANONICAL}#webpage`,
+            url: CANONICAL,
+            name: TITLE,
+            description: DESCRIPTION,
+            inLanguage: "en-IN",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.compressindia.co.in/#website",
+              url: "https://www.compressindia.co.in/",
+              name: "Compress India",
+            },
+            about: { "@id": "https://www.compressindia.co.in/#organization" },
+          }),
+        }}
+      />
+
+      {/* Service + OfferCatalog (prices reflect “Start @ …”) */}
+      <Script
+        id="ld-service-customized"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": `${CANONICAL}#service`,
+            name: "Customized HVAC & Refrigeration Services",
+            url: CANONICAL,
+            description:
+              "Bespoke HVAC services including on-site inspection, spray painting for rust prevention, flap/swing motor replacement, capillary/expansion valve work, copper tube insulation replacement, and power/communication rewiring.",
+            serviceType: "Customized HVAC Services",
+            areaServed: [
+              { "@type": "City", name: "Mumbai" },
+              { "@type": "City", name: "Navi Mumbai" },
+            ],
+            provider: {
+              "@id": "https://www.compressindia.co.in/#organization",
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Customized Service Rates",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  name: "Visiting Charges – AC Inspection",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "500",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Spray Painting – Rust Prevention",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "2500",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Flap / Swing Motor Replacement",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "1800",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Copper Tube Insulation Replacement",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "1850",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Power / Communication Replacement",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "2250",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Capillary Tube / Expansion Valve Replacement",
+                  category: "HVACService",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                  // Price varies by model; omitted intentionally
+                },
+              ],
+            },
+            potentialAction: {
+              "@type": "ContactAction",
+              target: "https://wa.me/918655011465",
+            },
+          }),
+        }}
+      />
+
       <HeaderOne />
       <Breadcrumb
         heading="Customized Services"
         currentPage="Customized Services"
         backgroundImage="/assets/images/backgrounds/custome-service.webp"
       />
+
       <section className="py-16 services-one pd-120-0-90 bg-white">
         <div className="container">
           <div className="row">

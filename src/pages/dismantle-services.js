@@ -3,63 +3,200 @@ import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from "react-icons/fa";
-import Link from 'next/link';
+import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 
 export default function AcdismantleservicesPageOne() {
+  const CANONICAL = "https://www.compressindia.co.in/dismantle-services";
+  const TITLE =
+    "AC Dismantling Services in Mumbai | Expert HVAC Removal – Compress India";
+  const DESCRIPTION =
+    "Professional AC dismantling & uninstallation in Mumbai & Navi Mumbai. Split ₹1500, Window ₹1200, Portable ₹1200; Cassette ₹2500/TR. Safe removal, site clearance & responsible disposal.";
+
   const services = [
     {
-      title: 'Split Air Conditioners',
+      title: "Split Air Conditioners",
       price: 1500,
-      image: '/assets/images/services/ac.webp',
+      image: "/assets/images/services/ac.webp",
     },
     {
-      title: 'Window Air Conditioners',
+      title: "Window Air Conditioners",
       price: 1200,
-      image: '/assets/images/services/window-AC.webp',
+      image: "/assets/images/services/window-AC.webp",
     },
     {
-      title: 'Portable Air Conditioners',
+      title: "Portable Air Conditioners",
       price: 1200,
-      image: '/assets/images/services/Portable-AC.webp',
+      image: "/assets/images/services/Portable-AC.webp",
     },
     {
-      title: 'Cassette Air Conditioners',
+      title: "Cassette Air Conditioners",
       price: 2500,
-      image: '/assets/images/services/cassette-AC.webp',
-      suffix: '/-TR',
+      image: "/assets/images/services/cassette-AC.webp",
+      suffix: "/-TR",
     },
     {
-      title: 'Tower Air Conditioners',
+      title: "Tower Air Conditioners",
       price: "N/A",
-      image: '/assets/images/services/tower-AC.webp',
-      suffix: '- TR',
+      image: "/assets/images/services/tower-AC.webp",
+      suffix: "- TR",
     },
     {
-      title: 'Ducted Air Conditioners',
+      title: "Ducted Air Conditioners",
       price: "N/A",
-      image: '/assets/images/services/ducted-ac.webp',
-      suffix: '- TR',
+      image: "/assets/images/services/ducted-ac.webp",
+      suffix: "- TR",
     },
   ];
 
-
-  // Dynamically calculate rows
   const rows = [];
-  for (let i = 0; i < services.length; i += 3) {
+  for (let i = 0; i < services.length; i += 3)
     rows.push(services.slice(i, i + 3));
-  }
 
   return (
     <>
-      <SEO
-        pageTitle={
-          "AC Dismantling Services in Mumbai | Expert HVAC Removal by Compress India"
-        }
-        description={
-          "Professional AC dismantling services in Mumbai for industrial, commercial, and large-scale HVAC systems. Safe removal, site clearance & eco-friendly disposal by experts."
-        }
+      {/* Meta */}
+      <SEO pageTitle={TITLE} description={DESCRIPTION} canonical={CANONICAL} />
+
+      {/* BreadcrumbList (Home → Dismantle Services) */}
+      <Script
+        id="ld-breadcrumbs"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.compressindia.co.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Dismantle Services",
+                item: CANONICAL,
+              },
+            ],
+          }),
+        }}
       />
+
+      {/* WebPage schema */}
+      <Script
+        id="ld-webpage"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `${CANONICAL}#webpage`,
+            url: CANONICAL,
+            name: TITLE,
+            description: DESCRIPTION,
+            inLanguage: "en-IN",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.compressindia.co.in/#website",
+              url: "https://www.compressindia.co.in/",
+              name: "Compress India",
+            },
+            about: { "@id": "https://www.compressindia.co.in/#organization" },
+          }),
+        }}
+      />
+
+      {/* Service + OfferCatalog (priced dismantling services) */}
+      <Script
+        id="ld-service-offercatalog"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": `${CANONICAL}#service`,
+            name: "AC Dismantling & Uninstallation Services",
+            url: CANONICAL,
+            description:
+              "Safe AC dismantling/uninstallation for Split, Window, Portable & Cassette units. Includes disconnection, unit removal, site clearance and responsible disposal where applicable.",
+            serviceType: "Air Conditioner Dismantling / Removal (HVAC)",
+            areaServed: [
+              { "@type": "City", name: "Mumbai" },
+              { "@type": "City", name: "Navi Mumbai" },
+            ],
+            provider: {
+              "@id": "https://www.compressindia.co.in/#organization",
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "AC Dismantling Rates",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  name: "Split AC – Dismantling",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "1500",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Window AC – Dismantling",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "1200",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Portable AC – Dismantling",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "1200",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Cassette AC – Dismantling",
+                  category: "HVACService",
+                  priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: "2500",
+                    priceCurrency: "INR",
+                    unitText: "per TR",
+                  },
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                // Tower/Ducted: contact for quote (no fixed price published)
+              ],
+            },
+            potentialAction: {
+              "@type": "ContactAction",
+              target: "https://wa.me/918655011465",
+            },
+          }),
+        }}
+      />
+
       <HeaderOne />
       <Breadcrumb
         heading="Dismantle Services"
@@ -84,17 +221,15 @@ export default function AcdismantleservicesPageOne() {
                 </p>
               </div>
               <div>
-
-
-
-
-
                 <div className="max-w-6xl mx-auto px-4 space-y-12">
                   {rows.map((row, rowIndex) => (
                     <div key={rowIndex}>
                       <div className="servicese">
                         {row.map((service, idx) => (
-                          <div key={idx} className="text-center w-full md:w-1/3">
+                          <div
+                            key={idx}
+                            className="text-center w-full md:w-1/3"
+                          >
                             <Image
                               src={service.image}
                               alt={service.title}
@@ -104,9 +239,11 @@ export default function AcdismantleservicesPageOne() {
                             />
                             <h5 className="mt-4 font-semibold text-lg">
                               Price : {service.price}
-                              {service.suffix || '/-'}
+                              {service.suffix || "/-"}
                             </h5>
-                            <p className="text-sm uppercase mt-1 text-gray-700">{service.title}</p>
+                            <p className="text-sm uppercase mt-1 text-gray-700">
+                              {service.title}
+                            </p>
                           </div>
                         ))}
                       </div>
@@ -116,8 +253,6 @@ export default function AcdismantleservicesPageOne() {
                     </div>
                   ))}
                 </div>
-
-
 
                 <div
                   className="mb-12 text-center italic"
@@ -176,7 +311,6 @@ export default function AcdismantleservicesPageOne() {
               Compare with same deal
             </button>
           </Link>
-
         </div>
       </section>
       {/* <BrandOne /> */}

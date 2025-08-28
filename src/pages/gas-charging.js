@@ -3,46 +3,53 @@ import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from "react-icons/fa";
-import Link from 'next/link';
+import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
+
 
 export default function GaschargingservicesPageOne() {
   const services = [
     {
-      title: 'Split Air Conditioners',
+      title: "Split Air Conditioners",
       price: 1850,
-      image: '/assets/images/services/ac.webp',
+      image: "/assets/images/services/ac.webp",
     },
     {
-      title: 'Window Air Conditioners',
+      title: "Window Air Conditioners",
       price: 1850,
-      image: '/assets/images/services/window-AC.webp',
+      image: "/assets/images/services/window-AC.webp",
     },
     {
-      title: 'Portable Air Conditioners',
+      title: "Portable Air Conditioners",
       price: 1850,
-      image: '/assets/images/services/Portable-AC.webp',
+      image: "/assets/images/services/Portable-AC.webp",
     },
     {
-      title: 'Cassette Air Conditioners',
+      title: "Cassette Air Conditioners",
       price: 2050,
-      image: '/assets/images/services/cassette-AC.webp',
-      suffix: '/-TR',
+      image: "/assets/images/services/cassette-AC.webp",
+      suffix: "/-TR",
     },
     {
-      title: 'Tower Air Conditioners',
+      title: "Tower Air Conditioners",
       price: 1800,
-      image: '/assets/images/services/tower-AC.webp',
-      suffix: '/-TR',
+      image: "/assets/images/services/tower-AC.webp",
+      suffix: "/-TR",
     },
     {
-      title: 'Ducted Air Conditioners',
+      title: "Ducted Air Conditioners",
       price: 1800,
-      image: '/assets/images/services/ducted-ac.webp',
-      suffix: '/-TR',
+      image: "/assets/images/services/ducted-ac.webp",
+      suffix: "/-TR",
     },
   ];
 
+  const CANONICAL = "https://www.compressindia.co.in/gas-charging";
+  const TITLE =
+    "AC Gas Charging in Mumbai | Split, Window, Cassette – Compress India";
+  const DESCRIPTION =
+    "Affordable AC gas charging in Mumbai & Navi Mumbai. Split/Window/Portable ₹1850; Cassette ₹2050/TR; Tower ₹1800/TR; Ducted ₹1800/TR. Restore cooling efficiency—book today.";
 
   // Dynamically calculate rows
   const rows = [];
@@ -51,20 +58,185 @@ export default function GaschargingservicesPageOne() {
   }
   return (
     <>
-      <SEO
-        pageTitle={
-          "Affordable AC Gas Charging Services in Mumbai | Compress India"
-        }
-        description={
-          "AC gas charging in Mumbai – Split, Window, Portable ₹1850 each. Restore cooling power. Book refill today!"
-        }
+      {/* SEO meta */}
+      <SEO pageTitle={TITLE} description={DESCRIPTION} canonical={CANONICAL} />
+
+      {/* BreadcrumbList (Home → Gas Charging) */}
+      <Script
+        id="ld-breadcrumbs"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.compressindia.co.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Gas Charging",
+                item: CANONICAL,
+              },
+            ],
+          }),
+        }}
       />
+
+      {/* WebPage schema */}
+      <Script
+        id="ld-webpage"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `${CANONICAL}#webpage`,
+            url: CANONICAL,
+            name: TITLE,
+            description: DESCRIPTION,
+            inLanguage: "en-IN",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.compressindia.co.in/#website",
+              url: "https://www.compressindia.co.in/",
+              name: "Compress India",
+            },
+            about: { "@id": "https://www.compressindia.co.in/#organization" },
+          }),
+        }}
+      />
+
+      {/* Service + OfferCatalog (priced gas charging) */}
+      <Script
+        id="ld-service-offercatalog"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": `${CANONICAL}#service`,
+            name: "AC Gas Charging / Refrigerant Refill",
+            url: CANONICAL,
+            description:
+              "Refrigerant gas charging for Split, Window, Portable, Cassette, Tower and Ducted ACs. Includes leak check, vacuum, charge by weight/pressure and performance test.",
+            serviceType: "Air Conditioner Gas Charging (HVAC)",
+            areaServed: [
+              { "@type": "City", name: "Mumbai" },
+              { "@type": "City", name: "Navi Mumbai" },
+            ],
+            provider: {
+              "@id": "https://www.compressindia.co.in/#organization",
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "AC Gas Charging Rates",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  name: "Split AC – Gas Charging",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "1850",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Window AC – Gas Charging",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "1850",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Portable AC – Gas Charging",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "1850",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Cassette AC – Gas Charging",
+                  category: "HVACService",
+                  priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: "2050",
+                    priceCurrency: "INR",
+                    unitText: "per TR",
+                  },
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Tower AC – Gas Charging",
+                  category: "HVACService",
+                  priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: "1800",
+                    priceCurrency: "INR",
+                    unitText: "per TR",
+                  },
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Ducted AC – Gas Charging",
+                  category: "HVACService",
+                  priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: "1800",
+                    priceCurrency: "INR",
+                    unitText: "per TR",
+                  },
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+              ],
+            },
+            potentialAction: {
+              "@type": "ContactAction",
+              target: "https://wa.me/918655011465",
+            },
+          }),
+        }}
+      />
+
       <HeaderOne />
       <Breadcrumb
         heading="GAS Charging"
         currentPage="GAS Charging"
         backgroundImage="/assets/images/backgrounds/ac-gas-charge.webp"
       />
+
       <section className="py-16 services-one pd-120-0-90 bg-white">
         <div className="container">
           <div className="row">
@@ -88,7 +260,10 @@ export default function GaschargingservicesPageOne() {
                     <div key={rowIndex}>
                       <div className="servicese">
                         {row.map((service, idx) => (
-                          <div key={idx} className="text-center w-full md:w-1/3">
+                          <div
+                            key={idx}
+                            className="text-center w-full md:w-1/3"
+                          >
                             <Image
                               src={service.image}
                               alt={service.title}
@@ -98,9 +273,11 @@ export default function GaschargingservicesPageOne() {
                             />
                             <h5 className="mt-4 font-semibold text-lg">
                               Price : {service.price}
-                              {service.suffix || '/-'}
+                              {service.suffix || "/-"}
                             </h5>
-                            <p className="text-sm uppercase mt-1 text-gray-700">{service.title}</p>
+                            <p className="text-sm uppercase mt-1 text-gray-700">
+                              {service.title}
+                            </p>
                           </div>
                         ))}
                       </div>
@@ -109,7 +286,6 @@ export default function GaschargingservicesPageOne() {
                       )}
                     </div>
                   ))}
-
                 </div>
                 <div
                   className="mb-12 text-center italic"
