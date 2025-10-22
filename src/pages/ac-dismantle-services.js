@@ -3,6 +3,7 @@ import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import Onetimeservice from "../components/service/Onetimeservice";
 import FooterOne from "../common/footer/FooterOne";
+import FaqEight from '../components/faq8/FaqEight';
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
@@ -243,6 +244,110 @@ export default function ACDismantleServicesPageOne() {
         <div className="container">
           <div className="row">
             <div className="innerpage-whiteboxs main-timeline">
+
+              {/* Hero Section */}
+              <div className="flex flex-col items-center justify-center h-screen text-center bg-white">
+                <h1 className="text-3xl md:text-5xl font-bold pb-6 mb-4 mt-3">
+                  AC Dismantle & Reinstallation Services in Mumbai
+                </h1>
+                <p className="mb-6 text-gray-700 max-w-2xl ">
+                  At Compress India, we offer cost-efficient AC dismantle & reinstallation services in Mumbai for homes, offices, and commercial spaces. Whether you're relocating your air conditioner, upgrading to a new model, or repairing your current unit, our trained technicians ensure safe removal, secure transport, and professional reinstallation to maintain cooling efficiency
+                </p>
+              </div>
+
+              <div className="container mx-auto px-4 text-center" style={{ marginBottom: '15px' }}>
+                <h4 className="mb-6 mt-4 text-xs font-semibold text-gray-700">
+                  We Handle:
+                </h4>
+                <ol className="list-disc pl-6 space-y-2 text-gray-700" style={{ marginBottom: '20px' }}>
+                  <li className="text-green-600">
+                    <span className="text-gray-700">- Split AC dismantle & reinstallation - ₹800 per unit</span>
+                  </li>
+                  <li className="text-green-600">
+                    <span className="text-gray-700">- Window AC dismantle & reinstallation - ₹700 per unit</span>
+                  </li>
+                  <li className="text-green-600">
+                    <span className="text-gray-700">- Portable AC dismantle & reinstallation - ₹700 per unit</span>
+                  </li>
+                  <li className="text-green-600">
+                    <span className="text-gray-700">- Cassette AC dismantle & reinstallation - ₹1,500 per unit</span>
+                  </li>
+                </ol>
+              </div>
+
+              {/* More Info 1 */}
+
+              <div className="container mx-auto px-4" style={{ marginBottom: '70px' }}>
+                {/* More Info 1 */}
+
+                <div className="offers">
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Why Choose Our AC Dismantling & Reinstallation Services</strong></h3>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Expert Handling for All AC Types</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '20px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Our technicians have extensive experience working with<br/> Split, Window, Portable, and Cassette AC systems. We follow <br/>manufacturer guidelines to prevent damage during dismantling<br/> and reinstalling.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Affordable, Transparent Pricing</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '20px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We offer clear, upfront rates with no hidden charges, making<br/> us the go-to choice for AC dismantle services in Mumbai.</span></li>
+                    </ol>
+                  </div>
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Our Step-by-Step AC Dismantle & Reinstallation Process</strong></h3>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Safe AC Removal</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We carefully disconnect the unit, secure refrigerant recovery if needed, and remove components without damaging your property.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 mt-2 text-gray-800"><strong>Secure Transportation</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Your AC is packed and transported safely to prevent any physical or functional damage.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 mt-2 text-gray-800"><strong>Professional Reinstallation</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '30px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We mount the unit, connect wiring and piping, perform refrigerant checks, and test the system for optimal cooling.</span></li>
+                    </ol>
+                  </div>
+
+                </div>
+
+                {/* More Info 2 */}
+
+                <div className="offers">
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Additional AC & HVAC Services You<br/> May Need</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">AC Repair & Servicing - Keep your AC running smoothly year-<br/>round.</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">AC Installation Services - For new AC setups in homes or offices.</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Chemical Jet Cleaning - Deep cleaning for better airflow and<br/>  energy savings.</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Annual Maintenance Contracts - Hassle-free upkeep for consistent performance.</span></li>
+                    </ol>
+                  </div>                  
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Service Coverage</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We provide AC dismantle & reinstallation services across Mumbai & Navi Mumbai, ensuring fast turnaround and reliable service for both residential and commercial clients.</span></li>
+                    </ol>
+                  </div>
+
+                </div>
+
+                <div className="offers">                
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Book Your AC Dismantle & Reinstallation Today</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Call us at +91 86550 11465 or email sales@compressindia.in to schedule your AC dismantle & reinstallation in Mumbai with Compress India—your trusted partner for professional, cost-effective air conditioning services.</span></li>
+                    </ol>
+                  </div>
+
+                </div>
+
+              </div>
+
               <div
                 className="text-center mb-12"
                 style={{ paddingBottom: "60px" }}
@@ -344,6 +449,7 @@ export default function ACDismantleServicesPageOne() {
             </button>
           </Link>
         </div>
+        <FaqEight />
       </section>
       {/* <BrandOne /> */}
 
