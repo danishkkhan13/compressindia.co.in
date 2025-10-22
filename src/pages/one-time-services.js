@@ -3,6 +3,7 @@ import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import Onetimeservice from "../components/service/Onetimeservice";
 import FooterOne from "../common/footer/FooterOne";
+import FaqFive from '../components/faq5/FaqFive';
 import { FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
 
@@ -169,6 +170,7 @@ export default function onetimeservicePageOne() {
                         </button>
                     </Link>
                 </div>
+            <FaqFive/>
             </section>
 
             <FooterOne />
