@@ -5,6 +5,8 @@ import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from 'next/link';
 import Image from "next/image";
+import Script from "next/script";
+
 
 export default function compressorinstallationPageOne() {
   const services = [
@@ -42,6 +44,10 @@ export default function compressorinstallationPageOne() {
       suffix: '/-TR',
     },
   ];
+  const CANONICAL = "https://www.compressindia.co.in/compressor-installation";
+  const TITLE = "Compressor Installation in Mumbai | Split, Window, Cassette – Compress India";
+  const DESCRIPTION =
+    "Expert AC compressor installation & replacement in Mumbai & Navi Mumbai. Split/Window/Portable ₹8500; Cassette ₹9500/TR; Tower ₹8500/TR; Ducted ₹8500/TR. Clean brazing, vacuum & testing.";
 
 
   // Dynamically calculate rows
@@ -51,20 +57,149 @@ export default function compressorinstallationPageOne() {
   }
   return (
     <>
-      <SEO
-        pageTitle={
-          "Compressor Installation Services in Mumbai | Compress India"
-        }
-        description={
-          "Expert Compressor Installation in Mumbai by Compress India. All AC types serviced. Split ₹8500, Cassette ₹9500/TR. Call now to restore cooling!"
-        }
-      />
-      <HeaderOne />
-      <Breadcrumb
-        heading="Compressor Installation"
-        currentPage="Compressor Installation"
-        backgroundImage="/assets/images/backgrounds/compressor.webp"
-      />
+       {/* Meta */}
+       <SEO pageTitle={TITLE} description={DESCRIPTION} canonical={CANONICAL} />
+
+{/* BreadcrumbList (Home → Compressor Installation) */}
+<Script
+  id="ld-breadcrumbs"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.compressindia.co.in/" },
+        { "@type": "ListItem", position: 2, name: "Compressor Installation", item: CANONICAL },
+      ],
+    }),
+  }}
+/>
+
+{/* WebPage schema */}
+<Script
+  id="ld-webpage"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${CANONICAL}#webpage`,
+      url: CANONICAL,
+      name: TITLE,
+      description: DESCRIPTION,
+      inLanguage: "en-IN",
+      isPartOf: {
+        "@type": "WebSite",
+        "@id": "https://www.compressindia.co.in/#website",
+        url: "https://www.compressindia.co.in/",
+        name: "Compress India",
+      },
+      about: { "@id": "https://www.compressindia.co.in/#organization" },
+    }),
+  }}
+/>
+
+{/* Service + OfferCatalog */}
+<Script
+  id="ld-service-offercatalog"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": `${CANONICAL}#service`,
+      name: "AC Compressor Installation & Replacement",
+      url: CANONICAL,
+      description:
+        "Removal of faulty compressor and installation of replacement unit with proper brazing, nitrogen purging, vacuum, refrigerant charge and performance testing for Split, Window, Portable, Cassette, Tower and Ducted ACs.",
+      serviceType: "Air Conditioner Compressor Installation (HVAC)",
+      areaServed: [{ "@type": "City", name: "Mumbai" }, { "@type": "City", name: "Navi Mumbai" }],
+      provider: { "@id": "https://www.compressindia.co.in/#organization" },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Compressor Installation Rates",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            name: "Split AC – Compressor Installation",
+            category: "HVACService",
+            priceCurrency: "INR",
+            price: "8500",
+            availability: "https://schema.org/InStock",
+            eligibleRegion: [{ "@type": "City", name: "Mumbai" }, { "@type": "City", name: "Navi Mumbai" }],
+          },
+          {
+            "@type": "Offer",
+            name: "Window AC – Compressor Installation",
+            category: "HVACService",
+            priceCurrency: "INR",
+            price: "8500",
+            availability: "https://schema.org/InStock",
+            eligibleRegion: [{ "@type": "City", name: "Mumbai" }, { "@type": "City", name: "Navi Mumbai" }],
+          },
+          {
+            "@type": "Offer",
+            name: "Portable AC – Compressor Installation",
+            category: "HVACService",
+            priceCurrency: "INR",
+            price: "8500",
+            availability: "https://schema.org/InStock",
+            eligibleRegion: [{ "@type": "City", name: "Mumbai" }, { "@type": "City", name: "Navi Mumbai" }],
+          },
+          {
+            "@type": "Offer",
+            name: "Cassette AC – Compressor Installation",
+            category: "HVACService",
+            priceSpecification: {
+              "@type": "UnitPriceSpecification",
+              price: "9500",
+              priceCurrency: "INR",
+              unitText: "per TR",
+            },
+            availability: "https://schema.org/InStock",
+            eligibleRegion: [{ "@type": "City", name: "Mumbai" }, { "@type": "City", name: "Navi Mumbai" }],
+          },
+          {
+            "@type": "Offer",
+            name: "Tower AC – Compressor Installation",
+            category: "HVACService",
+            priceSpecification: {
+              "@type": "UnitPriceSpecification",
+              price: "8500",
+              priceCurrency: "INR",
+              unitText: "per TR",
+            },
+            availability: "https://schema.org/InStock",
+            eligibleRegion: [{ "@type": "City", name: "Mumbai" }, { "@type": "City", name: "Navi Mumbai" }],
+          },
+          {
+            "@type": "Offer",
+            name: "Ducted AC – Compressor Installation",
+            category: "HVACService",
+            priceSpecification: {
+              "@type": "UnitPriceSpecification",
+              price: "8500",
+              priceCurrency: "INR",
+              unitText: "per TR",
+            },
+            availability: "https://schema.org/InStock",
+            eligibleRegion: [{ "@type": "City", name: "Mumbai" }, { "@type": "City", name: "Navi Mumbai" }],
+          },
+        ],
+      },
+      potentialAction: { "@type": "ContactAction", target: "https://wa.me/918655011465" },
+    }),
+  }}
+/>
+
+<HeaderOne />
+<Breadcrumb
+  heading="Compressor Installation"
+  currentPage="Compressor Installation"
+  backgroundImage="/assets/images/backgrounds/compressor.webp"
+/>
+
       <section className="py-16 services-one pd-120-0-90 bg-white">
         <div className="container">
           <div className="row">

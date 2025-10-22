@@ -3,46 +3,53 @@ import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from "react-icons/fa";
-import Link from 'next/link';
+import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
+
 
 export default function AcpressuretestservicesPageOne() {
   const services = [
     {
-      title: 'Split Air Conditioners',
+      title: "Split Air Conditioners",
       price: 2499,
-      image: '/assets/images/services/ac.webp',
+      image: "/assets/images/services/ac.webp",
     },
     {
-      title: 'Window Air Conditioners',
+      title: "Window Air Conditioners",
       price: 2499,
-      image: '/assets/images/services/window-AC.webp',
+      image: "/assets/images/services/window-AC.webp",
     },
     {
-      title: 'Portable Air Conditioners',
+      title: "Portable Air Conditioners",
       price: 2499,
-      image: '/assets/images/services/Portable-AC.webp',
+      image: "/assets/images/services/Portable-AC.webp",
     },
     {
-      title: 'Cassette Air Conditioners',
+      title: "Cassette Air Conditioners",
       price: 2499,
-      image: '/assets/images/services/cassette-AC.webp',
-      suffix: '/-TR',
+      image: "/assets/images/services/cassette-AC.webp",
+      suffix: "/-TR",
     },
     {
-      title: 'Tower Air Conditioners',
+      title: "Tower Air Conditioners",
       price: 1499,
-      image: '/assets/images/services/tower-AC.webp',
-      suffix: '/-TR',
+      image: "/assets/images/services/tower-AC.webp",
+      suffix: "/-TR",
     },
     {
-      title: 'Ducted Air Conditioners',
+      title: "Ducted Air Conditioners",
       price: 1599,
-      image: '/assets/images/services/ducted-ac.webp',
-      suffix: '/-TR',
+      image: "/assets/images/services/ducted-ac.webp",
+      suffix: "/-TR",
     },
   ];
-
+  const CANONICAL =
+    "https://www.compressindia.co.in/ac-pressure-testing-services";
+  const TITLE =
+    "AC Pressure Testing in Mumbai | Nitrogen Leak Test & Diagnosis – Compress India";
+  const DESCRIPTION =
+    "Professional AC pressure testing (nitrogen leak test) in Mumbai & Navi Mumbai. Split/Window/Portable ₹2499; Cassette ₹2499/TR; Tower ₹1499/TR; Ducted ₹1599/TR. Detect leaks early and protect cooling efficiency.";
 
   // Dynamically calculate rows
   const rows = [];
@@ -52,14 +59,178 @@ export default function AcpressuretestservicesPageOne() {
 
   return (
     <>
-      <SEO
-        pageTitle={
-          "AC Pressure Testing Services in Mumbai | Compress India"
-        }
-        description={
-          "Professional AC pressure testing in Mumbai. Split, Window, Portable - ₹2499 each. Detect leaks early. Contact us now!"
-        }
+      {/* SEO meta */}
+      <SEO pageTitle={TITLE} description={DESCRIPTION} canonical={CANONICAL} />
+
+      {/* BreadcrumbList (Home → AC Pressure Testing Services) */}
+      <Script
+        id="ld-breadcrumbs"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.compressindia.co.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "AC Pressure Testing Services",
+                item: CANONICAL,
+              },
+            ],
+          }),
+        }}
       />
+
+      {/* WebPage schema */}
+      <Script
+        id="ld-webpage"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `${CANONICAL}#webpage`,
+            url: CANONICAL,
+            name: TITLE,
+            description: DESCRIPTION,
+            inLanguage: "en-IN",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.compressindia.co.in/#website",
+              url: "https://www.compressindia.co.in/",
+              name: "Compress India",
+            },
+            about: { "@id": "https://www.compressindia.co.in/#organization" },
+          }),
+        }}
+      />
+
+      {/* Service + OfferCatalog (priced pressure testing) */}
+      <Script
+        id="ld-service-offercatalog"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": `${CANONICAL}#service`,
+            name: "AC Pressure Testing (Nitrogen Leak Test)",
+            url: CANONICAL,
+            description:
+              "Nitrogen pressure test to diagnose refrigerant leaks in Split, Window, Portable, Cassette, Tower and Ducted ACs. Includes pressurization, monitoring, and leak isolation.",
+            serviceType: "Air Conditioner Pressure Testing / Leak Test (HVAC)",
+            areaServed: [
+              { "@type": "City", name: "Mumbai" },
+              { "@type": "City", name: "Navi Mumbai" },
+            ],
+            provider: {
+              "@id": "https://www.compressindia.co.in/#organization",
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "AC Pressure Testing Rates",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  name: "Split AC – Pressure Testing",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "2499",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Window AC – Pressure Testing",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "2499",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Portable AC – Pressure Testing",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "2499",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Cassette AC – Pressure Testing",
+                  category: "HVACService",
+                  priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: "2499",
+                    priceCurrency: "INR",
+                    unitText: "per TR",
+                  },
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Tower AC – Pressure Testing",
+                  category: "HVACService",
+                  priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: "1499",
+                    priceCurrency: "INR",
+                    unitText: "per TR",
+                  },
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Ducted AC – Pressure Testing",
+                  category: "HVACService",
+                  priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: "1599",
+                    priceCurrency: "INR",
+                    unitText: "per TR",
+                  },
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+              ],
+            },
+            potentialAction: {
+              "@type": "ContactAction",
+              target: "https://wa.me/918655011465",
+            },
+          }),
+        }}
+      />
+
       <HeaderOne />
       <Breadcrumb
         heading="AC Pressure Testing Services"
@@ -91,7 +262,10 @@ export default function AcpressuretestservicesPageOne() {
                     <div key={rowIndex}>
                       <div className="servicese">
                         {row.map((service, idx) => (
-                          <div key={idx} className="text-center w-full md:w-1/3">
+                          <div
+                            key={idx}
+                            className="text-center w-full md:w-1/3"
+                          >
                             <Image
                               src={service.image}
                               alt={service.title}
@@ -101,9 +275,11 @@ export default function AcpressuretestservicesPageOne() {
                             />
                             <h5 className="mt-4 font-semibold text-lg">
                               Price : {service.price}
-                              {service.suffix || '/-'}
+                              {service.suffix || "/-"}
                             </h5>
-                            <p className="text-sm uppercase mt-1 text-gray-700">{service.title}</p>
+                            <p className="text-sm uppercase mt-1 text-gray-700">
+                              {service.title}
+                            </p>
                           </div>
                         ))}
                       </div>
@@ -112,16 +288,15 @@ export default function AcpressuretestservicesPageOne() {
                       )}
                     </div>
                   ))}
-
                 </div>
                 <div
                   className="mb-12 text-center italic"
                   style={{ paddingTop: "60px", fontSize: "small" }}
                 >
                   <h6>
-                    DISCAILMER : This is only Pressure Tasting Service Charges , If
-                    breakdown / repair required rates may vary as per standard
-                    charges in the market
+                    DISCAILMER : This is only Pressure Tasting Service Charges ,
+                    If breakdown / repair required rates may vary as per
+                    standard charges in the market
                   </h6>
                 </div>
               </div>

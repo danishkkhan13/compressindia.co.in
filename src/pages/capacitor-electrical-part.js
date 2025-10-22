@@ -3,46 +3,52 @@ import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import FooterOne from "../common/footer/FooterOne";
 import { FaWhatsapp } from "react-icons/fa";
-import Link from 'next/link';
+import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
+
 
 export default function capacitorelectricalpartPageOne() {
   const services = [
     {
-      title: 'Split Air Conditioners',
+      title: "Split Air Conditioners",
       price: 1550,
-      image: '/assets/images/services/ac.webp',
+      image: "/assets/images/services/ac.webp",
     },
     {
-      title: 'Window Air Conditioners',
+      title: "Window Air Conditioners",
       price: 1550,
-      image: '/assets/images/services/window-AC.webp',
+      image: "/assets/images/services/window-AC.webp",
     },
     {
-      title: 'Portable Air Conditioners',
+      title: "Portable Air Conditioners",
       price: 1550,
-      image: '/assets/images/services/Portable-AC.webp',
+      image: "/assets/images/services/Portable-AC.webp",
     },
     {
-      title: 'Cassette Air Conditioners',
+      title: "Cassette Air Conditioners",
       price: 2050,
-      image: '/assets/images/services/cassette-AC.webp',
-      suffix: '/-TR',
+      image: "/assets/images/services/cassette-AC.webp",
+      suffix: "/-TR",
     },
     {
-      title: 'Tower Air Conditioners',
+      title: "Tower Air Conditioners",
       price: 850,
-      image: '/assets/images/services/tower-AC.webp',
-      suffix: '/-TR',
+      image: "/assets/images/services/tower-AC.webp",
+      suffix: "/-TR",
     },
     {
-      title: 'Ducted Air Conditioners',
+      title: "Ducted Air Conditioners",
       price: 850,
-      image: '/assets/images/services/ducted-ac.webp',
-      suffix: '/-TR',
+      image: "/assets/images/services/ducted-ac.webp",
+      suffix: "/-TR",
     },
   ];
-
+  const CANONICAL = "https://www.compressindia.co.in/capacitor-electrical-part";
+  const TITLE =
+    "AC Capacitor & Electrical Part Replacement in Mumbai | Compress India";
+  const DESCRIPTION =
+    "Fast replacement of AC capacitors & electrical parts in Mumbai & Navi Mumbai. Split/Window/Portable ₹1550; Cassette ₹2050/TR; Tower ₹850/TR; Ducted ₹850/TR. Genuine parts, expert diagnosis.";
 
   // Dynamically calculate rows
   const rows = [];
@@ -51,14 +57,178 @@ export default function capacitorelectricalpartPageOne() {
   }
   return (
     <>
-      <SEO
-        pageTitle={
-          "Capacitor & HVAC Electrical Part Replacement in Mumbai | Compress India"
-        }
-        description={
-          "Need reliable HVAC capacitor or electrical part replacement in Mumbai? Compress India offers expert diagnostics and fast repairs to keep your systems running smoothly."
-        }
+      {/* SEO meta */}
+      <SEO pageTitle={TITLE} description={DESCRIPTION} canonical={CANONICAL} />
+
+      {/* BreadcrumbList (Home → Capacitor / Electrical Part) */}
+      <Script
+        id="ld-breadcrumbs"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://www.compressindia.co.in/",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Capacitor / Electrical Part",
+                item: CANONICAL,
+              },
+            ],
+          }),
+        }}
       />
+
+      {/* WebPage schema */}
+      <Script
+        id="ld-webpage"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": `${CANONICAL}#webpage`,
+            url: CANONICAL,
+            name: TITLE,
+            description: DESCRIPTION,
+            inLanguage: "en-IN",
+            isPartOf: {
+              "@type": "WebSite",
+              "@id": "https://www.compressindia.co.in/#website",
+              url: "https://www.compressindia.co.in/",
+              name: "Compress India",
+            },
+            about: { "@id": "https://www.compressindia.co.in/#organization" },
+          }),
+        }}
+      />
+
+      {/* Service + OfferCatalog (priced replacements) */}
+      <Script
+        id="ld-service-offercatalog"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": `${CANONICAL}#service`,
+            name: "AC Capacitor & Electrical Parts Replacement",
+            url: CANONICAL,
+            description:
+              "Diagnostic & replacement service for AC electrical components: start/run capacitors, relays, contactors, fuses, sensors & wiring. Includes testing and final performance check.",
+            serviceType: "HVAC Electrical Repair/Replacement",
+            areaServed: [
+              { "@type": "City", name: "Mumbai" },
+              { "@type": "City", name: "Navi Mumbai" },
+            ],
+            provider: {
+              "@id": "https://www.compressindia.co.in/#organization",
+            },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Capacitor & Electrical Part Replacement Rates",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  name: "Split AC – Capacitor/Electrical Part Replacement",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "1550",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Window AC – Capacitor/Electrical Part Replacement",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "1550",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Portable AC – Capacitor/Electrical Part Replacement",
+                  category: "HVACService",
+                  priceCurrency: "INR",
+                  price: "1550",
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Cassette AC – Capacitor/Electrical Part Replacement",
+                  category: "HVACService",
+                  priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: "2050",
+                    priceCurrency: "INR",
+                    unitText: "per TR",
+                  },
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Tower AC – Capacitor/Electrical Part Replacement",
+                  category: "HVACService",
+                  priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: "850",
+                    priceCurrency: "INR",
+                    unitText: "per TR",
+                  },
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+                {
+                  "@type": "Offer",
+                  name: "Ducted AC – Capacitor/Electrical Part Replacement",
+                  category: "HVACService",
+                  priceSpecification: {
+                    "@type": "UnitPriceSpecification",
+                    price: "850",
+                    priceCurrency: "INR",
+                    unitText: "per TR",
+                  },
+                  availability: "https://schema.org/InStock",
+                  eligibleRegion: [
+                    { "@type": "City", name: "Mumbai" },
+                    { "@type": "City", name: "Navi Mumbai" },
+                  ],
+                },
+              ],
+            },
+            potentialAction: {
+              "@type": "ContactAction",
+              target: "https://wa.me/918655011465",
+            },
+          }),
+        }}
+      />
+
       <HeaderOne />
       <Breadcrumb
         heading="Capacitor / Electrical Part"
@@ -91,7 +261,10 @@ export default function capacitorelectricalpartPageOne() {
                     <div key={rowIndex}>
                       <div className="servicese">
                         {row.map((service, idx) => (
-                          <div key={idx} className="text-center w-full md:w-1/3">
+                          <div
+                            key={idx}
+                            className="text-center w-full md:w-1/3"
+                          >
                             <Image
                               src={service.image}
                               alt={service.title}
@@ -101,9 +274,11 @@ export default function capacitorelectricalpartPageOne() {
                             />
                             <h5 className="mt-4 font-semibold text-lg">
                               Price : {service.price}
-                              {service.suffix || '/-'}
+                              {service.suffix || "/-"}
                             </h5>
-                            <p className="text-sm uppercase mt-1 text-gray-700">{service.title}</p>
+                            <p className="text-sm uppercase mt-1 text-gray-700">
+                              {service.title}
+                            </p>
                           </div>
                         ))}
                       </div>
@@ -112,7 +287,6 @@ export default function capacitorelectricalpartPageOne() {
                       )}
                     </div>
                   ))}
-
                 </div>
                 <div
                   className="mb-12 text-center italic"
