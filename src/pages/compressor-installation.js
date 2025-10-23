@@ -2,6 +2,7 @@ import SEO from "../common/seo/Seo";
 import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import FooterOne from "../common/footer/FooterOne";
+import FaqTwelve from '../components/faq12/FaqTwelve';
 import { FaWhatsapp } from "react-icons/fa";
 import Link from 'next/link';
 import Image from "next/image";
@@ -204,6 +205,119 @@ export default function compressorinstallationPageOne() {
         <div className="container">
           <div className="row">
             <div className="innerpage-whiteboxs main-timeline">
+
+              {/* Hero Section */}
+              <div className="flex flex-col items-center justify-center h-screen text-center bg-white">
+                <h1 className="text-3xl md:text-5xl font-bold pb-6 mb-4 mt-3">
+                  Compressor Installation Services in Mumbai
+                </h1>
+                <p className="mb-6 text-gray-700 max-w-2xl ">
+                  At Compress India, we provide professional compressor installation services in Mumbai for all AC types, ensuring efficient cooling and long-lasting performance. Whether it’s a residential, commercial, or industrial setup, our certified AC technicians install compressors with precision and follow manufacturer guidelines for reliability and safety.
+                </p>
+              </div>
+
+              <div className="container mx-auto px-4 text-center" style={{ marginBottom: '15px' }}>
+                <h4 className="mb-6 mt-4 text-xs font-semibold text-gray-700">
+                  We Service:
+                </h4>
+                <ol className="list-disc pl-6 space-y-2 text-gray-700" style={{ marginBottom: '20px' }}>
+                  <li className="text-green-600">
+                    <span className="text-gray-700">- Split AC compressor installation : ₹8,500 per unit</span>
+                  </li>
+                  <li className="text-green-600">
+                    <span className="text-gray-700">- Cassette AC compressor installation : ₹9,500 per TR</span>
+                  </li>
+                </ol>
+              </div>
+
+              {/* More Info 1 */}
+
+              <div className="container mx-auto px-4" style={{ marginBottom: '70px' }}>
+                {/* More Info 1 */}
+
+                <div className="offers">
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Why Choose Our Compressor<br/> Installation Services</strong></h3>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Skilled and Certified Technicians</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '20px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Our team has years of experience handling AC compressor installations, ensuring correct fitting and smooth operation.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Transparent Pricing</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '20px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We offer competitive rates with no hidden fees, making us<br/> a preferred choice for AC repair and servicing in Mumbai.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>All AC Types Covered</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '20px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">From Split and Cassette ACs to ducted systems and<br/> commercial HVAC units, we install compressors for<br/> every model and capacity.</span></li>
+                    </ol>
+                  </div>
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Our Compressor Installation<br/> Process</strong></h3>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Step 1 - Inspection & Compatibility Check</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We assess your AC unit to ensure the new compressor is compatible with your system specifications.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 mt-2 text-gray-800"><strong>Step 2 - Safe Removal of Old Compressor</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">If replacing, we safely remove the old compressor and recover refrigerant as per environmental guidelines, often paired with AC pressure testing.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 mt-2 text-gray-800"><strong>Step 3 - Precise Installation & Testing</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '30px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We install the new compressor, connect refrigerant lines, perform AC gas charging if necessary, and test for optimal cooling.</span></li>
+                    </ol>
+                  </div>
+
+                </div>
+
+                {/* More Info 2 */}
+
+                <div className="offers">
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Benefits of Choosing Professional Compressor Installation</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Ensures maximum cooling efficiency</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Reduces the risk of breakdowns</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Extends the lifespan of your AC unit</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Maintains manufacturer warranty</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Prevents costly future repairs</span></li>
+                    </ol>
+                  </div>                  
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Additional AC & HVAC Services You May Need</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">AC Gas Charging - Restore refrigerant levels for better cooling</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">AC Pressure Testing - Detect leaks before compressor installation</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Chemical Jet Cleaning - Keep your AC coils clean for efficiency</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Annual Maintenance Contracts - Hassle-free upkeep for your cooling system</span></li>
+                    </ol>
+                  </div>
+
+                </div>
+
+                <div className="offers">                
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Service Coverage</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We offer compressor installation services across Mumbai &<br/> Navi Mumbai, catering to residential AC customers, corporate<br/> offices, retail stores, and industrial facilities.</span></li>
+                    </ol>
+                  </div>
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Book Your Compressor Installation in Mumbai Today</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Get your AC back to peak performance with expert compressor installation in Mumbai by Compress India. Call +91 86550 11465 or email sales@compressindia.in to schedule your installation today.</span></li>
+                    </ol>
+                  </div>
+
+                </div>
+
+              </div>
+
               <div
                 className="text-center mb-12"
                 style={{ paddingBottom: "60px" }}
@@ -306,6 +420,7 @@ export default function compressorinstallationPageOne() {
             </button>
           </Link>
         </div>
+        <FaqTwelve/>
       </section>
       {/* <BrandOne /> */}
 

@@ -2,6 +2,7 @@ import SEO from "../common/seo/Seo";
 import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import FooterOne from "../common/footer/FooterOne";
+import FaqFourteen from '../components/faq14/FaqFourteen';
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
@@ -215,6 +216,125 @@ export default function coppercoilinstallationPageOne() {
         <div className="container">
           <div className="row">
             <div className="innerpage-whiteboxs main-timeline">
+
+              {/* Hero Section */}
+              <div className="flex flex-col items-center justify-center h-screen text-center bg-white">
+                <h1 className="text-3xl md:text-5xl font-bold pb-6 mb-4 mt-3">
+                  Copper Coil Installation Services in Mumbai
+                </h1>
+                <p className="mb-6 text-gray-700 max-w-2xl ">
+                  At Compress India, we provide professional copper coil installation services in Mumbai for all types of air conditioners, ensuring maximum cooling efficiency and durability. Our skilled technicians use high-quality copper coils that improve heat exchange performance, enhance energy efficiency, and extend your AC's lifespan.
+                </p>
+              </div>
+
+              <div className="container mx-auto px-4 text-center" style={{ marginBottom: '15px' }}>
+                <h4 className="mb-6 mt-4 text-xs font-semibold text-gray-700">
+                  We Service:
+                </h4>
+                <ol className="list-disc pl-6 space-y-2 text-gray-700" style={{ marginBottom: '20px' }}>
+                  <li className="text-green-600">
+                    <span className="text-gray-700">- Split/Window/Portable AC Copper Coil Installation : ₹3,500 per unit</span>
+                  </li>
+                  <li className="text-green-600">
+                    <span className="text-gray-700">- Cassette AC Copper Coil Installation : ₹4,850 per TR</span>
+                  </li>
+                  <li className="text-green-600">
+                    <span className="text-gray-700">- Tower AC Copper Coil Installation : ₹6,050 per TR</span>
+                  </li>
+                  <li className="text-green-600">
+                    <span className="text-gray-700">- Ducted AC Copper Coil Installation : ₹7,500 per TR</span>
+                  </li>
+                </ol>
+              </div>
+
+              {/* More Info 1 */}
+
+              <div className="container mx-auto px-4" style={{ marginBottom: '70px' }}>
+                {/* More Info 1 */}
+
+                <div className="offers">
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Why Choose Our Copper Coil Installation Services</strong></h3>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Skilled HVAC Technicians</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '20px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Our trained team specializes in AC installation and repair for<br/> residential, commercial, and industrial clients.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Premium Quality Copper Coils</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '20px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We use high-grade copper coils that offer better thermal<br/> conductivity, resistance to corrosion, and long-lasting<br/> performance.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Complete AC Service Solutions</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '20px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">In addition to copper coil installation, we offer compressor<br/> installation, fan motor installation, and AC gas charging.</span></li>
+                    </ol>
+                  </div>
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Our Copper Coil Installation<br/> Process</strong></h3>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Step 1 - AC Inspection & Measurement</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We assess your air conditioner's design and capacity to ensure the<br/> right copper coil size and fit.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 mt-2 text-gray-800"><strong>Step 2 - Safe Coil Removal</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We carefully remove the old or damaged coil without affecting other<br/> AC components.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 mt-2 text-gray-800"><strong>Step 3 - New Coil Installation & Testing</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '30px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We install the new copper coil, seal connections, and perform a full cooling efficiency test.</span></li>
+                    </ol>
+                  </div>
+
+                </div>
+
+                {/* More Info 2 */}
+
+                <div className="offers">
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Benefits of Professional Copper Coil Installation</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Improves cooling efficiency</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Reduces energy consumption</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Extends AC lifespan</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Prevents corrosion and leakage</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Ensures consistent performance</span></li>
+                    </ol>
+                  </div>                  
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Related AC Services You May<br/> Need</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">AC Pressure Testing - Detect refrigerant leaks early</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Chemical Jet Cleaning - Remove dirt for better airflow</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">AC Gas Charging - Maintain optimal refrigerant levels</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Annual Maintenance Contracts - Keep your AC in top shape year-round</span></li>
+                    </ol>
+                  </div>
+
+                </div>
+
+                <div className="offers">                
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Service Areas</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We provide copper coil installation services across Mumbai<br/> & Navi Mumbai, serving homes, offices, retail stores, and<br/> industrial premises.</span></li>
+                    </ol>
+                  </div>
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Book Your Copper Coil Installation Today</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Upgrade your AC's performance with expert copper coil installation in Mumbai by Compress India. Call +91 86550 11465 or email sales@compressindia.in to book your service today.</span></li>
+                    </ol>
+                  </div>
+
+                </div>
+
+              </div>
+
               <div
                 className="text-center mb-12"
                 style={{ paddingBottom: "60px" }}
@@ -321,6 +441,7 @@ export default function coppercoilinstallationPageOne() {
             </button>
           </Link>
         </div>
+        <FaqFourteen/>
       </section>
       {/* <BrandOne /> */}
 
