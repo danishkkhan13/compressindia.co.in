@@ -2,6 +2,7 @@ import SEO from "../common/seo/Seo";
 import HeaderOne from "../common/header/HeaderOne";
 import Breadcrumb from "../common/breadcrumb/Breadcrumb";
 import FooterOne from "../common/footer/FooterOne";
+import FaqTen from '../components/faq10/FaqTen';
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
@@ -241,6 +242,121 @@ export default function GaschargingservicesPageOne() {
         <div className="container">
           <div className="row">
             <div className="innerpage-whiteboxs main-timeline">
+
+              {/* Hero Section */}
+              <div className="flex flex-col items-center justify-center h-screen text-center bg-white">
+                <h1 className="text-3xl md:text-5xl font-bold pb-6 mb-4 mt-3">
+                  Affordable AC Gas Charging Services in Mumbai
+                </h1>
+                <p className="mb-6 text-gray-700 max-w-2xl ">
+                  At Compress India, we provide affordable AC gas charging services in Mumbai to restore your cooling system's performance and efficiency. Whether it's a Split, Window, or Portable AC, our certified technicians ensure accurate refrigerant refilling to keep your space cool and comfortable.
+                </p>
+              </div>
+
+              <div className="container mx-auto px-4 text-center" style={{ marginBottom: '15px' }}>
+                <h4 className="mb-6 mt-4 text-xs font-semibold text-gray-700">
+                  We Service:
+                </h4>
+                <ol className="list-disc pl-6 space-y-2 text-gray-700" style={{ marginBottom: '20px' }}>
+                  <li className="text-green-600">
+                    <span className="text-gray-700">- Split AC gas charging : ₹1,850 per unit</span>
+                  </li>
+                  <li className="text-green-600">
+                    <span className="text-gray-700">- Window AC gas charging : ₹1,850 per unit</span>
+                  </li>
+                  <li className="text-green-600">
+                    <span className="text-gray-700">- Portable AC gas charging : ₹1,850 per unit</span>
+                  </li>
+                </ol>
+              </div>
+
+              {/* More Info 1 */}
+
+              <div className="container mx-auto px-4" style={{ marginBottom: '70px' }}>
+                {/* More Info 1 */}
+
+                <div className="offers">
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Why Choose Our AC Gas Charging<br/> Service</strong></h3>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Restore Cooling Efficiency</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '20px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Low refrigerant levels reduce cooling capacity and increase<br/> power consumption. Our AC gas refill in Mumbai restores<br/> your AC to peak performance.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Trained and Experienced Technicians</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '20px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We follow precise gas charging methods, ensuring your AC<br/> repair and service is done to manufacturer standards.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Transparent Pricing</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '20px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Our rates are fixed and transparent, so you know exactly<br/> what you'll pay before we start.</span></li>
+                    </ol>
+                  </div>
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Our AC Gas Charging<br/> Process</strong></h3>
+                    <h4 className="text-xl font-semibold mb-2 text-gray-800"><strong>Step 1 - Leak Detection and Inspection</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Before charging, we inspect your AC for refrigerant leaks to avoid future cooling issues.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 mt-2 text-gray-800"><strong>Step 2 - Accurate Refrigerant Filling</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We use the correct refrigerant type and quantity based on your AC model specifications.</span></li>
+                    </ol>
+                    <h4 className="text-xl font-semibold mb-2 mt-2 text-gray-800"><strong>Step 3 - Performance Testing</strong></h4>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '30px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Post-refill, we test the system for cooling efficiency and ensure optimal operation.</span></li>
+                    </ol>
+                  </div>
+
+                </div>
+
+                {/* More Info 2 */}
+
+                <div className="offers">
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Benefits of Timely AC Gas<br/> Charging</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Restores quick and efficient cooling</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Reduces energy consumption</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Prevents compressor damage</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Extends AC lifespan</span></li>
+                    </ol>
+                  </div>                  
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Additional AC Services You Might<br/> Need</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">AC Repair & Service - Complete AC maintenance solutions</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">AC Installation - Professional setup for all AC types</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">Chemical Jet Cleaning - Deep cleaning for better airflow</span></li>
+                      <li className="text-green-600"> <span className="text-gray-700">AC Pressure Testing - Detect leaks before gas charging</span></li>
+                    </ol>
+                  </div>
+
+                </div>
+
+                <div className="offers">                
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Service Coverage</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">We offer AC gas charging services across Mumbai<br/> & Navi Mumbai, serving residential homes, offices,<br/> commercial facilities, and industrial clients.</span></li>
+                    </ol>
+                  </div>
+
+                  <div className="col-xl-6">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800"><strong>Book Your AC Gas Charging in Mumbai Today</strong></h3>
+                    <ol className="text-gray-700 space-y-2" style={{ listStyleType: 'disc', listStylePosition: 'outside', marginBottom: '15px' }}>
+                      <li className="text-green-600"> <span className="text-gray-700">Don't let low refrigerant levels compromise your comfort. Call<br/> +91 86550 11465 or email sales@compressindia.in to schedule<br/> your AC gas charging in Mumbai with Compress India.</span></li>
+                    </ol>
+                  </div>
+
+                </div>
+
+              </div>
+
               <div
                 className="text-center mb-12"
                 style={{ paddingBottom: "60px" }}
@@ -345,6 +461,7 @@ export default function GaschargingservicesPageOne() {
             </button>
           </Link>
         </div>
+        <FaqTen />
       </section>
       {/* <BrandOne /> */}
 
